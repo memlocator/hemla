@@ -1,0 +1,1363 @@
+desokod,transit_type,nearest_station_name,nearest_station_walk_min,nearest_station_dist_m
+deso_0186c1020,tram,Seglarvägen,2,177
+deso_0180c5490,bus,Ruddammen,2,157
+deso_0180c5510,subway,Solleftegatan,2,179
+deso_0180c6180,subway,Stenbygränd,1,72
+deso_0180c1310,bus,Sköndals centrum,2,153
+deso_0180c1300,subway,Sköllerstagatan,1,118
+deso_0181c1140,commuter_rail,Tältvägen,1,105
+deso_0126c1300,commuter_rail,Klockarvägen övre,1,68
+deso_0126c1270,bus,Bergavägen,5,391
+deso_0127c1460,bus,Norrskogsvägen,3,209
+deso_0180c1170,bus,Diakongränd,2,199
+deso_0126c1460,commuter_rail,Källvägen,2,188
+deso_0180c3170,subway,Södermannagatan,1,11
+deso_0180c1390,subway,Fågeltungan,1,68
+deso_0180c1400,subway,Gubbängsskolan,2,166
+deso_0138c1240,bus,Tjärnstigen,4,321
+deso_0180c1670,bus,Apelvägen,2,207
+deso_0180c1760,subway,Morkullsvägen,1,90
+deso_0180c2630,subway,Svandammsplan,2,135
+deso_0180c2590,commuter_rail,Årsta västra,2,165
+deso_0182c1130,tram,Ostronvägen,1,122
+deso_0180c3070,subway,Sjövik,2,125
+deso_0180c3080,commuter_rail,Södersjukhuset,1,61
+deso_0180c3160,subway,Rosenlund,2,133
+deso_0180c3600,subway,Mariatorget,3,213
+deso_0180c3530,tram,Gröndal,1,91
+deso_0180c3090,subway,Torsten Almstigen,2,130
+deso_0180c3180,subway,Hallandsgatan,1,112
+deso_0180c3190,subway,Allhelgonagatan Götgatan,2,176
+deso_0180c3120,subway,Marievik,1,106
+deso_0180c3670,subway,Ansgariegatan,1,68
+deso_0180c3570,subway,Torkel Knutssonsgatan,1,69
+deso_0120c1050,bus,Hovnoret,7,568
+deso_0180c3640,subway,Hornsgatan/Rosenlundsgatan,1,14
+deso_0180c3630,subway,Bergsunds strand,1,41
+deso_0182c1372,bus,Kvarnholmen,1,2
+deso_0180c3590,subway,Reimersholme,1,6
+deso_0182c1330,bus,Danvikshem,1,118
+deso_0180c3620,subway,Högalidskyrkan,1,41
+deso_0180c3660,subway,Verkstadsgatan,1,15
+deso_0182c1291,bus,Mellanbergsvägen,2,148
+deso_0180c4170,subway,Thorildsplan Lindhagensgatan S:t Görans sjukhus,1,55
+deso_0182c1420,bus,Boovägen,2,181
+deso_0180c4160,subway,Polhemsgatan,2,182
+deso_0180c4300,subway,Gustav III:s väg,3,231
+deso_0180c4220,subway,Kungsbroplan,1,47
+deso_0180c4180,subway,Tranebergsslingan,1,53
+deso_0180c4280,subway,Arbetargatan,2,141
+deso_0180c4310,subway,Djurgårdsbron,1,60
+deso_0182c1430,bus,Norrkärr,7,621
+deso_0180c4270,subway,Lindhagensgatan,3,236
+deso_0180c4410,subway,Fleminggatan,1,121
+deso_0180c4420,subway,Arbetargatan,2,148
+deso_0180c4330,subway,Olof Dalins väg,2,147
+deso_0180c4670,subway,Vidängsvägen,2,138
+deso_0180c4510,subway,Ängbybadet,5,388
+deso_0180c5310,subway,Norra Stationsgatan,1,98
+deso_0180c2670,subway,Per Lindeströms väg övre,1,60
+deso_0180c2720,subway,Midsommarkransen,1,21
+deso_0180c2783,commuter_rail,Hildebergsvägen,1,69
+deso_0180c2640,subway,Edvard Swartz plan,1,116
+deso_0180c2690,subway,Johanneshovsvägen,1,7
+deso_0184c1120,subway,Solnahallen,1,77
+deso_0182c1250,tram,Becksjudarvägen,1,98
+deso_0180c3250,subway,Närkesgatan,1,41
+deso_0180c3280,subway,Timmermansgränd,1,74
+deso_0180c3260,subway,Siargatan,1,79
+deso_0180c3290,subway,Närkesgatan,1,106
+deso_0180c3310,subway,Södra station,2,139
+deso_0180c3340,subway,Medborgarplatsen,2,175
+deso_0180c3202,bus,Mandelparken,1,13
+deso_0180c3201,tram,Tengdahlsgatan,1,48
+deso_0180c5620,tram,Mariehällskyrkan,1,77
+deso_0184c1130,tram,Sunnangården,4,333
+deso_0180c5600,subway,Vällingbyskolan,2,154
+deso_0180c5751,bus,Ekbacken,2,155
+deso_0180c1470,subway,Läggestavägen,1,62
+deso_0180c5800,subway,Härjedalsgatan,2,208
+deso_0184c1280,subway,Östervägen,1,9
+deso_0180c5810,subway,Stallpojksbacken,1,91
+deso_0184c1330,bus,Rosenborgsgatan,2,182
+deso_0184c1380,subway,Bergshamra centrum,1,30
+deso_0180c5820,bus,Skogslöparvägen,1,54
+deso_0180c5840,bus,Järneksvägen,2,207
+deso_0180c6350,subway,Husby centrum Bergengatan,1,115
+deso_0123c1070,bus,Dragspelsvägen,1,14
+deso_0180c6360,subway,Tönsbergsgatan,1,32
+deso_0181c1302,bus,Fina Svenséns gata,2,141
+deso_0181c1162,bus,Heimdallsvägen,1,87
+deso_0180c1750,subway,Voxnegränd,1,91
+deso_0180c1810,subway,Gränsberget,4,334
+deso_0180c1840,subway,Spikbrädan,1,68
+deso_0123c1370,bus,Termovägen,1,56
+deso_0163c1290,bus,Båtsmansvägen,2,179
+deso_0191c1050,bus,Tingvalla,2,165
+deso_0180c3700,subway,Långholmsgatan,1,114
+deso_0182c1320,bus,Edinsvägen övre,2,175
+deso_0180c3510,tram,Matrosbacken,1,21
+deso_0180c3710,subway,Mariatorget,2,137
+deso_0127c1431,subway,Lugnets väg,3,291
+deso_0138c1250,bus,Orrnäset,2,126
+deso_0180c1270,bus,Sköndalsskolan,2,167
+deso_0128c1030,bus,Fasanstigen,2,142
+deso_0184c1052,subway,Tomteboda postterminal,3,243
+deso_0180c5421,subway,Råcksta,2,175
+deso_0180c5422,subway,Råcksta,3,259
+deso_0186c1030,tram,Larsberg,1,80
+deso_0180c4690,subway,Sibyllegatan,1,115
+deso_0180c4580,subway,Olof Dalins väg,3,248
+deso_0180c4520,subway,Mariedalsvägen,1,27
+deso_0180c6340,bus,Hästa gård,5,415
+deso_0127c1470,subway,Slagsta strand,1,83
+deso_0180c1330,subway,Askersgatan,1,98
+deso_0123c1150,bus,Viksjö gård,2,187
+deso_0123c1170,bus,Dackevägen,1,75
+deso_0139b2050,commuter_rail,Korpstigen,1,94
+deso_0126c1450,commuter_rail,Stuvsta torg Bussar,4,351
+deso_0182c1020,bus,Östra Stensö,1,67
+deso_0114c1092,bus,Norra berget,2,168
+deso_0181c1180,commuter_rail,Blombackagatan,1,71
+deso_0136c1313,commuter_rail,Polcirkelvägen,1,84
+deso_0138c1130,bus,Nyboda skola,1,114
+deso_0182c1240,tram,Duvnäs skola,2,142
+deso_0180c1190,bus,Listuddsfältet,1,22
+deso_0125c1010,bus,Lundhagen,2,180
+deso_0180c3230,subway,Liljeholmen,2,130
+deso_0180c3420,subway,Södra station,2,194
+deso_0180c3440,subway,Fatbursgatan,1,86
+deso_0180c3400,subway,Hornstull,1,42
+deso_0180c1860,subway,Bullerholmsgränd,1,89
+deso_0182c1150,tram,Fisksätra station,2,185
+deso_0180c2870,subway,Aspudden,1,23
+deso_0180c2810,subway,Mårtensdal,2,166
+deso_0180c2890,subway,Manhemsgatan,1,96
+deso_0180c2860,tram,Luma,2,170
+deso_0180c3520,subway,Medborgarplatsen Björns trädgård,2,167
+deso_0180c3350,subway,Stockholms södra,1,76
+deso_0180c3220,tram,Stora Fågelsången,1,99
+deso_0182c1260,tram,Danvikshemsvägen,2,134
+deso_0180c3770,subway,Slussen,2,165
+deso_0180c3690,subway,Glasbruksgatan,1,95
+deso_0180c4040,subway,Gustav Adolfs torg,1,65
+deso_0180c4400,subway,Wallingatan,1,89
+deso_0120c1140,bus,Hästhagen,1,69
+deso_0180c4350,subway,Tranebergsplan,2,174
+deso_0180c4490,subway,Industrigatan,1,94
+deso_0180c4910,subway,Valhallavägen Tessinparken,1,7
+deso_0180c4980,subway,Karlbergsvägen,1,87
+deso_0180c4960,subway,Musikhögskolan,1,93
+deso_0180c4870,subway,Runebergsplan,1,68
+deso_0180c4900,subway,Handelshögskolan Stadsbiblioteket,2,172
+deso_0136c1170,bus,Örnens väg,1,77
+deso_0180c2020,commuter_rail,Solberga park,2,207
+deso_0182c1050,bus,Marenvägen,4,324
+deso_0180c1960,subway,Åkervägen,2,133
+deso_0180c2040,subway,Byälvsvägen,2,204
+deso_0180c4200,tram,Rånövägen,1,106
+deso_0180c4650,subway,Tegnérgatan,1,66
+deso_0136c1210,bus,Fredrika Bremerskolan,1,119
+deso_0136c1342,commuter_rail,Nakterhusvägen,1,108
+deso_0181c1190,bus,Klockarvägen,2,139
+deso_0128c1050,bus,Skogvaktarstigen,2,185
+deso_0120c1180,bus,Munkmora,3,291
+deso_0126c1312,bus,Sibyllavägen,4,333
+deso_0163c1380,bus,Bisslinge,7,592
+deso_0183c1020,subway,Albygatan,1,83
+deso_0186c1110,tram,Högsätrahuset,2,180
+deso_0180c5480,subway,Jämtlandsgatan,2,208
+deso_0126c1380,bus,Källbrinksskolan,4,299
+deso_0180c5660,subway,Persikogatan,1,68
+deso_0180c5610,subway,Gulddragargränd,3,238
+deso_0180c1250,subway,Russinhöjden,1,87
+deso_0180c1160,subway,Lurstigen,1,54
+deso_0184c1230,subway,Bollen,1,68
+deso_0126c1570,subway,Vårdkasevägen,3,238
+deso_0127c1320,subway,Hallunda - Eriksberg,2,183
+deso_0127c1280,bus,Kvarnhagen,2,185
+deso_0180c4640,subway,Hakberget,1,77
+deso_0180c4550,subway,Eyvind Johnsons gata,1,63
+deso_0180c4620,subway,Adolf Fredriks kyrka,1,35
+deso_0180c5230,subway,Norrtullsgatan,1,79
+deso_0180c1440,subway,Skebokvarnsvägen,1,54
+deso_0182c1060,bus,Älta gård,3,221
+deso_0181c1260,bus,Klövjevägen,3,282
+deso_0127c1100,commuter_rail,Gröndalsvägen,2,194
+deso_0126c1320,commuter_rail,Rådsvägen,1,95
+deso_0126c1290,bus,Kynäsvägen,2,133
+deso_0180c1120,bus,Havsörnstorget,2,200
+deso_0180c2030,bus,Häradsvägen,1,82
+deso_0180c1990,subway,De Gamlas väg,2,186
+deso_0180c1970,bus,Krattvägen,3,256
+deso_0180c2960,tram,Sickla udde,3,215
+deso_0180c2951,subway,Årstadal,1,101
+deso_0180c2910,subway,Eriksdal,2,196
+deso_0180c2900,subway,Hägerstenshamnen,1,34
+deso_0180c3020,subway,Bohusgatan,1,88
+deso_0180c3210,subway,Jägargatan,2,129
+deso_0182c1231,tram,Lillängen,2,202
+deso_0180c3300,tram,Henriksdal,1,54
+deso_0182c1371,bus,Makaronifabriken,1,12
+deso_0180c3750,subway,Slussen,1,53
+deso_0180c4730,subway,Eyvind Johnsons gata,1,70
+deso_0180c4720,subway,Banérgatan,1,94
+deso_0120c1170,bus,Höjdhagen,5,390
+deso_0180c5280,subway,Körsbärsvägen,1,122
+deso_0180c5190,subway,Voltavägen,4,332
+deso_0180c5264,subway,Vanadisplan,2,131
+deso_0180c5550,commuter_rail,Askängsbacken,2,149
+deso_0180c5390,subway,Frejgatan,1,121
+deso_0186c1040,tram,Skärsätra torg,2,168
+deso_0180c5350,subway,Furusundsgatan Frihamnen - Hiss,1,57
+deso_0180c5150,subway,Runstensplan,3,246
+deso_0180c5630,bus,Sundbyvägen,3,291
+deso_0180c5680,bus,Bättringsvägen,1,65
+deso_0184c1200,commuter_rail,Solna station,1,100
+deso_0180c6410,subway,Mariehamnsgatan,2,150
+deso_0180c6420,subway,Akalla företagsområde Nystadsgatan,2,127
+deso_0180c6240,subway,Hjulsta,1,64
+deso_0180c6200,bus,Bornholmsgatan,6,504
+deso_0180c6370,subway,Husby gård Trondheimsgatan,3,237
+deso_0123c1141,bus,Stora torget,4,359
+deso_0180c6380,subway,Husby,2,137
+deso_0180c6400,subway,Helsingforsgatan,3,210
+deso_0123c1222,bus,Nybergstorget,2,183
+deso_0163c1020,bus,Silverdals kapell,3,291
+deso_0180c6430,subway,Sveaborgsgatan,2,137
+deso_0139c1051,bus,Rönnbärsvägen,6,532
+deso_0117c1110,tram,Solhälla,1,61
+deso_0163c1090,commuter_rail,Stockholmsmässan,2,143
+deso_0162c1170,bus,Sätra,2,171
+deso_0163c1100,commuter_rail,Timmervägen,3,211
+deso_0163c1120,commuter_rail,Tingsvägen Malmvägen,2,131
+deso_0160c1270,bus,Trädgårdsvägen,3,270
+deso_0163c1360,commuter_rail,Ebba Brahes väg,1,101
+deso_0117a0030,bus,Hjälmsättra,5,449
+deso_0191c1040,bus,Idungatan,1,103
+deso_0188c1062,bus,Roslagsskolan,1,95
+deso_0188c1070,bus,Gråbergsgatan,1,50
+deso_0188a0080,bus,Hagen,6,465
+deso_0115c1010,bus,Uthamra,1,44
+deso_0126c1580,bus,Lövsångarvägen,3,233
+deso_0180c1650,subway,Munksjövägen,3,221
+deso_0180c1700,bus,Apelvägen,4,336
+deso_0180c1873,commuter_rail,Älvsjö torg,1,82
+deso_0180c1770,bus,Ludgovägen,1,107
+deso_0180c2190,subway,Enskede rackethall,2,160
+deso_0180c2520,subway,Skärmarbrink,2,128
+deso_0180c2440,subway,Inteckningsvägen,2,127
+deso_0180c2530,tram,Linde,2,196
+deso_0180c3980,subway,Pontonjärgatan,2,151
+deso_0180c3910,subway,Alléparken,1,69
+deso_0180c4100,subway,Fridhemsgatan,1,72
+deso_0120c1090,bus,Grantomta,5,424
+deso_0180c4020,subway,Västerbroplan,1,99
+deso_0180c4090,subway,Vitalisvägen,1,79
+deso_0180c4010,subway,Stadshuset,1,112
+deso_0180c4050,subway,Rörläggarvägen,3,210
+deso_0180c4130,subway,Mariebergsgatan,1,112
+deso_0180c4120,subway,Hantverkargatan Rådhuset Kungsholmsgatan,1,51
+deso_0139b2020,bus,Finnsta östra,3,257
+deso_0126c1430,bus,Gillerbacken,5,418
+deso_0180c1200,subway,Bjursätragatan,1,93
+deso_0180c1180,subway,Cigarrvägen,1,122
+deso_0123c1160,bus,Vasavägen,2,168
+deso_0191c1090,commuter_rail,Centralgatan,1,46
+deso_0191c1100,commuter_rail,Dragonvägen,1,111
+deso_0180c6020,bus,Björnflokevägen,1,69
+deso_0180c6030,commuter_rail,Kälvestavägen,2,192
+deso_0180c6070,subway,Rinkebysvängen,1,122
+deso_0163c1390,bus,Antuna,1,91
+deso_0163c1400,bus,Curmans väg,1,95
+deso_0180c5780,subway,Natt och Dags gränd,2,148
+deso_0184c1260,subway,Näckrosen,1,60
+deso_0180c5640,bus,Fyrklöversbackarna,7,624
+deso_0180c5570,subway,Nimrodsgatan,1,123
+deso_0183c1050,subway,Götgatan,1,45
+deso_0180c5752,bus,Mariehällsskolan,2,160
+deso_0180c5520,subway,Jägmästargatan,2,153
+deso_0180c5710,subway,Kvarnhagsplan,1,33
+deso_0184c1060,subway,Pumpan,2,157
+deso_0180c5250,subway,Björnsonsgatan,5,377
+deso_0180c4710,subway,Snickarbacken,1,66
+deso_0180c5700,subway,Fjällnäsgatan,3,210
+deso_0180c5470,subway,Strandliden,2,148
+deso_0180c5590,subway,Vällingbyplan Vällingby torg,1,70
+deso_0180c5652,subway,Bobergsskolan,2,130
+deso_0184c1170,subway,Solna stadshus,2,155
+deso_0180c5691,tram,Mariehäll,2,154
+deso_0180c4780,subway,Norrbackagatan,1,59
+deso_0180c4750,subway,Skeppargatan,1,81
+deso_0180c4630,subway,S:t Eriksplan,3,266
+deso_0180c4760,subway,Tegnérgatan,2,190
+deso_0180c3730,tram,Gammelgårdsvägen,2,158
+deso_0182c1360,bus,Boo,9,768
+deso_0184c1370,commuter_rail,Ulriksdals station,1,110
+deso_0180c5290,subway,Furusundsgatan Frihamnen - Hiss,2,175
+deso_0180c5180,subway,Ibsengatan övre,1,57
+deso_0180c5262,bus,Norra station,2,129
+deso_0180c2970,subway,Alvastraparken,1,28
+deso_0180c3030,subway,Torsten Alms gata,1,37
+deso_0180c5261,subway,Torsplan,2,155
+deso_0180c5270,subway,Surbrunnsgatan,1,40
+deso_0180c1850,subway,Åkervägen,1,87
+deso_0180c2140,bus,Pliggvägen,2,146
+deso_0180c3720,tram,Smedslätten,1,110
+deso_0184c1250,subway,Vasalund,2,145
+deso_0180c2120,subway,Sandsborg,4,311
+deso_0162c1060,subway,Mörby station,1,31
+deso_0180c6280,subway,Bornholmsgatan,3,241
+deso_0127c1380,subway,Kärsbyskolan,2,130
+deso_0127c1390,subway,Norsborg,3,267
+deso_0127c1360,subway,Rågvägen,2,202
+deso_0127c1370,subway,Tomtbergavägen,5,388
+deso_0182c1270,bus,Sjöstugan,6,496
+deso_0180c3240,tram,Mandelparken,1,103
+deso_0180c3380,bus,Erstagatan,1,43
+deso_0180c3390,bus,Klippgatan,1,41
+deso_0180c1110,subway,Sunnemobacken,2,144
+deso_0126c1440,bus,Kallkärrsvägen,4,356
+deso_0138c1230,bus,Sidvallsvägen,1,45
+deso_0180c2881,tram,Luma,1,90
+deso_0180c2980,tram,Sickla udde,3,219
+deso_0182c1232,tram,Ekuddsvägen,2,126
+deso_0126c1510,subway,Vårby gård,5,426
+deso_0180c1480,subway,Sjösabrinken,2,180
+deso_0125c1020,bus,Sandudden,1,123
+deso_0184c1190,commuter_rail,Viktoriagatan,1,41
+deso_0126c1330,bus,Stortorpshallen,3,218
+deso_0136c1400,commuter_rail,Tromsövägen,3,245
+deso_0182c1180,none,,,
+deso_0192c1030,commuter_rail,Videgatan,2,156
+deso_0192c1060,commuter_rail,Skeppargatan,1,28
+deso_0192c1010,bus,Sjögången,4,311
+deso_0192c1020,commuter_rail,Hembygdsgården,1,49
+deso_0192c1050,commuter_rail,Gröndalsskolan,2,158
+deso_0192c1040,commuter_rail,Gröndalsskolan,3,211
+deso_0192c1080,commuter_rail,Vikingavägen,1,96
+deso_0192c1070,commuter_rail,Nickstahöjden,2,162
+deso_0192c1090,commuter_rail,Gotthem,1,73
+deso_0136c1250,commuter_rail,Runstenstorget,1,90
+deso_0192c1100,bus,Kvarnvägen,1,41
+deso_0136c1240,bus,Tvillingarnas gata,1,111
+deso_0181c1090,bus,Fridenslundsvägen,1,116
+deso_0127c1190,commuter_rail,Solskensvägen,1,81
+deso_0127c1400,subway,Rågvägen,1,122
+deso_0192a0010,bus,Kvarnängen,6,484
+deso_0192b2020,bus,Tärnvägen,5,447
+deso_0180c1101,bus,Sköndalsbro,2,139
+deso_0192b2010,commuter_rail,Ösmo centrum,1,79
+deso_0180c1260,subway,Kontoristvägen,2,204
+deso_0180c1280,subway,Lerbäcksgränd,2,168
+deso_0180c1540,subway,Bandhagen,1,92
+deso_0180c1592,subway,Vårbergs sjukhem,1,43
+deso_0180c1510,subway,Flygledargatan,1,38
+deso_0181b4010,bus,Lämbonäsvägen,1,3
+deso_0192b3010,bus,Torp,1,41
+deso_0192a0020,bus,Ristomta,7,611
+deso_0136c1260,bus,Brandbergens centrum,1,65
+deso_0181b5010,commuter_rail,Rosendal,2,172
+deso_0127c1210,commuter_rail,Tullingeberg,2,177
+deso_0138c1120,bus,Vitlöksgränd,3,230
+deso_0192a0030,none,,,
+deso_0136a0010,bus,Mälby,3,274
+deso_0181a0010,bus,Sörby - Valåker,7,589
+deso_0181b2020,none,,,
+deso_0180c1150,bus,Skrakgränd,6,528
+deso_0127c1480,bus,Lavendelvägen,2,154
+deso_0180c1290,subway,Skönstaholmsvägen,2,146
+deso_0181b2010,bus,Skäve,4,372
+deso_0181b2032,bus,Rönnvägen,8,677
+deso_0136a0030,none,,,
+deso_0181b2040,bus,Kallfors,8,625
+deso_0181b2031,none,,,
+deso_0136c1010,commuter_rail,Krigslida,10,794
+deso_0180c1550,bus,Flensvägen,3,257
+deso_0180c1570,subway,Tallkrogen,4,333
+deso_0180c1580,bus,Postiljonsvägen,3,287
+deso_0136c1020,commuter_rail,Tungelsta skola,6,479
+deso_0182c1200,tram,Sickla industriväg,1,57
+deso_0182c1220,tram,Storängen,4,298
+deso_0136c1030,bus,Ribbygaraget,5,376
+deso_0136c1090,bus,Västerbommen,6,499
+deso_0136c1100,commuter_rail,Kullerstensvägen,3,226
+deso_0192a0040,bus,Grödbylunds tomtområde,4,304
+deso_0136c1120,commuter_rail,Jordbro station,2,199
+deso_0136c1040,bus,Murarvägen,7,546
+deso_0181a0020,none,,,
+deso_0182c1210,bus,Duvnäs tennisplan,6,531
+deso_0180c3580,subway,Ansgariegatan,1,75
+deso_0136c1070,commuter_rail,Hanveden,3,225
+deso_0136c1270,bus,Skyttens gata,1,64
+deso_0136c1280,bus,Skyttens gata,3,284
+deso_0140c1030,bus,Turingeskolan,3,260
+deso_0136c1050,bus,Ribbyskolan,9,754
+deso_0136c1060,bus,Lidaskolan,3,280
+deso_0136c1130,commuter_rail,Gammelhagen,1,84
+deso_0180c3780,subway,Bergsunds strand,4,340
+deso_0180c3810,subway,Varvsgatan,2,170
+deso_0180c3790,subway,Skinnarviken,1,93
+deso_0180c3800,subway,Münchenbryggeriet,2,195
+deso_0180c3820,subway,Mariatorget,3,239
+deso_0136c1110,bus,Åbylund,2,193
+deso_0181c1010,bus,Abborrstigen,1,110
+deso_0136c1080,bus,Kvartärvägen,9,779
+deso_0136c1450,bus,Västra skolan,2,157
+deso_0136c1290,commuter_rail,Sjukhusentrén,1,20
+deso_0181c1110,commuter_rail,Linnégatan,2,133
+deso_0181c1100,bus,Fridenslundsvägen,6,497
+deso_0136c1140,bus,Sommarbo,4,347
+deso_0140c1011,bus,Vandringsvägen,2,169
+deso_0180c4590,subway,Hemslöjdsvägen,3,245
+deso_0140c1012,bus,Rimsjöhöjden,5,383
+deso_0136c1160,bus,Tuvvägen,3,226
+deso_0140c1020,bus,Turingeskolan,2,199
+deso_0181c1050,bus,Hovsjö centrum,1,112
+deso_0136c1190,commuter_rail,Odenvägen,2,128
+deso_0136c1200,bus,Vikingaskolan,1,95
+deso_0136c1150,bus,Rudanvägen,1,113
+deso_0136c1220,commuter_rail,Test 4,1,61
+deso_0181c1060,bus,Telgebo,1,83
+deso_0136c1180,bus,Skäggsmo,6,463
+deso_0127c1010,bus,Slättmalm,9,773
+deso_0181c1030,bus,Hovsjöskolan,9,785
+deso_0181c1070,bus,Förmansvägen,2,162
+deso_0136c1230,bus,Svartbäcksvägen,5,387
+deso_0127c1020,bus,Bremora,2,138
+deso_0181c1080,bus,Förmansvägen,1,29
+deso_0127c1040,bus,Skäcklinge,4,325
+deso_0181c1040,bus,Chassiporten,2,143
+deso_0136c1320,bus,Kulfångsgatan,2,153
+deso_0181c1130,commuter_rail,Jernbergsgatan,1,124
+deso_0181a0030,none,,,
+deso_0140c1040,bus,Björkhagen,4,355
+deso_0180c4530,subway,Brommaplan,3,263
+deso_0180c4790,subway,Karlaplan,1,20
+deso_0136c1330,bus,Evertsbergsvägen,1,65
+deso_0127c1030,bus,Lövholmenvägen,5,402
+deso_0136c1314,bus,Hermanstorpsvägen,1,116
+deso_0181c1161,bus,Mårten Bullers väg,4,299
+deso_0136b2010,bus,Schweizerparken,9,784
+deso_0180c4700,bus,Frihamnen,5,437
+deso_0180c5210,subway,Starrbäcksängen,3,236
+deso_0180c5300,subway,Frejgatan,2,171
+deso_0180c5160,subway,Blackeberg,1,118
+deso_0136c1300,bus,Svartbäcksskolan,8,645
+deso_0181c1020,bus,Gärtuna,7,621
+deso_0127c1052,bus,Klättrarstigen,3,287
+deso_0181c1150,bus,Fornbacken,3,268
+deso_0127c1051,bus,Gösta Frohms väg,5,444
+deso_0181c1170,commuter_rail,Södertälje centrum,1,50
+deso_0127c1070,bus,Broängsvägen,3,240
+deso_0136c1343,bus,Port 73,1,52
+deso_0181c1282,commuter_rail,Jovisgatan,1,67
+deso_0181c1230,bus,Orrstigen,1,28
+deso_0136c1341,commuter_rail,Nakterhusvägen,1,113
+deso_0136c1312,commuter_rail,Polcirkelvägen,3,209
+deso_0181c1120,bus,Scaniarinken,3,224
+deso_0128c1010,commuter_rail,Gymnasiet,1,55
+deso_0127c1060,none,,,
+deso_0136c1311,bus,Sippvägen,8,652
+deso_0127c1182,bus,Segersjö,3,263
+deso_0136c1360,bus,Tyrestavägen,5,394
+deso_0136c1350,bus,Tyrestavägen,6,486
+deso_0127a0010,none,,,
+deso_0181c1200,commuter_rail,Idrottsvägen,1,51
+deso_0181c1240,bus,Morkullans servicehus,1,29
+deso_0181c1210,bus,Fornhöjden norra,1,97
+deso_0180c1360,subway,Hagsätra,1,54
+deso_0126c1520,subway,Mogårdsgången,2,166
+deso_0180c1370,subway,Högdalen,1,31
+deso_0128c1020,commuter_rail,Rönninge centrum Bussar,1,93
+deso_0181c1220,bus,Byvägen,2,193
+deso_0127c1090,commuter_rail,Hålvägen,2,128
+deso_0136c1370,bus,Järnåldersringen,2,171
+deso_0181c1250,bus,Fogdetorpshöjden,2,177
+deso_0127c1110,bus,Stupvägen,1,57
+deso_0127c1080,bus,Viltstigen,6,524
+deso_0128c1040,commuter_rail,Tvärvägen,1,70
+deso_0181c1301,bus,Fina Svenséns gata,5,418
+deso_0181c1320,bus,Ronna skola,1,122
+deso_0181c1290,bus,Odalvägen,1,118
+deso_0181c1270,bus,Klövjevägen,1,65
+deso_0181c1281,bus,Kvarnbergagatan,2,164
+deso_0136c1380,bus,Skomakarvägen,6,480
+deso_0181c1310,bus,Bruksgatan,1,39
+deso_0128c1070,bus,Söderby park,2,178
+deso_0127c1130,commuter_rail,Smedvägen,1,118
+deso_0127c1120,bus,Krokvägen,4,317
+deso_0128c1060,bus,Snickarstigen,2,147
+deso_0127c1160,bus,Tuna,3,216
+deso_0180c1640,bus,Turingevägen,2,140
+deso_0136c1390,none,,,
+deso_0181c1360,bus,Brunnsängsvägen,2,154
+deso_0181c1330,bus,Barrstigen,2,176
+deso_0180c1241,bus,Stora Sköndals väg,5,389
+deso_0127c1150,commuter_rail,Elgentorpsvägen,3,248
+deso_0127c1140,commuter_rail,Aftonvägen,3,271
+deso_0181c1340,bus,Malmbergavägen,1,52
+deso_0127c1170,bus,Solhöjden,4,320
+deso_0136c1420,bus,Grindstugan,5,391
+deso_0136c1410,bus,Norrby gård,6,499
+deso_0180c1230,subway,Lurstigen,2,201
+deso_0127c1450,bus,Brunnaskolan,2,177
+deso_0181c1350,bus,Listonhill,1,98
+deso_0136c1440,bus,Grindstugan,2,174
+deso_0127c1260,bus,Dymmelkärrsvägen,4,334
+deso_0127c1181,none,,,
+deso_0127c1230,bus,Adler Salvius väg,2,156
+deso_0126c1030,commuter_rail,Visättra,3,254
+deso_0127c1240,bus,Blickavägen,4,308
+deso_0126c1110,commuter_rail,Flemingsbergs station,2,151
+deso_0126c1060,commuter_rail,Visättra sportcenter,2,160
+deso_0126c1070,commuter_rail,Storvretsvägen,1,52
+deso_0181a0040,bus,Linavägen,7,549
+deso_0136c1430,none,,,
+deso_0126c1081,commuter_rail,Huddinge sjukhus,3,221
+deso_0126c1140,commuter_rail,Ortopedvägen,1,104
+deso_0126c1040,commuter_rail,Rondovägen,2,161
+deso_0126c1020,bus,Visättra ängar,5,437
+deso_0180c1610,bus,Vinthundsvägen,3,261
+deso_0180c1720,subway,Fjärdholmsgränd,1,105
+deso_0180c1680,subway,Skärholmshallen,1,106
+deso_0138c1010,bus,Sofiebergsskolan,1,114
+deso_0126c1130,commuter_rail,Vretskolan,2,203
+deso_0126c1100,commuter_rail,Rapsodivägen,1,12
+deso_0140a0010,bus,Björkesta,5,383
+deso_0127c1290,subway,Alhagsvägen,2,167
+deso_0127c1250,bus,Trädgårdstorp,2,163
+deso_0126c1150,bus,Bläcksvampsvägen,2,144
+deso_0126c1160,commuter_rail,Studievägen,2,155
+deso_0127c1220,none,,,
+deso_0127c1200,bus,Vreta gårdsväg,5,396
+deso_0126c1010,bus,Slipstensvägen,3,234
+deso_0126c1090,commuter_rail,Vallstigen,1,44
+deso_0126a0010,bus,Gladövägen,4,299
+deso_0126c1082,commuter_rail,Ortopedvägen,1,91
+deso_0126c1170,commuter_rail,Edboskolan,4,301
+deso_0136a0020,none,,,
+deso_0126c1180,bus,Trågstigen,1,54
+deso_0126c1120,bus,Balingsnäs,4,350
+deso_0126c1230,commuter_rail,Klockarvägen övre,2,188
+deso_0180c5360,subway,Frejgatan,1,37
+deso_0180c5330,subway,Sandhamnsplan,1,50
+deso_0126c1192,bus,Björkholmsvägen,2,144
+deso_0138c1030,bus,Kumla skola,5,418
+deso_0126c1191,bus,Solgård,3,212
+deso_0180c1030,bus,Farsta IP,5,387
+deso_0127c1432,subway,Tomtbergavägen,1,86
+deso_0126c1220,commuter_rail,Spelvägen,1,73
+deso_0127c1310,subway,Albyvägen,3,225
+deso_0126c1200,commuter_rail,Tjäderstigen,1,96
+deso_0138c1020,bus,Bränneribacken,2,150
+deso_0138c1040,bus,Liljegränd,1,119
+deso_0127c1270,subway,Kvarnhagsvägen,2,196
+deso_0127c1300,subway,Alby centrum,3,222
+deso_0184c1051,subway,Lunda äldrecentrum,1,115
+deso_0138c1050,bus,Trångsundsvägen,1,46
+deso_0126c1250,commuter_rail,Spelvägen,3,228
+deso_0138c1070,bus,Krusboda torg,3,283
+deso_0127c1352,subway,Alby,2,128
+deso_0126c1210,bus,Vistaberg,3,264
+deso_0180c1020,subway,Farsta strand,2,168
+deso_0180c1010,subway,Edö servicehus,1,119
+deso_0138c1080,bus,Koriandergränd,2,180
+deso_0126c1260,bus,Centralvägen,2,146
+deso_0127c1340,subway,Notariebacken,1,120
+deso_0126c1280,commuter_rail,Mossvägen,3,246
+deso_0127c1351,subway,Alby,3,221
+deso_0126c1240,bus,Odonbacken,2,127
+deso_0126c1340,bus,Pingstkyrkan,1,62
+deso_0126c1050,bus,Ågesta gård,7,578
+deso_0138c1090,bus,Uddbyvägen,1,109
+deso_0127c1410,subway,Kärsbyvägen,3,234
+deso_0138c1100,bus,Lummergången,1,95
+deso_0180c1040,subway,Sunneplan,2,157
+deso_0126c1360,bus,Vistavägen,5,381
+deso_0181c1380,bus,Hackspettstigen,8,633
+deso_0138c1110,bus,Trollbäcksvägen,2,125
+deso_0126c1370,subway,Myrstuguvägen,4,315
+deso_0127c1330,subway,Bägarvägen,3,278
+deso_0127c1420,subway,Bägarvägen,3,280
+deso_0126c1390,bus,Rosendalsgården,2,148
+deso_0138a0010,none,,,
+deso_0127c1440,subway,Fittja,2,149
+deso_0180c1070,subway,Ölmevägen,1,108
+deso_0182c1090,tram,Saltsjöbadens sjukhus,1,43
+deso_0180c2112,bus,Safirgränd,1,101
+deso_0180c2280,subway,Stöttingsgränd,2,182
+deso_0181c1390,bus,Eksättravägen,9,762
+deso_0138c1150,bus,Bollmoraberg,2,193
+deso_0180c1080,subway,Färnebogatan,1,63
+deso_0180c1060,subway,Farsta centrum,1,123
+deso_0181c1370,none,,,
+deso_0126c1350,bus,Ekspinnarvägen,4,329
+deso_0180c1090,subway,Farstavägen,1,58
+deso_0138c1140,bus,Tranbärsvägen,1,122
+deso_0126c1400,bus,Björkängshallen,5,439
+deso_0180c1050,bus,Perstorpsvägen,3,228
+deso_0180c1102,subway,Torsbygatan,1,95
+deso_0138c1160,bus,Tyresö centrum,4,294
+deso_0126c1410,commuter_rail,Skeppsmyreparken,1,61
+deso_0138c1190,bus,Videvägen,3,235
+deso_0138c1180,bus,Rotvik,9,785
+deso_0138c1200,bus,Tyresö centrum,3,216
+deso_0180c1140,subway,Gillerbacken,1,67
+deso_0138c1210,bus,Bäverbäcken,3,264
+deso_0126c1311,bus,Kristinavägen,2,174
+deso_0180c1130,subway,Lysviksgatan,3,239
+deso_0138c1170,bus,Töresjövägen,2,185
+deso_0182c1010,bus,Ekstubben,5,407
+deso_0127a0020,bus,Norsborgsvägen,3,286
+deso_0180c1242,bus,Stora Sköndal,3,228
+deso_0182c1032,bus,Almvägen,4,357
+deso_0126c1500,bus,Byggmästarvägen,2,149
+deso_0140a0020,bus,Lidavägen,2,128
+deso_0180c1220,subway,Saltvägen,1,24
+deso_0126c1420,subway,Masmo,8,676
+deso_0138c1220,bus,Tyresö skola,6,495
+deso_0126c1470,bus,Kallkärrsvägen,3,272
+deso_0182c1031,bus,Alpvägen,2,168
+deso_0126c1540,subway,Mogårdsgången,2,157
+deso_0182c1040,bus,Stavsborgsskolan,2,127
+deso_0126c1480,bus,Byggmästarvägen,1,123
+deso_0180c1320,subway,Högdalens industri,2,187
+deso_0182c1033,bus,Odlingsvägen,3,280
+deso_0180c1450,subway,Sjösabrinken,1,114
+deso_0180c1430,bus,Långsjöplan,1,92
+deso_0180c1350,subway,Stjärnsundsgatan,1,45
+deso_0180c1420,bus,Norra Sköndal,2,197
+deso_0180c1460,subway,Skebokvarnsvägen,1,68
+deso_0126c1490,subway,Mogårdsvägen,1,106
+deso_0180c1410,subway,Kistvägen,1,28
+deso_0126c1550,subway,Mogårdsgången,2,177
+deso_0180c1380,subway,Frövigatan,1,110
+deso_0180c1340,subway,Ormkärr,1,75
+deso_0138c1060,bus,Ällmora,3,286
+deso_0180c1490,subway,Lindholmsbacken,3,245
+deso_0180c1520,subway,Skarpnäck,2,141
+deso_0180c1210,bus,Flatenbadet,5,377
+deso_0125c1030,bus,Vipphavrevägen,4,343
+deso_0180c1660,subway,Idholmsvägen nedre,1,64
+deso_0180c1500,subway,Älvsjöbadet,3,270
+deso_0180c1560,subway,Storholmsbackarna övre,2,140
+deso_0180c1530,subway,Visirskivan,1,112
+deso_0180c1591,subway,Vårbergs centrum,1,11
+deso_0180c1620,bus,Stockbergsvägen,3,279
+deso_0126c1560,bus,Smista,4,315
+deso_0126c1530,bus,Toyota,3,229
+deso_0180c1630,subway,Tallkrogen,2,130
+deso_0180c1730,subway,Stångholmsbacken,1,119
+deso_0180c1780,subway,Ekholmsvägen övre,1,57
+deso_0180c1740,subway,Svartbäcksvägen,1,72
+deso_0180c1710,subway,Virkesstapeln,1,27
+deso_0180c3890,tram,Primusgatan,1,82
+deso_0180c3840,tram,Ålstensgatan,3,259
+deso_0180c3850,tram,Nockeby torg,3,273
+deso_0180c1790,subway,Svedmyra,3,210
+deso_0180c1800,subway,Bagarmossen,2,207
+deso_0180c2113,commuter_rail,Älvsjögården,2,192
+deso_0180c1871,commuter_rail,Älvsjögården,1,93
+deso_0180c1820,subway,Hjälpmedelscentralen,2,161
+deso_0180c1600,commuter_rail,Varuvägen,2,142
+deso_0180c1872,commuter_rail,Prästgårdsgärdet,1,82
+deso_0180c1900,subway,Bagarmossen,2,159
+deso_0120c1010,bus,Grönskan,4,335
+deso_0182c1070,tram,Solsidan,5,378
+deso_0180c1690,subway,Duvholmsgränd,3,224
+deso_0180c1890,subway,Källvägen,1,39
+deso_0181a0050,none,,,
+deso_0180c1950,subway,Djursjukhuset,1,98
+deso_0180c1910,subway,Gillsätragränd,3,219
+deso_0180c1880,bus,Örby slott,3,280
+deso_0180c1930,subway,Bandhagsvägen,1,86
+deso_0180c1830,bus,Vivelvägen,3,235
+deso_0125c1060,bus,Vipphavrevägen,6,474
+deso_0126c1590,bus,Visirvägen,3,267
+deso_0180c1940,subway,Rusthållarvägen,3,247
+deso_0180c1920,bus,Vältstigen,1,70
+deso_0180c2000,subway,Murklevägen,2,151
+deso_0180c2010,subway,Sätraskolan,2,166
+deso_0180c1980,subway,Lina Sandells plan,2,139
+deso_0180c2070,bus,Stamgatan nedre,1,14
+deso_0125c1040,bus,Fredrikstrandsvägen,7,556
+deso_0180c2060,subway,Sätra idrottsplats,3,218
+deso_0180c2080,subway,Eva Bonniers gata,1,53
+deso_0180c2050,subway,Fruängen,1,70
+deso_0180c2090,subway,Hanna Ryds gata,1,113
+deso_0128a0010,none,,,
+deso_0180c2180,bus,Sulvägen,2,157
+deso_0180c2160,bus,Östberga torg,1,96
+deso_0180c2100,bus,Brännkyrka kyrka,2,188
+deso_0180c2200,subway,Dalgårdsvägen,3,237
+deso_0180c2111,bus,Nippervägen,1,112
+deso_0120c1020,bus,Skälsmara,7,617
+deso_0180c2230,subway,Arkövägen,3,250
+deso_0180c2210,subway,Sandsborg,2,157
+deso_0180c2130,subway,Kärrtorp,1,17
+deso_0180c2170,subway,Enskede gård,3,275
+deso_0125c1070,bus,Hedborgs filial,2,151
+deso_0180c2150,subway,Slättgårdsskolan,1,24
+deso_0180c2260,subway,Dalens sjukhus,2,155
+deso_0180c2270,subway,Hägerstensåsen,1,89
+deso_0182c1100,tram,Tippen,4,363
+deso_0125c1080,bus,Bergsvägen,1,48
+deso_0180c2240,subway,Huvudskärsvägen,1,100
+deso_0180c2250,subway,Bredängs allé,2,182
+deso_0180c2290,subway,Vita Liljans väg,1,22
+deso_0180c2310,subway,Inteckningsvägen,2,180
+deso_0180c2330,subway,Simrishamnsvägen,1,104
+deso_0180c2450,subway,Västbergavägen,3,244
+deso_0180c2431,tram,Idlången,1,73
+deso_0180c2360,subway,Blåsut,2,130
+deso_0180c2370,subway,Falsterbovägen,1,20
+deso_0180c2410,subway,Skarabacken övre,1,27
+deso_0180c2432,tram,Bråviksvägen,2,125
+deso_0180c2320,subway,Stadsdelsförvaltningen,1,41
+deso_0180c2400,subway,Hammarbyhallen,2,136
+deso_0180c2420,subway,Telemarksgränd,1,110
+deso_0180c2350,subway,Enskede gård,3,232
+deso_0180c2460,subway,Boråsvägen,1,46
+deso_0180c2220,bus,Örnsätrabacken,4,315
+deso_0180c2380,subway,Mejselvägen,2,201
+deso_0182c1120,tram,Ålgatan,2,208
+deso_0180c2300,subway,Gillegatan,1,65
+deso_0180c2490,subway,Björkhagens skola,1,83
+deso_0180c2390,subway,Slakthuset (Globen),2,164
+deso_0180c2480,tram,Asplången,1,66
+deso_0180c2510,subway,Sedelvägen,3,222
+deso_0180c2540,tram,Årsta torg,1,71
+deso_0180c2340,tram,Ersta gårdsväg,1,103
+deso_0182c1140,tram,Fisksätra station,1,111
+deso_0180c2570,subway,Svandammsplan,3,269
+deso_0120c1030,bus,Vallbovägen,2,127
+deso_0180c2560,tram,Bråviksvägen,2,199
+deso_0125c1050,bus,Nyckelby,3,261
+deso_0182c1110,tram,Tippen,2,197
+deso_0180c2500,subway,Minigolfbanan,2,157
+deso_0180c2550,subway,Mälarhöjdsbadet,1,121
+deso_0180c2650,subway,Solandergatan,1,28
+deso_0180c2620,subway,Telefonpl(Reserv),2,201
+deso_0180c2610,subway,Petrejusvägen övre,1,45
+deso_0180c2680,subway,Valutavägen,1,113
+deso_0180c2470,subway,Elektravägen,2,192
+deso_0180c2660,subway,Läckövägen,3,222
+deso_0180c2760,subway,Gösta Ekmans väg,1,114
+deso_0180c2600,subway,Storsvängen,1,100
+deso_0180c2700,tram,Sköntorp,2,206
+deso_0180c2740,subway,Påskvägen,1,76
+deso_0180c2710,subway,Sköntorpsplan,2,190
+deso_0180c2781,commuter_rail,Sjöviksbacken,2,169
+deso_0180c2790,subway,Mårtensdal,1,112
+deso_0180c2770,subway,Vallfartsvägen,1,69
+deso_0182c1160,tram,Igelboda,5,425
+deso_0182c1080,none,,,
+deso_0180c2782,commuter_rail,Årstadalsskolan,1,102
+deso_0180c2580,subway,Gesällbacken,2,199
+deso_0180c2882,tram,Luma,2,151
+deso_0180c2830,tram,Sickla kaj,1,86
+deso_0180c2750,bus,Tämnarvägen,2,181
+deso_0180c2840,tram,Sickla kaj,1,71
+deso_0180c2850,subway,Fågeltorget,1,94
+deso_0180c2730,subway,Tegelbruksvägen,3,223
+deso_0180c2820,subway,Klubbacken,2,185
+deso_0180c2952,subway,Årstadal,1,95
+deso_0182c1190,tram,Tallbacken,1,56
+deso_0180c2940,subway,Tullgårdsparken,1,109
+deso_0182c1170,tram,Ekudden,3,280
+deso_0180c3050,tram,Malmgårdsvägen,1,97
+deso_0180c2930,subway,Skanstull,2,163
+deso_0180c3000,subway,Rosenlund,1,80
+deso_0180c2920,subway,Klubbacken,5,389
+deso_0180c2953,commuter_rail,Sjöviksvägen,2,195
+deso_0180c2800,commuter_rail,Årsta gård,2,126
+deso_0180c3110,subway,Skanstull,1,79
+deso_0182c1292,bus,Tollare torg,1,74
+deso_0180c3040,subway,Nätgränd,2,157
+deso_0180c3060,subway,Liljeholmstorget Vårdcentralen,1,36
+deso_0180c2990,subway,Portalen,2,155
+deso_0180c3100,tram,Sickla udde,1,75
+deso_0180c3010,subway,Nybohovsgränd,1,29
+deso_0180c3130,subway,Åsötorget,2,185
+deso_0180c3140,subway,Södermannagatan,1,76
+deso_0180c3150,subway,Ljusterögatan,1,79
+deso_0180c3430,subway,Nytorgsgatan,2,128
+deso_0180c3320,subway,Åsögatan,1,62
+deso_0180c3270,bus,Ekensberg,1,65
+deso_0180c3370,subway,Lignagatan,1,123
+deso_0180c3460,subway,Södra station,2,159
+deso_0182c1280,tram,Tallidsgården,2,143
+deso_0180c3470,subway,Lindvallsplan,1,88
+deso_0180c3450,subway,Nytorgsgatan,1,66
+deso_0180c3360,bus,Klippgatan,1,100
+deso_0180c3500,subway,Verkstadsgatan,1,45
+deso_0180c3490,subway,Ansgariegatan,2,151
+deso_0180c3330,tram,Fregattvägens vändplan,1,59
+deso_0180c3480,subway,Wollmar Yxkullsgatan,1,93
+deso_0182c1300,tram,Per Hallströms väg,2,125
+deso_0180c3550,subway,Mariatorget,1,66
+deso_0182c1350,bus,Finnboda hamn,2,146
+deso_0182c1412,bus,Jarlaberg,1,93
+deso_0180c3680,subway,Götgatan Mosebacke,2,170
+deso_0180c3540,bus,Londonviadukten,1,92
+deso_0180c3560,tram,Essingetorget,3,256
+deso_0180c3410,tram,Smedslätten,3,219
+deso_0182c1380,bus,Jarlaberg,2,154
+deso_0180c3650,subway,Fotografiska,1,118
+deso_0180c3740,subway,Söder Mälarstrand,2,127
+deso_0120c1040,bus,Västertorp,8,679
+deso_0182c1310,bus,Centralplan,7,544
+deso_0182c1340,bus,Kompassvägen,7,565
+deso_0180c3860,tram,Luxbacken,1,49
+deso_0180c3830,tram,Luxparken,1,16
+deso_0180c3760,tram,Höglandstorget,2,180
+deso_0182c1390,bus,Bråvallaplan,3,247
+deso_0180c3610,tram,Höglandstorget,4,306
+deso_0120c1070,bus,Skeppsdalsström,3,209
+deso_0180c3900,subway,Wivalliusgatan,1,88
+deso_0182c1400,bus,Centralplan,2,198
+deso_0180c3950,subway,Viktor Rydbergs gata,2,143
+deso_0180c3880,subway,Gamla stan Tegelbacken,2,186
+deso_0180c3870,tram,Stora Essingen,1,80
+deso_0120c1080,bus,Charlottendal,5,413
+deso_0180c3930,subway,Kungsholmstorg,1,97
+deso_0180c3960,subway,Pilgatan,2,141
+deso_0180c4070,subway,Frödingsvägen,2,200
+deso_0180c4140,subway,Kungsholmsgatan Kungsklippan Hiss,1,49
+deso_0180c3920,tram,Waldemarsudde,6,489
+deso_0120c1060,bus,Lövhamra,3,276
+deso_0180c3970,subway,John Ericssonsgatan,1,107
+deso_0180c3940,subway,Mynttorget,2,206
+deso_0180c3990,subway,Pontonjärparken,1,103
+deso_0180c4000,tram,Nockeby torg,1,64
+deso_0125b2010,bus,Söderberga,2,155
+deso_0180c4030,subway,Fredhäll,1,59
+deso_0180c4150,subway,Kronobergsgatan,1,84
+deso_0182c1411,bus,Cylindervägen,2,180
+deso_0180c4230,subway,Celsiusgatan,1,62
+deso_0180c4110,subway,Bromma gymnasium,3,259
+deso_0180c4240,subway,Fridhemsplan,1,55
+deso_0120c1112,bus,Rättarvägen,1,94
+deso_0180c4250,subway,Kristineberg,2,185
+deso_0180c4060,tram,Tältgatan,2,173
+deso_0182c1440,bus,Husaröstigen,4,332
+deso_0180c4080,subway,Alvik,2,202
+deso_0180c4290,subway,Scheelegatan,2,140
+deso_0180c4190,subway,Abrahamsbergsskolan,1,95
+deso_0180c4210,subway,Styrmansgatan,1,86
+deso_0120c1100,bus,Mölnviksrondellen,4,312
+deso_0180c4260,subway,Gustav III:s väg,5,392
+deso_0125b2030,bus,Eknäs,8,648
+deso_0180c4320,subway,S:t Görans sjukhus,1,94
+deso_0180c4370,subway,Celsiusgatan,2,207
+deso_0180c4340,subway,Nybroplan,2,128
+deso_0120c1120,bus,Ösbydalen,1,95
+deso_0180c4360,subway,Inedalsgatan,1,88
+deso_0180c4380,subway,Grevgatan,1,66
+deso_0181a0060,bus,Årby,7,560
+deso_0180c4450,subway,Historiska museet,1,39
+deso_0180c4440,subway,Svartviksslingan,1,17
+deso_0180c4430,subway,Linnégatan Nybrogatan,1,69
+deso_0120c1111,bus,Farsta slott,5,424
+deso_0180c4540,subway,Sibyllegatan,1,110
+deso_0180c4500,subway,Wallingatan,2,161
+deso_0180c4600,subway,Igeldammsgatan,1,21
+deso_0120c1130,none,,,
+deso_0180c4390,subway,Berwaldhallen,1,33
+deso_0182c1480,bus,Korsöstigen,3,209
+deso_0180c4560,subway,Grevgatan,1,44
+deso_0180c4660,subway,S:t Eriksplan Rörstrandsgatan,1,124
+deso_0180c4470,subway,Mariedal,1,66
+deso_0180c4610,subway,S:t Eriksplan,2,154
+deso_0182c1490,bus,Korset,3,260
+deso_0180c4480,subway,Ulvsunda slott,2,176
+deso_0180c4800,subway,Sabbatsbergs sjukhus,1,97
+deso_0180c4810,subway,Karlaplan Erik Dahlbergsallén,2,130
+deso_0180c4680,bus,Minneberg,1,87
+deso_0180c4850,subway,Vikingagatan,2,144
+deso_0180c4740,subway,Karlberg,2,140
+deso_0180c4830,subway,Nybrogatan,1,66
+deso_0180c4820,subway,S:t Eriksplan,1,83
+deso_0180c4840,subway,Tegnérgatan Sveavägen,1,27
+deso_0180c4860,subway,S:t Eriksplan,2,126
+deso_0182c1470,bus,Mensättra,3,221
+deso_0180c4460,bus,Blackebergs grindstuga,1,57
+deso_0182c1460,bus,Prinsvägen,2,181
+deso_0182c1450,bus,Glasbrukssjön,3,237
+deso_0180c4570,subway,Grindstuvägen,4,328
+deso_0180c4890,subway,Jungfrugatan,1,95
+deso_0180c4880,subway,Vasaparken,1,98
+deso_0180c4920,subway,Norra Stationsgatan,1,35
+deso_0125b2020,bus,Stenhamra centrum,7,578
+deso_0180c4770,subway,Humlegården,1,41
+deso_0180c4940,subway,Stenen,1,20
+deso_0180c5020,subway,Odenplan,1,67
+deso_0180c5000,subway,Handelshögskolan Sveavägen,1,101
+deso_0120c1160,bus,Hemmesta centrum,7,575
+deso_0180c5030,subway,Torsplan,1,105
+deso_0180c5010,subway,Stadion,2,158
+deso_0180c4930,subway,Rigagatan,2,186
+deso_0180c4950,subway,Blackebergsplan,1,123
+deso_0180c5060,subway,Torsplan,1,41
+deso_0180c5110,subway,Vanadisvägen,1,87
+deso_0180c5090,subway,Karlbergsvägen Norrtullsgatan,1,118
+deso_0180c4990,subway,Jarlaplan,1,96
+deso_0180c5070,subway,Kallskärsgatan,1,76
+deso_0180c5080,subway,Kallskärsgatan,2,200
+deso_0180c5050,subway,Engelbrektskyrkan,1,26
+deso_0182c1500,bus,Myrsjöskolan,3,224
+deso_0180c5140,subway,Stadsbiblioteket,1,103
+deso_0180c5130,subway,Frejgatan,1,76
+deso_0180c5040,subway,Vanadisplan,1,85
+deso_0180c4970,subway,Åkeshov,4,292
+deso_0180c5120,subway,Engelbrektskyrkan,1,97
+deso_0180c5170,subway,Brantingsgatan Askrikegatan,1,57
+deso_0180c5220,subway,Frejgatan,2,139
+deso_0180c5200,subway,Tessinparken,1,102
+deso_0184c1020,subway,Skoga äldrecentrum,2,190
+deso_0184c1010,subway,Västra skogen,4,339
+deso_0180c5100,subway,Rökubbsgatan,2,149
+deso_0184c1040,subway,Rödbetan,1,89
+deso_0186c1010,tram,Brostugevägen,4,307
+deso_0184c1030,subway,Västra skogen,1,95
+deso_0180c5380,subway,Rindögatan,2,128
+deso_0180c5263,commuter_rail,Norra station,2,137
+deso_0180c5432,subway,Odengatan Körsbärsvägen,1,60
+deso_0180c5370,subway,Norrtull,1,71
+deso_0125a0010,bus,Kanton,3,269
+deso_0186c1050,tram,Larsbergsvägen,1,72
+deso_0180c5400,bus,Kyrksjölöten,3,222
+deso_0184c1070,subway,Pumpan,3,290
+deso_0184c1080,subway,Löftets kyrka,2,176
+deso_0180c5240,subway,Råcksta begravningsplats,5,383
+deso_0180c5500,bus,Bromma sjukhus,3,239
+deso_0180c5560,bus,Styresman Sanders väg,3,277
+deso_0180c5431,subway,Ryttarstadion,4,313
+deso_0186c1080,tram,Bodals skola,1,51
+deso_0180c5320,subway,Norra Ulvsunda,2,208
+deso_0180c5460,bus,Bromma Kyrkskola,1,24
+deso_0180c5440,bus,Roslagstull,4,314
+deso_0184c1100,subway,Skytteholmsskolan,1,31
+deso_0184c1090,subway,Göran Perssons väg,2,146
+deso_0180c5410,bus,Kanngjutargränd,4,367
+deso_0184c1110,subway,Testhållplatsvå,1,120
+deso_0120c1190,bus,Koviks hagar,3,235
+deso_0180c5530,bus,Jaktgatan,1,118
+deso_0180c5450,subway,Medsolsbacken,1,24
+deso_0180c5340,tram,Bromma flygplats,5,452
+deso_0180c5540,bus,Styresman Sanders väg,2,204
+deso_0186c1070,tram,Lyckostigen,3,253
+deso_0183c1010,subway,Humblegatan,1,73
+deso_0182c1520,bus,Myrsjövägen,3,280
+deso_0180c5651,bus,Jaktgatan,1,76
+deso_0186c1100,tram,Baggeby skola,1,98
+deso_0180c5580,subway,Krikongränd,1,69
+deso_0186c1120,tram,Jupitervägen,2,169
+deso_0184c1140,subway,Höstvägen,1,113
+deso_0186c1090,tram,Ängsklockevägen,4,306
+deso_0184c1150,subway,Solna centrum,1,46
+deso_0180c5670,subway,Kvarnhagsplan,1,93
+deso_0184c1160,subway,Vireberg,1,109
+deso_0183c1040,subway,Sturegatan,1,27
+deso_0180c5692,subway,Mariehäll,2,204
+deso_0183c1030,subway,Löfströms allé,1,102
+deso_0180c5653,subway,Ropsten,1,83
+deso_0180c5730,subway,Lyckselegatan Bräckevägen,1,96
+deso_0184c1210,subway,Södra Långgatan,1,29
+deso_0183c1060,subway,Sundbybergs skola,1,87
+deso_0180c5760,subway,Tapetrabatten,1,106
+deso_0184c1220,subway,Bollgatan,1,103
+deso_0180c5720,subway,Bergslagsplan,2,188
+deso_0120c1150,none,,,
+deso_0183c1080,subway,Svalgränd,1,48
+deso_0184c1240,subway,Bergstigen,2,150
+deso_0183c1070,subway,Bergsgatan,1,78
+deso_0186c1150,tram,Siggebogården,4,297
+deso_0183c1090,subway,Duvbo,1,80
+deso_0180c5740,bus,Skorpvägen,1,49
+deso_0180c6040,bus,Cervins väg,2,179
+deso_0182c1530,bus,Högabergsvägen,1,62
+deso_0186c1140,bus,Granbacksvägen,8,638
+deso_0186c1130,bus,Frimurarhemmet,2,150
+deso_0186c1160,tram,Gåshaga strand,3,285
+deso_0180c5790,subway,Enspännargatan,1,66
+deso_0120c1200,bus,Evlingevägen,3,214
+deso_0183c1120,subway,Östergården,1,38
+deso_0186c1180,tram,Siggebogården,1,109
+deso_0183c1110,subway,Duvbo torg,3,214
+deso_0183c1100,subway,Storskogstorget,1,35
+deso_0184c1270,commuter_rail,Lilla Frösunda,1,61
+deso_0186c1170,bus,Riddarvägen,2,154
+deso_0184c1290,subway,Hasselstigen,2,177
+deso_0180c5900,subway,Professorsslingan,1,72
+deso_0180c5870,bus,Nälstaplan,1,49
+deso_0180c5880,subway,Krossgatan,2,139
+deso_0186c1060,bus,Stockby,3,218
+deso_0184c1300,commuter_rail,Solna station norra,3,247
+deso_0183c1130,subway,Hallonbergen,4,329
+deso_0183c1140,subway,Duvbo torg,2,152
+deso_0180c5830,bus,Bruntegatan,3,216
+deso_0180c5850,bus,Vidholmsbackarna,4,316
+deso_0183c1150,subway,Rissne,2,188
+deso_0120c1220,bus,Skevik,2,128
+deso_0180c5862,bus,Vandrarstigen,5,391
+deso_0183c1162,subway,Lavettvägen,1,118
+deso_0162c1030,tram,Stockhagen,5,434
+deso_0186c1190,bus,Odenvägen,2,184
+deso_0183c1170,subway,Lötsjön,3,214
+deso_0180c5920,bus,Västergöksvägen,1,120
+deso_0180c5930,bus,Björnbodaskolan,2,138
+deso_0183c1161,subway,Rissne IP,1,104
+deso_0182c1510,bus,Boo prästgård,9,747
+deso_0180c5770,subway,Stora Skuggan,4,356
+deso_0184c1310,commuter_rail,Arenan,2,139
+deso_0180c5940,bus,Björnbodavägen,1,32
+deso_0180c5890,bus,Vidholmsbackarna,8,692
+deso_0180c5950,bus,Toppklockegränd,4,314
+deso_0180c5910,subway,Mamrevägen,3,257
+deso_0183c1243,bus,Ursvik,2,179
+deso_0184c1340,subway,Bergshamra bro,3,210
+deso_0180c5980,bus,Snårvindevägen,2,177
+deso_0184c1180,bus,Kvarter 10,1,46
+deso_0180c5861,bus,Logvägen,1,99
+deso_0183c1200,subway,Bergshöjden,1,108
+deso_0180c5960,commuter_rail,Solhagavägen,2,165
+deso_0183c1190,subway,Hallonbergen,1,51
+deso_0180c5970,bus,Renstigen,3,223
+deso_0186c1210,bus,Källängstorget,1,32
+deso_0183c1210,subway,Artillerivägen,1,117
+deso_0183c1220,subway,Artillerivägen,2,132
+deso_0184c1350,commuter_rail,Bagartorp norra,1,124
+deso_0183c1180,subway,Mamsellstigen,2,150
+deso_0180c5990,bus,Sörgårdsskolan,2,167
+deso_0186c1220,bus,Högnäsvägen,3,212
+deso_0180c6000,bus,Rinkebysvängen,6,476
+deso_0180c6010,bus,Riddersvik,3,253
+deso_0184c1320,commuter_rail,Arenan,4,299
+deso_0184c1390,bus,Spegeldammsparken,1,43
+deso_0183c1242,bus,Milstensvägen,2,184
+deso_0184c1360,subway,Bergshamra,2,146
+deso_0163c1012,bus,Norra grinden,4,339
+deso_0183c1230,subway,Rinkeby kvarn,2,190
+deso_0184c1400,subway,Kungshamra,1,103
+deso_0180c6100,subway,Rinkeby allé,1,103
+deso_0123c1010,bus,Neptunivägen,1,93
+deso_0183c1250,bus,Ursviks holme,2,144
+deso_0180c6090,subway,Mjölbyplan,3,225
+deso_0180c6120,subway,Rinkeby,1,100
+deso_0183c1241,bus,Stora Ursvik,1,56
+deso_0180c6110,subway,Järva närsjukhus,3,246
+deso_0162c1020,tram,Stocksunds torg,1,118
+deso_0184c1420,subway,Kungshamra,1,83
+deso_0183c1262,bus,Ursviks motionsgård,4,325
+deso_0186c1200,bus,Östra Yttringe,5,420
+deso_0180c6080,subway,Hagstråket,4,308
+deso_0180c6060,bus,Växthusvägen,4,309
+deso_0123c1240,commuter_rail,Månadsvägen,1,114
+deso_0120c1230,bus,Stadsvall,4,319
+deso_0180c6152,subway,Rinkeby centrum,2,165
+deso_0123c1020,bus,Astronomivägen,3,211
+deso_0186c1230,bus,Askrikevägen,1,101
+deso_0180c6160,subway,Bytorget,3,236
+deso_0162c1040,subway,Mörbylund,1,45
+deso_0162c1010,bus,Svanholmsvägen,4,357
+deso_0180c6170,subway,Tensta,2,187
+deso_0180c6140,subway,Spånga kyrka,2,180
+deso_0180c6151,subway,Bytorget,1,59
+deso_0180c6050,bus,Kråkbärsgränd,1,66
+deso_0186c1240,bus,Rudboda torg,1,82
+deso_0180c6230,subway,Tensta,1,81
+deso_0180c6210,subway,Krällingegränd,3,236
+deso_0180c6190,bus,Backlura,3,249
+deso_0180c6220,subway,Dyvingegränd,1,77
+deso_0139b2030,commuter_rail,Norrgårdsvägen,2,171
+deso_0180c6270,subway,Risingeplan,3,215
+deso_0180c6250,subway,Hidinge backe,2,149
+deso_0186c1260,bus,Karpvägen,3,227
+deso_0120c1210,none,,,
+deso_0184c1430,bus,Raoul Wallenbergskolan,8,673
+deso_0180c6130,bus,Finspångsgatan,1,99
+deso_0180c6260,subway,Risingeplan,1,103
+deso_0123c1030,bus,Budkavlevägen,2,147
+deso_0162c1050,tram,Stocksunds torg,6,468
+deso_0123c1050,bus,Fornvägen,3,217
+deso_0123c1040,bus,Banangränd,2,142
+deso_0184c1410,commuter_rail,Ridskolan,1,118
+deso_0183c1261,subway,Grahamsvägen,6,516
+deso_0123c1060,commuter_rail,Häggvägen,1,119
+deso_0162c1070,subway,Danderyds sjukhus huvudentré,3,278
+deso_0180c6300,subway,Kista galleria Kistamässan,3,227
+deso_0125b3010,bus,Kvarsta,2,141
+deso_0162c1090,subway,Mörby centrum/E18,2,197
+deso_0180c6320,subway,Kista centrum,3,248
+deso_0162c1080,tram,Vasaskolan,1,76
+deso_0180c6290,subway,Thorvaldsengången,2,156
+deso_0123c1080,bus,Andeboda,4,308
+deso_0186c1250,bus,Golfklubben,2,199
+deso_0180c6310,none,,,
+deso_0163c1011,bus,Silverdalsskolan,1,70
+deso_0162c1110,bus,Nora torg,3,252
+deso_0123c1100,bus,Såningsvägen,3,236
+deso_0123c1120,bus,Gösvägen,1,117
+deso_0180c6330,subway,Kistavägen,1,30
+deso_0123c1091,bus,Veddesta gård,1,64
+deso_0162c1120,tram,Bråvallavägen,4,332
+deso_0123c1130,bus,Hammarskogen,1,72
+deso_0163c1030,commuter_rail,Helenelunds station,2,149
+deso_0123c1142,bus,Stora torget,1,90
+deso_0180c6390,subway,Kista gård,2,167
+deso_0162c1140,bus,Rinkeby södra,1,72
+deso_0163c1050,bus,Drotsvägen,3,222
+deso_0162c1100,tram,Norrängsgården,1,63
+deso_0123c1092,bus,Tallebo,1,93
+deso_0162c1130,bus,Solgården,3,247
+deso_0187c1010,bus,Viken,3,269
+deso_0123c1190,commuter_rail,Dackevägen,2,149
+deso_0123c1230,commuter_rail,Frihetsvägen,2,143
+deso_0123c1110,bus,Andeboda,3,272
+deso_0125b3020,bus,Karlskär,8,702
+deso_0187c1020,bus,Timmermansvägen,1,38
+deso_0123c1210,bus,Tallbohov,2,177
+deso_0163c1040,commuter_rail,Eriksbergsvägen,1,103
+deso_0123c1143,bus,Sveatorget,8,685
+deso_0123c1200,bus,Säby kulle,5,389
+deso_0123c1221,commuter_rail,Månadsvägen,3,274
+deso_0123c1250,commuter_rail,Riddarplatsen,1,76
+deso_0123c1260,commuter_rail,Jakobsbergs sjukhus,2,171
+deso_0123c1180,bus,Bruket,1,55
+deso_0163c1060,bus,Skjutbanevägen,2,156
+deso_0162c1160,tram,Djursholms Ekeby,4,331
+deso_0162c1150,tram,Eddavägen,1,107
+deso_0123c1280,commuter_rail,Aspnäs södra,1,101
+deso_0163c1070,bus,Sunnebovägen,4,313
+deso_0163c1080,bus,Barrvägen,2,169
+deso_0123c1290,commuter_rail,Drabantvägen,3,261
+deso_0163c1130,bus,Sjöberg,3,271
+deso_0187c1040,bus,Kullö,5,435
+deso_0125a0020,bus,Skytteholm,5,406
+deso_0160c1010,tram,Slottsvägen,2,193
+deso_0163c1160,commuter_rail,Malmvägen,1,56
+deso_0162c1180,bus,Enmans väg,4,345
+deso_0163c1150,commuter_rail,Sollentuna station,1,112
+deso_0163c1170,bus,Sjöbergs centrum,3,234
+deso_0123c1300,bus,Vattmyraskolan,1,67
+deso_0160c1230,tram,Åkerbyvägen norra,2,172
+deso_0163c1110,bus,Trollvägen,1,81
+deso_0160c1020,tram,Flottiljvägen,2,144
+deso_0125a0030,bus,Portugal,8,639
+deso_0163c1140,commuter_rail,Dammvägen,2,198
+deso_0180c6440,bus,Vandagatan,8,669
+deso_0163c1180,bus,Stålvägen,2,157
+deso_0187c1030,bus,Rindöbaden,8,650
+deso_0160c1030,tram,Flottiljvägen,3,235
+deso_0160c1060,tram,Ångaren,2,133
+deso_0163c1190,bus,Norra Kärrdal,5,408
+deso_0187a0010,none,,,
+deso_0160c1050,tram,Näsbyvägen,1,62
+deso_0160c1190,tram,Viggbygärdet,1,22
+deso_0123c1270,bus,Minneslunden,2,207
+deso_0162c1200,bus,Eneby torg,2,207
+deso_0160c1080,tram,Näsbydalsvägen 2,1,101
+deso_0123c1310,bus,Sätervägen,4,365
+deso_0162c1190,bus,Kryddgårdsvägen,6,500
+deso_0163c1200,commuter_rail,Skälby,1,87
+deso_0160c1100,tram,Näsbydalsvägen 16,1,111
+deso_0160c1090,tram,Kuttervägen,2,130
+deso_0125a0040,bus,Björkliden,2,155
+deso_0163c1210,bus,Kvarnskogen,4,308
+deso_0163c1220,commuter_rail,Häggvik,3,223
+deso_0163c1230,bus,Rudbecksskolan,1,75
+deso_0163c1250,bus,Edsbergs centrum,2,132
+deso_0160c1110,bus,Rösjöskolan,5,387
+deso_0160c1040,tram,Vallarevägen,2,128
+deso_0160c1141,tram,Grindtorp norra,1,38
+deso_0160c1120,bus,Rostock,1,24
+deso_0160c1070,bus,Drakskeppsvägen,2,153
+deso_0163c1260,bus,Kruthornsvägen,2,160
+deso_0160c1130,tram,Skiftesvägen,1,121
+deso_0163c1270,bus,Edsberg,3,224
+deso_0160c1142,tram,Galoppfältet,5,381
+deso_0160c1143,tram,Norra Bergtorp,2,197
+deso_0160c1150,tram,Tibbleskolan,1,94
+deso_0123c1320,bus,Säby gård,10,798
+deso_0160c1170,bus,Rösjöskolan,2,201
+deso_0163c1240,commuter_rail,Häggvik,2,197
+deso_0187c1060,bus,Ytterby brygga,3,218
+deso_0160c1160,tram,Flygkårsvägen,2,137
+deso_0123c1340,commuter_rail,Termovägen,5,457
+deso_0160c1180,tram,Skiftesvägen,5,446
+deso_0123c1350,commuter_rail,Kopparvägen,3,213
+deso_0160c1220,tram,Hägernäs Pilotvägen,1,40
+deso_0160c1200,tram,Åkerby industriområde,1,115
+deso_0123c1380,bus,Gillesgården,4,296
+deso_0160c1210,bus,Milstensvägen,2,179
+deso_0123c1330,commuter_rail,Kallhäll,5,452
+deso_0123c1360,commuter_rail,Kärnmakargränd,1,18
+deso_0187c1050,bus,Överby bollplan,6,498
+deso_0160c1240,tram,Viggbyholm,3,218
+deso_0160c1300,bus,Myrängsvägen,2,129
+deso_0163c1320,bus,Pukvägen,5,392
+deso_0117c1010,bus,Rydbo Saltsjöbad,3,231
+deso_0163c1300,commuter_rail,Norrvikens station,3,270
+deso_0163c1350,commuter_rail,Konsumentvägen,4,330
+deso_0139c1011,commuter_rail,Kungsängens station,3,243
+deso_0160c1250,bus,Forntidsvägen,1,36
+deso_0163c1312,bus,Södersätra,7,558
+deso_0160c1290,bus,Palmstruchs väg,4,309
+deso_0139c1012,commuter_rail,Kungsängen Pendelparkeringshus,2,171
+deso_0160c1260,tram,Ensta,6,504
+deso_0117c1020,bus,Svinninge tomtområde,2,199
+deso_0163c1330,commuter_rail,Norrviken norra,1,88
+deso_0160c1280,bus,Anbudsvägen,5,422
+deso_0163c1340,bus,Stenkullevägen,2,167
+deso_0160c1310,bus,Furuvägen,2,150
+deso_0123c1390,bus,McDonalds,5,387
+deso_0163c1280,bus,Kornettvägen,7,611
+deso_0117c1030,bus,Lerviksvägen,3,236
+deso_0139c1020,bus,Ekhammarskolan,2,138
+deso_0117c1040,tram,Tunagård,4,295
+deso_0163c1370,bus,Kärleksbacken,3,281
+deso_0160c1330,bus,Täbyvägen,2,175
+deso_0117c1060,tram,Tunagård,5,407
+deso_0163c1311,bus,Väsjöbacken,4,295
+deso_0117c1070,bus,Margretelunds centrum,1,67
+deso_0139c1030,bus,Vickberga,3,235
+deso_0117c1100,tram,Sörabadet,1,94
+deso_0139c1040,bus,Kungsvägen,3,250
+deso_0139c1052,bus,Tibble torg,5,421
+deso_0117c1090,bus,Margretelundsskolan,3,252
+deso_0114c1010,bus,Skogsvägen,1,104
+deso_0117c1140,tram,Storängsvägen,1,54
+deso_0117c1130,bus,Lillbrostigen,1,42
+deso_0117c1120,tram,Solhälla,1,79
+deso_0117c1170,bus,Vattenverksvägen,3,236
+deso_0114c1030,bus,Grimstaby,1,92
+deso_0117c1050,bus,Täljöviken,2,193
+deso_0160c1360,tram,Täby kyrkby,3,226
+deso_0117c1150,bus,Ekbacken,2,168
+deso_0117c1081,bus,Flaxenviksvägen,2,168
+deso_0139b2070,bus,Bro kyrka,3,247
+deso_0123c1400,bus,Gokartvägen,4,324
+deso_0160c1341,bus,Gamla Vaxholmsvägen,7,602
+deso_0160c1342,bus,Löttingelund,3,261
+deso_0139c1060,bus,Textilvägen,5,439
+deso_0117c1082,bus,Fritz Janssons väg,4,352
+deso_0160c1370,bus,Nannavägen,1,48
+deso_0160c1380,bus,Jarlabankes bro,3,265
+deso_0117a0010,none,,,
+deso_0114c1020,bus,Näckrosvägen,2,203
+deso_0160c1350,tram,Täby kyrka,2,152
+deso_0114c1050,bus,Sutargränd,4,374
+deso_0114c1070,bus,Rosendalsgränd,1,28
+deso_0114c1080,bus,Hovslagargatan,2,190
+deso_0114c1040,bus,Galoppgatan,5,403
+deso_0160c1320,none,,,
+deso_0114c1061,bus,Prästgårdsallén,1,78
+deso_0114c1062,bus,Herdevägen,2,129
+deso_0139b2010,bus,Kockbackavägen,7,542
+deso_0139c1070,bus,Vibystigen,2,169
+deso_0114c1150,commuter_rail,Centralvägen,3,287
+deso_0117c1160,bus,Solberga,4,336
+deso_0114c1091,bus,Drabantvägen,1,48
+deso_0115c1030,tram,Tallåsvägen,3,253
+deso_0114c1100,bus,Sundsborg,5,402
+deso_0114c1120,commuter_rail,Messingen,2,199
+deso_0117c1180,bus,Stava gård,9,764
+deso_0114c1110,bus,Lövstavägen,2,190
+deso_0114c1130,bus,Smedsgärdshallen,2,140
+deso_0139b2060,bus,Finnsta,9,768
+deso_0115c1020,bus,Skogsbrynet,2,126
+deso_0115c1040,none,,,
+deso_0117c1190,bus,Tallebo,6,533
+deso_0139b2040,commuter_rail,Tryckfärgsvägen,2,161
+deso_0114c1210,commuter_rail,Stora Wäsby,2,199
+deso_0117c1200,bus,Solskiftesvägen,8,679
+deso_0114c1141,bus,Fresta kyrka,2,145
+deso_0114c1200,bus,Apoteksskogen,1,94
+deso_0114c1160,commuter_rail,Lilla Hagvägen,1,44
+deso_0115c1060,tram,Vallentuna,3,231
+deso_0114c1170,bus,Skälby södra,1,120
+deso_0114c1190,bus,Brunnby Vik,2,153
+deso_0114c1180,bus,Runby backar,4,315
+deso_0114c1142,none,,,
+deso_0115c1070,tram,Smidesvägen,3,227
+deso_0120a0010,bus,Tuna,8,689
+deso_0191c1130,bus,Norrbackaskolan,2,129
+deso_0191a0010,none,,,
+deso_0115c1050,bus,Gammelängstorget,2,160
+deso_0115c1090,bus,Rosengården,2,190
+deso_0115c1080,bus,Ekebydal,7,582
+deso_0115c1110,tram,Västanberga,1,92
+deso_0114c1220,bus,Gamla lasarettsvägen,5,426
+deso_0115c1100,bus,Gustavslund,4,312
+deso_0115c1120,bus,Molnbyvägen,3,265
+deso_0115c1130,bus,Stängselboda,4,347
+deso_0114a0010,bus,Carlslunds servicehus,2,146
+deso_0115b3010,bus,Brottby trafikplats,2,181
+deso_0139a0010,none,,,
+deso_0191b3010,commuter_rail,Tallbacksgatan,2,167
+deso_0188b5010,bus,Hästängen,8,644
+deso_0191c1060,bus,Ekillaskolan,4,292
+deso_0117a0020,bus,Nässlingen,8,656
+deso_0115b2010,tram,Gustav Vasaskolan,3,218
+deso_0191c1020,bus,Buregatan,6,490
+deso_0191c1010,bus,Steningeliden västra,2,144
+deso_0191c1030,bus,Valsta centrum,2,143
+deso_0191c1082,bus,Gloskärr,4,338
+deso_0191c1083,bus,Vintergatan,3,216
+deso_0191b2020,none,,,
+deso_0191b2010,bus,Stora Brännbovägen,2,177
+deso_0191b2031,bus,Stora Sjudargården,4,314
+deso_0191c1070,bus,Vidargatan,1,116
+deso_0115a0010,none,,,
+deso_0191b2040,bus,Nyponvägen,4,323
+deso_0191b2050,bus,Svalängen,4,294
+deso_0191b2032,bus,Hällsboskolan,2,135
+deso_0191c1081,bus,Ölsta,1,99
+deso_0191c1110,commuter_rail,Fältvägen,3,223
+deso_0191c1120,bus,Björkvägen,6,503
+deso_0139a0020,bus,Tjusta,3,259
+deso_0191c1140,bus,Blåbärsvägen,2,137
+deso_0115a0020,none,,,
+deso_0188a0020,none,,,
+deso_0188a0030,bus,Mora äng,6,514
+deso_0191a0020,bus,Venngarnsvägen,8,661
+deso_0115a0030,none,,,
+deso_0115a0040,tram,Ekskogens gård,1,86
+deso_0191a0030,bus,Kumla,8,646
+deso_0188c1040,bus,Tullportsgatan,2,151
+deso_0188c1050,bus,Norrtälje sjukhus,2,152
+deso_0188c1061,bus,Diamantgatan,2,164
+deso_0191a0040,none,,,
+deso_0188a0010,none,,,
+deso_0188b2010,bus,Midsjö,5,417
+deso_0188b2030,none,,,
+deso_0188c1030,bus,Granparken,3,278
+deso_0188c1063,bus,Hamnvägen,1,104
+deso_0188b2020,bus,Vallby hage,1,119
+deso_0188c1080,none,,,
+deso_0188c1010,bus,Görla mellersta,4,330
+deso_0188a0050,bus,Ösbyholm,7,579
+deso_0188c1020,bus,August Strindbergs gata,5,409
+deso_0188c1090,bus,Malsta vägskäl västra,8,653
+deso_0188c1100,bus,Färsnagatan,6,505
+deso_0188a0090,none,,,
+deso_0188a0040,bus,Mälby,7,558
+deso_0188c1110,bus,Hårnacka vägskäl,7,548
+deso_0188a0070,bus,Håsta,4,355
+deso_0188a0100,bus,Rånäs skola,5,401
+deso_0188a0120,none,,,
+deso_0188a0110,bus,Lohärads kyrka,4,359
+deso_0188a0060,none,,,
+deso_0188a0140,none,,,
+deso_0188a0130,bus,Solbacken,5,455
+deso_0188b4010,bus,Älmsta-Gåsviks vägskäl,1,64
+deso_0188a0150,bus,Johannesberg,6,530
+deso_0188a0160,none,,,
+deso_0188b3010,bus,Almvägen,1,52
+deso_0188b3020,bus,Margaretavägen,2,169
+deso_0188b3030,bus,Barkarevägen,4,342
+deso_0188a0170,none,,,
+deso_0188a0190,none,,,
+deso_0188a0180,none,,,

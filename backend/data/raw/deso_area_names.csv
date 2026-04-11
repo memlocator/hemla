@@ -1,0 +1,1363 @@
+desokod,area_name,source
+0114A0010,Odenslunda,neighbourhood
+0114C1010,Sköldnora,hamlet
+0114C1020,Sköldnora,hamlet
+0114C1030,Sköldnora,hamlet
+0114C1040,Odenslunda,neighbourhood
+0114C1050,Sköldnora,hamlet
+0114C1061,Upplands Väsby,town
+0114C1062,Upplands Väsby,town
+0114C1070,Sköldnora,hamlet
+0114C1080,Odenslunda,neighbourhood
+0114C1091,Odenslunda,neighbourhood
+0114C1092,Odenslunda,neighbourhood
+0114C1100,Vilunda,suburb
+0114C1110,Upplands Väsby,town
+0114C1120,Odenslunda,neighbourhood
+0114C1130,Odenslunda,neighbourhood
+0114C1141,Vilunda,suburb
+0114C1142,Ekeby,village
+0114C1150,Odenslunda,neighbourhood
+0114C1160,Odenslunda,neighbourhood
+0114C1170,Odenslunda,neighbourhood
+0114C1180,Upplands Väsby,town
+0114C1190,Odenslunda,neighbourhood
+0114C1200,Odenslunda,neighbourhood
+0114C1210,Odenslunda,neighbourhood
+0114C1220,Upplands Väsby,town
+0115A0010,Lingbergs säteri,display_name
+0115A0020,Grebbtorp,display_name
+0115A0030,Långkärret,display_name
+0115A0040,Ekskogen,village
+0115B2010,Lindholmen,village
+0115B3010,Össeby-Garn,hamlet
+0115C1010,Vallentuna,town
+0115C1020,Bällsta park,neighbourhood
+0115C1030,Bällsta park,neighbourhood
+0115C1040,Vallentuna,town
+0115C1050,Rickeby,suburb
+0115C1060,Vallentuna,town
+0115C1070,Vallentuna,town
+0115C1080,Vallentuna,town
+0115C1090,Vallentuna,town
+0115C1100,Lingbergs säteri,display_name
+0115C1110,Vallentuna,town
+0115C1120,Vallentuna,town
+0115C1130,Ekeby,suburb
+0117A0010,Hagalund,display_name
+0117A0020,Blåsut,display_name
+0117A0030,Hjälmsättra,display_name
+0117C1010,Valsättra,neighbourhood
+0117C1020,Valsättra,neighbourhood
+0117C1030,Atterötorpet,display_name
+0117C1040,Söra,neighbourhood
+0117C1050,Alsro,neighbourhood
+0117C1060,Söra,neighbourhood
+0117C1070,Söra,neighbourhood
+0117C1081,Kylan,display_name
+0117C1082,Lill-Bo,display_name
+0117C1090,Skånsta,neighbourhood
+0117C1100,Söra,neighbourhood
+0117C1110,Runö,neighbourhood
+0117C1120,Söra,neighbourhood
+0117C1130,Runö,neighbourhood
+0117C1140,Runö,neighbourhood
+0117C1150,Runö,neighbourhood
+0117C1160,Skånsta,neighbourhood
+0117C1170,Runö,neighbourhood
+0117C1180,Norrö,village
+0117C1190,Skånsta,neighbourhood
+0117C1200,Nytorp,display_name
+0120A0010,Kopparmora,village
+0120C1010,Mörtviken,village
+0120C1020,Långvik,village
+0120C1030,Nykvarn,village
+0120C1040,Långstrandsudd,village
+0120C1050,Bullandö,village
+0120C1060,Lövhamra,neighbourhood
+0120C1070,Nykvarn,village
+0120C1080,Charlottendal,suburb
+0120C1090,Näverängen,neighbourhood
+0120C1100,Nya Mörtnäs,neighbourhood
+0120C1111,Charlottendal,suburb
+0120C1112,Charlottendal,suburb
+0120C1120,Charlottendal,suburb
+0120C1130,Herrviksnäs,village
+0120C1140,Hästhagen,suburb
+0120C1150,Mor,display_name
+0120C1160,Haghulta,suburb
+0120C1170,Höjdhagen,suburb
+0120C1180,Ösby,display_name
+0120C1190,Bergudden,display_name
+0120C1200,Kopparmora,village
+0120C1210,Ekudden,display_name
+0120C1220,Bergudden,display_name
+0120C1230,Torsby,village
+0123C1010,Björkeby,neighbourhood
+0123C1020,Björkeby,neighbourhood
+0123C1030,Björkeby,neighbourhood
+0123C1040,Järfälla kommun,town
+0123C1050,Björkeby,neighbourhood
+0123C1060,Björkeby,neighbourhood
+0123C1070,Viksjö,suburb
+0123C1080,Järfälla kommun,town
+0123C1091,Björkeby,neighbourhood
+0123C1092,Söderhöjden,suburb
+0123C1100,Järfälla kommun,town
+0123C1110,Hammaren,neighbourhood
+0123C1120,Järfälla kommun,town
+0123C1130,Söderhöjden,suburb
+0123C1141,Söderhöjden,suburb
+0123C1142,Söderhöjden,suburb
+0123C1143,Söderhöjden,suburb
+0123C1150,Järfälla kommun,town
+0123C1160,Hammaren,neighbourhood
+0123C1170,Hammaren,neighbourhood
+0123C1180,Järfälla kommun,town
+0123C1190,Hammaren,neighbourhood
+0123C1200,Söderhöjden,suburb
+0123C1210,Hammaren,neighbourhood
+0123C1221,Hammaren,neighbourhood
+0123C1222,Hammaren,neighbourhood
+0123C1230,Hammaren,neighbourhood
+0123C1240,Hammaren,neighbourhood
+0123C1250,Hammaren,neighbourhood
+0123C1260,Hammaren,neighbourhood
+0123C1270,Järfälla kommun,town
+0123C1280,Hammaren,neighbourhood
+0123C1290,Hammaren,neighbourhood
+0123C1300,Hammaren,neighbourhood
+0123C1310,Grönvreten,neighbourhood
+0123C1320,Söderhöjden,suburb
+0123C1330,Kolarängen,neighbourhood
+0123C1340,Kolarängen,neighbourhood
+0123C1350,Kolarängen,neighbourhood
+0123C1360,Kolarängen,neighbourhood
+0123C1370,Järfälla kommun,town
+0123C1380,Kolarängen,neighbourhood
+0123C1390,Järfälla kommun,town
+0123C1400,Järfälla kommun,town
+0125A0010,Ekerö kommun,town
+0125A0020,Ekerö kommun,town
+0125A0030,Ekerö kommun,town
+0125A0040,Ekerö kommun,town
+0125B2010,Ekerö kommun,town
+0125B2020,Ekerö kommun,town
+0125B2030,Lövhagen,neighbourhood
+0125B3010,Ekerö kommun,town
+0125B3020,Ekerö kommun,town
+0125C1010,Ekerö kommun,town
+0125C1020,Ängsvik,neighbourhood
+0125C1030,Ekerö kommun,town
+0125C1040,Ekerö kommun,town
+0125C1050,Ekerö kommun,town
+0125C1060,Ekerö kommun,town
+0125C1070,Ekerö kommun,town
+0125C1080,Ekerö kommun,town
+0126A0010,Huddinge,town
+0126C1010,Länna industriområde,display_name
+0126C1020,Flemingsberg,suburb
+0126C1030,Flemingsberg,suburb
+0126C1040,Trångsund,display_name
+0126C1050,Pumphusängen,display_name
+0126C1060,Flemingsberg,suburb
+0126C1070,Trångsund,display_name
+0126C1081,Flemingsberg,suburb
+0126C1082,Flemingsberg,suburb
+0126C1090,Trångsund,display_name
+0126C1100,Trångsund,display_name
+0126C1110,Flemingsberg,suburb
+0126C1120,Huddinge,town
+0126C1130,Trångsund,display_name
+0126C1140,Flemingsberg,suburb
+0126C1150,Huddinge,town
+0126C1160,Trångsund,display_name
+0126C1170,Trångsund,display_name
+0126C1180,Glömsta,suburb
+0126C1191,Huddinge,town
+0126C1192,Huddinge,town
+0126C1200,Trångsund,display_name
+0126C1210,Huddinge,town
+0126C1220,Trångsund,suburb
+0126C1230,Huddinge,town
+0126C1240,Trångsund,display_name
+0126C1250,Trångsund,suburb
+0126C1260,Huddinge,town
+0126C1270,Vistaberg,neighbourhood
+0126C1280,Huddinge,town
+0126C1290,Kynäs,neighbourhood
+0126C1300,Huddinge,town
+0126C1311,Glömsta,suburb
+0126C1312,Glömsta,suburb
+0126C1320,Huddinge,town
+0126C1330,Trångsund,suburb
+0126C1340,Kynäs,neighbourhood
+0126C1350,Kynäs,neighbourhood
+0126C1360,Huddinge,town
+0126C1370,Vårby,suburb
+0126C1380,Fullersta kvarn,display_name
+0126C1390,Huddinge,town
+0126C1400,Kynäs,neighbourhood
+0126C1410,Kynäs,neighbourhood
+0126C1420,Vårby,suburb
+0126C1430,Kynäs,neighbourhood
+0126C1440,Fullersta,suburb
+0126C1450,Kvarnbergsplan,neighbourhood
+0126C1460,Skogsäng,neighbourhood
+0126C1470,Snättringe,suburb
+0126C1480,Snättringe,suburb
+0126C1490,Vårby,suburb
+0126C1500,Snättringe,suburb
+0126C1510,Vårby,suburb
+0126C1520,Vårby,suburb
+0126C1530,Jakobslund,neighbourhood
+0126C1540,Vårby,suburb
+0126C1550,Vårby,suburb
+0126C1560,Jakobslund,neighbourhood
+0126C1570,Kungens kurva,suburb
+0126C1580,Jakobslund,neighbourhood
+0126C1590,Jakobslund,neighbourhood
+0127A0010,Malmbro gård,display_name
+0127A0020,Fiskarhagen,village
+0127C1010,Lillmalm,neighbourhood
+0127C1020,Lillmalm,neighbourhood
+0127C1030,Hästmossen,neighbourhood
+0127C1040,Hästmossen,neighbourhood
+0127C1051,Norra Riksten,residential
+0127C1052,Norra Riksten,residential
+0127C1060,Vårsta,village
+0127C1070,Hästmossen,neighbourhood
+0127C1080,Röda villorna,neighbourhood
+0127C1090,Hästmossen,neighbourhood
+0127C1100,Tumba,town
+0127C1110,Röda villorna,neighbourhood
+0127C1120,Brantbrink,neighbourhood
+0127C1130,Brantbrink,neighbourhood
+0127C1140,Brantbrink,neighbourhood
+0127C1150,Brantbrink,neighbourhood
+0127C1160,Solbacken,neighbourhood
+0127C1170,Solbacken,neighbourhood
+0127C1181,Tumba,town
+0127C1182,Tumba,town
+0127C1190,Brantbrink,neighbourhood
+0127C1200,Tumba,town
+0127C1210,Brantbrink,neighbourhood
+0127C1220,Solbacken,neighbourhood
+0127C1230,Brantbrink,neighbourhood
+0127C1240,Brantbrink,neighbourhood
+0127C1250,Gula radhusen,neighbourhood
+0127C1260,Gula radhusen,neighbourhood
+0127C1270,Brunna,suburb
+0127C1280,Elvesta säteri,display_name
+0127C1290,Brunna,suburb
+0127C1300,Brunna,suburb
+0127C1310,Brunna,suburb
+0127C1320,Hallunda,suburb
+0127C1330,Brunna,suburb
+0127C1340,Brunna,suburb
+0127C1351,Brunna,suburb
+0127C1352,Brunna,suburb
+0127C1360,Hallunda,suburb
+0127C1370,Brunna,suburb
+0127C1380,Hallunda,suburb
+0127C1390,Hallunda,suburb
+0127C1400,Brunna,suburb
+0127C1410,Fiskarhagen,village
+0127C1420,Brunna,suburb
+0127C1431,Hallunda,suburb
+0127C1432,Brunna,suburb
+0127C1440,Brunna,suburb
+0127C1450,Brunna,suburb
+0127C1460,Fiskarhagen,village
+0127C1470,Alby,suburb
+0127C1480,Brunna,suburb
+0128A0010,Nyboda,display_name
+0128C1010,Hallsta,display_name
+0128C1020,Hallsta,display_name
+0128C1030,Övre Söderby,display_name
+0128C1040,Hallsta,display_name
+0128C1050,Övre Söderby,display_name
+0128C1060,Övre Söderby,display_name
+0128C1070,Övre Söderby,display_name
+0136A0010,Muskö,village
+0136A0020,Risseln,display_name
+0136A0030,Ekeby säteri,display_name
+0136B2010,Sjötäppan,display_name
+0136C1010,Mulsta,hamlet
+0136C1020,Ålsta,residential
+0136C1030,Västerhaninge,town
+0136C1040,Mulsta,hamlet
+0136C1050,Västerhaninge,town
+0136C1060,Krigslida,village
+0136C1070,Västerhaninge,town
+0136C1080,Krigslida,village
+0136C1090,Handen,town
+0136C1100,Handen,town
+0136C1110,Krigslida,village
+0136C1120,Handen,town
+0136C1130,Handen,town
+0136C1140,Handen,town
+0136C1150,Handen,town
+0136C1160,Handen,town
+0136C1170,Kvarteret Sjögläntan,residential
+0136C1180,Vendelsömalm,suburb
+0136C1190,Kvarntorp,suburb
+0136C1200,Kvarntorp,suburb
+0136C1210,Kvarntorp,suburb
+0136C1220,Kvarntorp,suburb
+0136C1230,Vendelsömalm,suburb
+0136C1240,Vendelsömalm,suburb
+0136C1250,Kvarntorp,suburb
+0136C1260,Vendelsömalm,suburb
+0136C1270,Vendelsömalm,suburb
+0136C1280,Vendelsömalm,suburb
+0136C1290,Kvarntorp,suburb
+0136C1300,Ramsdalen,suburb
+0136C1311,Kvarntorp,suburb
+0136C1312,Kvarntorp,suburb
+0136C1313,Kvarntorp,suburb
+0136C1314,Kvarntorp,suburb
+0136C1320,Vendelsömalm,suburb
+0136C1330,Vendelsömalm,suburb
+0136C1341,Kvarntorp,suburb
+0136C1342,Kvarntorp,suburb
+0136C1343,Kvarntorp,suburb
+0136C1350,Vendelsömalm,suburb
+0136C1360,Vendelsömalm,suburb
+0136C1370,Vendelsömalm,suburb
+0136C1380,Sågen,suburb
+0136C1390,Sågen,suburb
+0136C1400,Handen,town
+0136C1410,Handen,town
+0136C1420,Sågen,suburb
+0136C1430,Forsen,display_name
+0136C1440,Sågen,suburb
+0136C1450,Mannhem,display_name
+0138A0010,Raksta,village
+0138C1010,Kumla,display_name
+0138C1020,Kumla,display_name
+0138C1030,Kumla,display_name
+0138C1040,Kumla,display_name
+0138C1050,Kumla,display_name
+0138C1060,Ängmaren,display_name
+0138C1070,Björktickegången,neighbourhood
+0138C1080,Farmarstigen,neighbourhood
+0138C1090,Farmarstigen,neighbourhood
+0138C1100,Farmarstigen,neighbourhood
+0138C1110,Kumla,display_name
+0138C1120,Farmarstigen,neighbourhood
+0138C1130,Farmarstigen,neighbourhood
+0138C1140,Farmarstigen,neighbourhood
+0138C1150,Farmarstigen,neighbourhood
+0138C1160,Farmarstigen,neighbourhood
+0138C1170,Farmarstigen,neighbourhood
+0138C1180,Björktickegången,neighbourhood
+0138C1190,Strand,neighbourhood
+0138C1200,Farmarstigen,neighbourhood
+0138C1210,Farmarstigen,neighbourhood
+0138C1220,Strand,neighbourhood
+0138C1230,Rotvik,neighbourhood
+0138C1240,Gimmersta,village
+0138C1250,Nytorp,neighbourhood
+0139A0010,Österhagen,neighbourhood
+0139A0020,Håbo-Tibble kyrkby,village
+0139B2010,Österhagen,neighbourhood
+0139B2020,Ekboda,neighbourhood
+0139B2030,Bro,town
+0139B2040,Bro,town
+0139B2050,Bro,town
+0139B2060,Bro,town
+0139B2070,Rättarboda,village
+0139C1011,Kungsängen,town
+0139C1012,Kungsängen,town
+0139C1020,Kungsängen,town
+0139C1030,Sylta,village
+0139C1040,Kungsängen,town
+0139C1051,Örnäs,display_name
+0139C1052,Kungsängen,town
+0139C1060,Hammartorp,display_name
+0139C1070,Hammartorp,display_name
+0140A0010,Nykvarn,town
+0140A0020,Aldal,display_name
+0140C1011,Nykvarn,town
+0140C1012,Nykvarn,town
+0140C1020,Nykvarn,town
+0140C1030,Nykvarn,town
+0140C1040,Nykvarn,town
+0160C1010,Grindtorp,suburb
+0160C1020,Grindtorp,suburb
+0160C1030,Grindtorp,suburb
+0160C1040,Grindtorp,suburb
+0160C1050,Grindtorp,suburb
+0160C1060,Grindtorp,suburb
+0160C1070,Viggbyholm,suburb
+0160C1080,Grindtorp,suburb
+0160C1090,Grindtorp,suburb
+0160C1100,Grindtorp,suburb
+0160C1110,Ella,neighbourhood
+0160C1120,Ella,neighbourhood
+0160C1130,Ella,neighbourhood
+0160C1141,Grindtorp,suburb
+0160C1142,Grindtorp,suburb
+0160C1143,Grindtorp,suburb
+0160C1150,Grindtorp,suburb
+0160C1160,Viggbyholm,suburb
+0160C1170,Ella,neighbourhood
+0160C1180,Ella,neighbourhood
+0160C1190,Täby,town
+0160C1200,Täby,town
+0160C1210,Ella,neighbourhood
+0160C1220,Viggbyholm,suburb
+0160C1230,Täby,town
+0160C1240,Täby,town
+0160C1250,Täby,town
+0160C1260,Marielund,display_name
+0160C1270,Ella,neighbourhood
+0160C1280,Karlslund,suburb
+0160C1290,Täby,town
+0160C1300,Marielund,display_name
+0160C1310,Marielund,display_name
+0160C1320,Karlslund,suburb
+0160C1330,Karlslund,suburb
+0160C1341,Vågsjö,hamlet
+0160C1342,Löttingelund,suburb
+0160C1350,Täby kyrkby,village
+0160C1360,Täby kyrkby,village
+0160C1370,Täby kyrkby,village
+0160C1380,Täby kyrkby,village
+0162C1010,Utsikten,residential
+0162C1020,Utsikten,residential
+0162C1030,Utsikten,residential
+0162C1040,Utsikten,residential
+0162C1050,Utsikten,residential
+0162C1060,Klingsta,suburb
+0162C1070,Charlottenberg,neighbourhood
+0162C1080,Djursholm,town
+0162C1090,Charlottenberg,neighbourhood
+0162C1100,Djursholm,town
+0162C1110,Charlottenberg,neighbourhood
+0162C1120,Charlottenberg,neighbourhood
+0162C1130,Charlottenberg,neighbourhood
+0162C1140,Charlottenberg,neighbourhood
+0162C1150,Svalnäs,neighbourhood
+0162C1160,Svalnäs,neighbourhood
+0162C1170,Nora,suburb
+0162C1180,Danderyds kommun,town
+0162C1190,Danderyds kommun,town
+0162C1200,Danderyds kommun,town
+0163C1011,Sollentuna kommun,town
+0163C1012,Sollentuna kommun,town
+0163C1020,Sollentuna kommun,town
+0163C1030,Helenelund,suburb
+0163C1040,Helenelund,suburb
+0163C1050,Helenelund,suburb
+0163C1060,Helenelund,suburb
+0163C1070,Häggvik,suburb
+0163C1080,Helenelund,suburb
+0163C1090,Edsberg,suburb
+0163C1100,Häggvik,suburb
+0163C1110,Häggvik,suburb
+0163C1120,Edsberg,suburb
+0163C1130,Kärrdal,suburb
+0163C1140,Helenelund,suburb
+0163C1150,Häggvik,suburb
+0163C1160,Häggvik,suburb
+0163C1170,Kärrdal,suburb
+0163C1180,Häggvik,suburb
+0163C1190,Kärrdal,suburb
+0163C1200,Häggvik,suburb
+0163C1210,Edsberg,suburb
+0163C1220,Häggvik,suburb
+0163C1230,Häggvik,suburb
+0163C1240,Pommern,neighbourhood
+0163C1250,Edsberg,suburb
+0163C1260,Edsberg,suburb
+0163C1270,Edsberg,suburb
+0163C1280,Viby,suburb
+0163C1290,Edsängen,neighbourhood
+0163C1300,Pommern,neighbourhood
+0163C1311,Edsberg,suburb
+0163C1312,Kärrdal,suburb
+0163C1320,Rotebro,suburb
+0163C1330,Pommern,neighbourhood
+0163C1340,Rotebro,suburb
+0163C1350,Rotebro,suburb
+0163C1360,Rotebro,suburb
+0163C1370,Sollentuna kommun,town
+0163C1380,Gillbo,neighbourhood
+0163C1390,Sollentuna kommun,town
+0163C1400,Sollentuna kommun,town
+0180C1010,Farsta strand,suburb
+0180C1020,Farsta strand,suburb
+0180C1030,Farsta strand,suburb
+0180C1040,Larsboda,suburb
+0180C1050,Farsta strand,suburb
+0180C1060,Larsboda,suburb
+0180C1070,Larsboda,suburb
+0180C1080,Larsboda,suburb
+0180C1090,Larsboda,suburb
+0180C1101,Larsboda,suburb
+0180C1102,Larsboda,suburb
+0180C1110,Farsta,suburb
+0180C1120,Yrkesgatsområdet,neighbourhood
+0180C1130,Larsboda,suburb
+0180C1140,Högdalen,suburb
+0180C1150,Högdalen,suburb
+0180C1160,Högdalen,suburb
+0180C1170,Larsboda,suburb
+0180C1180,Farsta,suburb
+0180C1190,DeSO 0180C1190,error-fallback
+0180C1200,Högdalen,suburb
+0180C1210,Flaten,suburb
+0180C1220,Larsboda,suburb
+0180C1230,Högdalen,suburb
+0180C1241,Skarpnäcks gård,suburb
+0180C1242,Skarpnäcks gård,suburb
+0180C1250,Gubbängen,suburb
+0180C1260,Högdalen,suburb
+0180C1270,Larsboda,suburb
+0180C1280,Högdalen,suburb
+0180C1290,Larsboda,suburb
+0180C1300,Högdalen,suburb
+0180C1310,Larsboda,suburb
+0180C1320,Högdalen,suburb
+0180C1330,Högdalen,suburb
+0180C1340,Högdalen,suburb
+0180C1350,Högdalen,suburb
+0180C1360,Högdalen,suburb
+0180C1370,Högdalen,suburb
+0180C1380,Högdalen,suburb
+0180C1390,Gubbängen,suburb
+0180C1400,Kryddhyllan,neighbourhood
+0180C1410,Svedmyra,suburb
+0180C1420,Skarpnäcks gård,suburb
+0180C1430,Långsjö,suburb
+0180C1440,Högdalen,suburb
+0180C1450,Högdalen,suburb
+0180C1460,Högdalen,suburb
+0180C1470,Bandhagen,suburb
+0180C1480,Bandhagen,suburb
+0180C1490,Johannesdal,neighbourhood
+0180C1500,Högdalen,suburb
+0180C1510,Skarpnäcks gård,suburb
+0180C1520,Skarpnäcks gård,suburb
+0180C1530,Högdalen,suburb
+0180C1540,Svedmyra,suburb
+0180C1550,Högdalen,suburb
+0180C1560,Johannesdal,neighbourhood
+0180C1570,Tallkrogen,suburb
+0180C1580,Svedmyra,suburb
+0180C1591,Johannesdal,neighbourhood
+0180C1592,Johannesdal,neighbourhood
+0180C1600,Älvsjö,suburb
+0180C1610,Skarpnäcks gård,suburb
+0180C1620,Långsjö,suburb
+0180C1630,Svedmyra,suburb
+0180C1640,Högdalen,suburb
+0180C1650,Stureby,suburb
+0180C1660,Johannesdal,neighbourhood
+0180C1670,Älvsjö,suburb
+0180C1680,Johannesdal,neighbourhood
+0180C1690,Johannesdal,neighbourhood
+0180C1700,Älvsjö,suburb
+0180C1710,Högdalen,suburb
+0180C1720,Johannesdal,neighbourhood
+0180C1730,Johannesdal,neighbourhood
+0180C1740,Bagarmossen,suburb
+0180C1750,Bagarmossen,suburb
+0180C1760,Tallkrogen,suburb
+0180C1770,Älvsjö,suburb
+0180C1780,Johannesdal,neighbourhood
+0180C1790,Svedmyra,suburb
+0180C1800,Skarpnäcks gård,suburb
+0180C1810,Skarpnäcks gård,suburb
+0180C1820,Västertorp,suburb
+0180C1830,Älvsjö,suburb
+0180C1840,Östberga,suburb
+0180C1850,Gamla Enskede,suburb
+0180C1860,Johannesdal,neighbourhood
+0180C1871,Älvsjö,suburb
+0180C1872,Älvsjö,suburb
+0180C1873,Älvsjö,suburb
+0180C1880,Älvsjö,suburb
+0180C1890,Svedmyra,suburb
+0180C1900,Bagarmossen,suburb
+0180C1910,Bredäng,suburb
+0180C1920,Älvsjö,suburb
+0180C1930,Svedmyra,suburb
+0180C1940,Bagarmossen,suburb
+0180C1950,Bagarmossen,suburb
+0180C1960,Enskededalen,suburb
+0180C1970,Älvsjö,suburb
+0180C1980,Västertorp,suburb
+0180C1990,Enskededalen,suburb
+0180C2000,Svedmyra,suburb
+0180C2010,Bredäng,suburb
+0180C2020,Älvsjö,suburb
+0180C2030,Fruängen,suburb
+0180C2040,Bagarmossen,suburb
+0180C2050,Västertorp,suburb
+0180C2060,Bredäng,suburb
+0180C2070,Årsta,suburb
+0180C2080,Västertorp,suburb
+0180C2090,Västertorp,suburb
+0180C2100,Älvsjö,suburb
+0180C2111,Älvsjö,suburb
+0180C2112,Älvsjö,suburb
+0180C2113,Älvsjö,suburb
+0180C2120,Gamla Enskede,suburb
+0180C2130,Bagarmossen,suburb
+0180C2140,Älvsjö,suburb
+0180C2150,Bredäng,suburb
+0180C2160,Årsta,suburb
+0180C2170,Svedmyra,suburb
+0180C2180,Älvsjö,suburb
+0180C2190,Enskedefältet,suburb
+0180C2200,Skarpnäcks stadsdelsområde,city_district
+0180C2210,Skarpnäcks stadsdelsområde,city_district
+0180C2220,Bredäng,suburb
+0180C2230,Bagarmossen,suburb
+0180C2240,Skarpnäcks stadsdelsområde,city_district
+0180C2250,Bredäng,suburb
+0180C2260,Skarpnäcks stadsdelsområde,city_district
+0180C2270,Västertorp,suburb
+0180C2280,Västertorp,suburb
+0180C2290,Bredäng,suburb
+0180C2300,Västertorp,suburb
+0180C2310,Västertorp,suburb
+0180C2320,Västertorp,suburb
+0180C2330,Bagarmossen,suburb
+0180C2340,Årsta,suburb
+0180C2350,Årsta,suburb
+0180C2360,Skarpnäcks stadsdelsområde,city_district
+0180C2370,Bagarmossen,suburb
+0180C2380,Älvsjö,suburb
+0180C2390,Skarpnäcks stadsdelsområde,city_district
+0180C2400,Skarpnäcks stadsdelsområde,city_district
+0180C2410,Skarpnäcks stadsdelsområde,city_district
+0180C2420,Västertorp,suburb
+0180C2431,Årsta,suburb
+0180C2432,Årsta,suburb
+0180C2440,Hägerstensåsen,suburb
+0180C2450,Älvsjö,suburb
+0180C2460,Skarpnäcks stadsdelsområde,city_district
+0180C2470,Midsommarkransen,suburb
+0180C2480,Årsta,suburb
+0180C2490,Skarpnäcks stadsdelsområde,city_district
+0180C2500,Bredäng,suburb
+0180C2510,Västertorp,suburb
+0180C2520,Enskede-Årsta-Vantörs stadsdelsområde,city_district
+0180C2530,Årsta,suburb
+0180C2540,Årsta,suburb
+0180C2550,Bredäng,suburb
+0180C2560,Årsta,suburb
+0180C2570,Midsommarkransen,suburb
+0180C2580,Hägersten,suburb
+0180C2590,Årsta,suburb
+0180C2600,Västertorp,suburb
+0180C2610,Skarpnäcks stadsdelsområde,city_district
+0180C2620,Midsommarkransen,suburb
+0180C2630,Midsommarkransen,suburb
+0180C2640,Hägersten,suburb
+0180C2650,Skarpnäcks stadsdelsområde,city_district
+0180C2660,Skarpnäcks stadsdelsområde,city_district
+0180C2670,Hammarbyhöjden,suburb
+0180C2680,Midsommarkransen,suburb
+0180C2690,Johanneshov,suburb
+0180C2700,Årsta,suburb
+0180C2710,Danvikstull,neighbourhood
+0180C2720,Midsommarkransen,suburb
+0180C2730,Midsommarkransen,suburb
+0180C2740,Midsommarkransen,suburb
+0180C2750,Årsta,suburb
+0180C2760,Midsommarkransen,suburb
+0180C2770,Midsommarkransen,suburb
+0180C2781,Liljeholmen,suburb
+0180C2782,Liljeholmen,suburb
+0180C2783,Liljeholmen,suburb
+0180C2790,Skarpnäcks stadsdelsområde,city_district
+0180C2800,Årsta,suburb
+0180C2810,Södermalms stadsdelsområde,city_district
+0180C2820,Hägersten,suburb
+0180C2830,Skarpnäcks stadsdelsområde,city_district
+0180C2840,Skarpnäcks stadsdelsområde,city_district
+0180C2850,Midsommarkransen,suburb
+0180C2860,Södra Hammarbyhamnen,suburb
+0180C2870,Aspudden,suburb
+0180C2881,Danvikstull,neighbourhood
+0180C2882,Skarpnäcks stadsdelsområde,city_district
+0180C2890,Aspudden,suburb
+0180C2900,Hägersten,suburb
+0180C2910,Södermalm,suburb
+0180C2920,Hägersten,suburb
+0180C2930,Danvikstull,neighbourhood
+0180C2940,Danvikstull,neighbourhood
+0180C2951,Liljeholmen,suburb
+0180C2952,Liljeholmen,suburb
+0180C2953,Liljeholmen,suburb
+0180C2960,Södra Hammarbyhamnen,suburb
+0180C2970,Aspudden,suburb
+0180C2980,Danvikstull,neighbourhood
+0180C2990,Midsommarkransen,suburb
+0180C3000,Danvikstull,neighbourhood
+0180C3010,Midsommarkransen,suburb
+0180C3020,Danvikstull,neighbourhood
+0180C3030,Aspudden,suburb
+0180C3040,Danvikstull,neighbourhood
+0180C3050,Danvikstull,neighbourhood
+0180C3060,Liljeholmen,suburb
+0180C3070,Nybohov,neighbourhood
+0180C3080,Zinkensdamm,neighbourhood
+0180C3090,Aspudden,suburb
+0180C3100,Danvikstull,neighbourhood
+0180C3110,Danvikstull,neighbourhood
+0180C3120,Liljeholmen,suburb
+0180C3130,Danvikstull,neighbourhood
+0180C3140,Danvikstull,neighbourhood
+0180C3150,Danvikstull,neighbourhood
+0180C3160,Södermalm,suburb
+0180C3170,Södermalm,suburb
+0180C3180,Södermalm,suburb
+0180C3190,Södermalm,suburb
+0180C3201,Danvikstull,neighbourhood
+0180C3202,Danvikstull,neighbourhood
+0180C3210,Zinkensdamm,neighbourhood
+0180C3220,Gröndal,suburb
+0180C3230,Liljeholmen,suburb
+0180C3240,Danvikstull,neighbourhood
+0180C3250,Södermalm,suburb
+0180C3260,Södermalm,suburb
+0180C3270,Ekensberg,neighbourhood
+0180C3280,Södermalm,suburb
+0180C3290,Skanstull,neighbourhood
+0180C3300,Danvikstull,neighbourhood
+0180C3310,Zinkensdamm,neighbourhood
+0180C3320,Danvikstull,neighbourhood
+0180C3330,Lilla Essingen,suburb
+0180C3340,Skanstull,neighbourhood
+0180C3350,Zinkensdamm,neighbourhood
+0180C3360,Danvikstull,neighbourhood
+0180C3370,Zinkensdamm,neighbourhood
+0180C3380,Södermalm,suburb
+0180C3390,Danvikstull,neighbourhood
+0180C3400,Hornstull,neighbourhood
+0180C3410,Hägersten,suburb
+0180C3420,Södermalm,suburb
+0180C3430,Danvikstull,neighbourhood
+0180C3440,Södermalm,suburb
+0180C3450,Danvikstull,neighbourhood
+0180C3460,Zinkensdamm,neighbourhood
+0180C3470,Zinkensdamm,neighbourhood
+0180C3480,Zinkensdamm,neighbourhood
+0180C3490,Zinkensdamm,neighbourhood
+0180C3500,Zinkensdamm,neighbourhood
+0180C3510,Gröndal,suburb
+0180C3520,Skanstull,neighbourhood
+0180C3530,Ekensberg,neighbourhood
+0180C3540,Danvikstull,neighbourhood
+0180C3550,Zinkensdamm,neighbourhood
+0180C3560,Lilla Essingen,suburb
+0180C3570,Zinkensdamm,neighbourhood
+0180C3580,Zinkensdamm,neighbourhood
+0180C3590,Reimersholme,suburb
+0180C3600,Södermalm,suburb
+0180C3610,Ålsten,suburb
+0180C3620,Hornstull,neighbourhood
+0180C3630,Hornstull,neighbourhood
+0180C3640,Zinkensdamm,neighbourhood
+0180C3650,Danvikstull,neighbourhood
+0180C3660,Hornstull,neighbourhood
+0180C3670,Zinkensdamm,neighbourhood
+0180C3680,Zinkensdamm,neighbourhood
+0180C3690,Skanstull,neighbourhood
+0180C3700,Hornstull,neighbourhood
+0180C3710,Södermalm,suburb
+0180C3720,Smedslätten,suburb
+0180C3730,Stora Essingen,suburb
+0180C3740,Zinkensdamm,neighbourhood
+0180C3750,Skanstull,neighbourhood
+0180C3760,Ålsten,suburb
+0180C3770,Södermalm,suburb
+0180C3780,Zinkensdamm,neighbourhood
+0180C3790,Zinkensdamm,neighbourhood
+0180C3800,Zinkensdamm,neighbourhood
+0180C3810,Zinkensdamm,neighbourhood
+0180C3820,Zinkensdamm,neighbourhood
+0180C3830,Lilla Essingen,suburb
+0180C3840,Ålsten,suburb
+0180C3850,Ålsten,suburb
+0180C3860,Lilla Essingen,suburb
+0180C3870,Lilla Essingen,suburb
+0180C3880,Zinkensdamm,neighbourhood
+0180C3890,Lilla Essingen,suburb
+0180C3900,Lilla Essingen,suburb
+0180C3910,Äppelviken,suburb
+0180C3920,Djurgården,suburb
+0180C3930,Zinkensdamm,neighbourhood
+0180C3940,Zinkensdamm,neighbourhood
+0180C3950,Lilla Essingen,suburb
+0180C3960,Zinkensdamm,neighbourhood
+0180C3970,Zinkensdamm,neighbourhood
+0180C3980,Kungsholmen,suburb
+0180C3990,Zinkensdamm,neighbourhood
+0180C4000,Bromma,suburb
+0180C4010,Kungsholmen,suburb
+0180C4020,Marieberg,suburb
+0180C4030,Lilla Essingen,suburb
+0180C4040,Norrmalm,suburb
+0180C4050,Bromma,suburb
+0180C4060,Nockebyhov,suburb
+0180C4070,Lilla Essingen,suburb
+0180C4080,Lilla Essingen,suburb
+0180C4090,Fredhäll,suburb
+0180C4100,Kungsholmen,suburb
+0180C4110,Ålsten,suburb
+0180C4120,Kungsholmen,suburb
+0180C4130,Marieberg,suburb
+0180C4140,Zinkensdamm,neighbourhood
+0180C4150,Kungsholmen,suburb
+0180C4160,Kungsholmen,suburb
+0180C4170,Kristineberg,suburb
+0180C4180,Traneberg,suburb
+0180C4190,Bromma,suburb
+0180C4200,Åkeshov,suburb
+0180C4210,Villastaden,neighbourhood
+0180C4220,Kungsholmen,suburb
+0180C4230,Kungsholmen,suburb
+0180C4240,Kungsholmen,suburb
+0180C4250,Lilla Essingen,suburb
+0180C4260,Bromma,suburb
+0180C4270,Kristineberg,suburb
+0180C4280,Kungsholmen,suburb
+0180C4290,Zinkensdamm,neighbourhood
+0180C4300,Bromma,suburb
+0180C4310,Östermalm,suburb
+0180C4320,Kungsholmen,suburb
+0180C4330,Kristineberg,suburb
+0180C4340,Villastaden,neighbourhood
+0180C4350,Traneberg,suburb
+0180C4360,Kungsholmen,suburb
+0180C4370,Kungsholmen,suburb
+0180C4380,Villastaden,neighbourhood
+0180C4390,Villastaden,neighbourhood
+0180C4400,Klara,neighbourhood
+0180C4410,Kungsholmen,suburb
+0180C4420,Kungsholmen,suburb
+0180C4430,Villastaden,neighbourhood
+0180C4440,Traneberg,suburb
+0180C4450,Villastaden,neighbourhood
+0180C4460,Blackeberg,suburb
+0180C4470,Kungsholmen,suburb
+0180C4480,Bromma,suburb
+0180C4490,Kungsholmen,suburb
+0180C4500,Sabbatsberg,neighbourhood
+0180C4510,Södra Ängby,suburb
+0180C4520,Hornsberg,neighbourhood
+0180C4530,Bromma,suburb
+0180C4540,Villastaden,neighbourhood
+0180C4550,Hornsberg,neighbourhood
+0180C4560,Villastaden,neighbourhood
+0180C4570,Traneberg,suburb
+0180C4580,Kristineberg,suburb
+0180C4590,Bromma,suburb
+0180C4600,Kungsholmen,suburb
+0180C4610,Sabbatsberg,neighbourhood
+0180C4620,Klara,neighbourhood
+0180C4630,Atlasområdet,neighbourhood
+0180C4640,Östermalm,suburb
+0180C4650,Sabbatsberg,neighbourhood
+0180C4660,Sabbatsberg,neighbourhood
+0180C4670,Traneberg,suburb
+0180C4680,Traneberg,suburb
+0180C4690,Villastaden,neighbourhood
+0180C4700,Ladugårdsgärdet,suburb
+0180C4710,Klara,neighbourhood
+0180C4720,Östermalm,suburb
+0180C4730,Hornsberg,neighbourhood
+0180C4740,Sabbatsberg,neighbourhood
+0180C4750,Villastaden,neighbourhood
+0180C4760,Sabbatsberg,neighbourhood
+0180C4770,Villastaden,neighbourhood
+0180C4780,Torsplan,neighbourhood
+0180C4790,Villastaden,neighbourhood
+0180C4800,Sabbatsberg,neighbourhood
+0180C4810,Villastaden,neighbourhood
+0180C4820,Sabbatsberg,neighbourhood
+0180C4830,Villastaden,neighbourhood
+0180C4840,Sabbatsberg,neighbourhood
+0180C4850,Sabbatsberg,neighbourhood
+0180C4860,Sabbatsberg,neighbourhood
+0180C4870,Villastaden,neighbourhood
+0180C4880,Sabbatsberg,neighbourhood
+0180C4890,Villastaden,neighbourhood
+0180C4900,Sibirien,neighbourhood
+0180C4910,Gärdeshöjden,neighbourhood
+0180C4920,Sabbatsberg,neighbourhood
+0180C4930,Villastaden,neighbourhood
+0180C4940,Blackeberg,suburb
+0180C4950,Blackeberg,suburb
+0180C4960,Villastaden,neighbourhood
+0180C4970,Bromma kyrka,suburb
+0180C4980,Torsplan,neighbourhood
+0180C4990,Villastaden,neighbourhood
+0180C5000,Sabbatsberg,neighbourhood
+0180C5010,Villastaden,neighbourhood
+0180C5020,Sabbatsberg,neighbourhood
+0180C5030,Sabbatsberg,neighbourhood
+0180C5040,Sabbatsberg,neighbourhood
+0180C5050,Villastaden,neighbourhood
+0180C5060,Sabbatsberg,neighbourhood
+0180C5070,Villastaden,neighbourhood
+0180C5080,Villastaden,neighbourhood
+0180C5090,Sabbatsberg,neighbourhood
+0180C5100,Villastaden,neighbourhood
+0180C5110,Sabbatsberg,neighbourhood
+0180C5120,Villastaden,neighbourhood
+0180C5130,Sabbatsberg,neighbourhood
+0180C5140,Sabbatsberg,neighbourhood
+0180C5150,Norra Ängby,suburb
+0180C5160,Blackeberg,suburb
+0180C5170,Villastaden,neighbourhood
+0180C5180,Bromma stadsdelsområde,city_district
+0180C5190,Ulvsunda industriområde,suburb
+0180C5200,Villastaden,neighbourhood
+0180C5210,Villastaden,neighbourhood
+0180C5220,Sabbatsberg,neighbourhood
+0180C5230,Sabbatsberg,neighbourhood
+0180C5240,Blackeberg,suburb
+0180C5250,Beckomberga,suburb
+0180C5261,Torsplan,neighbourhood
+0180C5262,Torsplan,neighbourhood
+0180C5263,Sabbatsberg,neighbourhood
+0180C5264,Atlasområdet,neighbourhood
+0180C5270,Sibirien,neighbourhood
+0180C5280,Östermalm,suburb
+0180C5290,Gärdeshöjden,neighbourhood
+0180C5300,Sabbatsberg,neighbourhood
+0180C5310,Hagastaden,neighbourhood
+0180C5320,Mariehäll,suburb
+0180C5330,Villastaden,neighbourhood
+0180C5340,Mariehäll,suburb
+0180C5350,Gärdeshöjden,neighbourhood
+0180C5360,Sabbatsberg,neighbourhood
+0180C5370,Sabbatsberg,neighbourhood
+0180C5380,Villastaden,neighbourhood
+0180C5390,Lärkstaden,neighbourhood
+0180C5400,Bromma kyrka,suburb
+0180C5410,Vinsta,suburb
+0180C5421,Vällingby,suburb
+0180C5422,Vällingby,suburb
+0180C5431,Villastaden,neighbourhood
+0180C5432,Villastaden,neighbourhood
+0180C5440,Sabbatsberg,neighbourhood
+0180C5450,Hässelby strand,suburb
+0180C5460,Bromma kyrka,suburb
+0180C5470,Hässelby strand,suburb
+0180C5480,Vällingby,suburb
+0180C5490,Norra Djurgården,suburb
+0180C5500,Blackeberg,suburb
+0180C5510,Vällingby,suburb
+0180C5520,Gasverket,neighbourhood
+0180C5530,Villastaden,neighbourhood
+0180C5540,Bromma kyrka,suburb
+0180C5550,Annedal,neighbourhood
+0180C5560,Bromma kyrka,suburb
+0180C5570,Gasverket,neighbourhood
+0180C5580,Vinsta,suburb
+0180C5590,Vällingby,suburb
+0180C5600,Råcksta,suburb
+0180C5610,Vällingby,suburb
+0180C5620,Annedal,neighbourhood
+0180C5630,Råcksta,suburb
+0180C5640,Hässelby strand,suburb
+0180C5651,Hjorthagen,suburb
+0180C5652,Gasverket,neighbourhood
+0180C5653,Hjorthagen,suburb
+0180C5660,Hässelby strand,suburb
+0180C5670,Vinsta,suburb
+0180C5680,Råcksta,suburb
+0180C5691,Mariehäll,suburb
+0180C5692,Mariehäll,suburb
+0180C5700,Vällingby,suburb
+0180C5710,Hässelby gård,suburb
+0180C5720,Vinsta,suburb
+0180C5730,Vinsta,suburb
+0180C5740,Sörgården,neighbourhood
+0180C5751,Annedal,neighbourhood
+0180C5752,Mariehäll,suburb
+0180C5760,Vinsta,suburb
+0180C5770,Lappkärrsberget,neighbourhood
+0180C5780,Hässelby gård,suburb
+0180C5790,Vinsta,suburb
+0180C5800,Vällingby,suburb
+0180C5810,Hässelby strand,suburb
+0180C5820,Solhöjden,neighbourhood
+0180C5830,Hässelby strand,suburb
+0180C5840,Nälsta,suburb
+0180C5850,Hässelby strand,suburb
+0180C5861,Sörgården,neighbourhood
+0180C5862,Sörgården,neighbourhood
+0180C5870,Vällingby,suburb
+0180C5880,Vinsta,suburb
+0180C5890,Hässelby strand,suburb
+0180C5900,Lappkärrsberget,neighbourhood
+0180C5910,Sörgården,neighbourhood
+0180C5920,Vällingby,suburb
+0180C5930,Vinsta,suburb
+0180C5940,Vinsta,suburb
+0180C5950,Hässelby strand,suburb
+0180C5960,Solhöjden,neighbourhood
+0180C5970,Solhöjden,neighbourhood
+0180C5980,Hässelby strand,suburb
+0180C5990,Kälvesta,suburb
+0180C6000,Sörgården,neighbourhood
+0180C6010,Hässelby strand,suburb
+0180C6020,Kälvesta,suburb
+0180C6030,Solhöjden,neighbourhood
+0180C6040,Solhöjden,neighbourhood
+0180C6050,Hässelby-Vällingby stadsdelsområde,city_district
+0180C6060,Hässelby strand,suburb
+0180C6070,Rinkeby,suburb
+0180C6080,Solhöjden,neighbourhood
+0180C6090,Rinkeby,suburb
+0180C6100,Rinkeby,suburb
+0180C6110,Rinkeby,suburb
+0180C6120,Rinkeby,suburb
+0180C6130,Solhöjden,neighbourhood
+0180C6140,Solhöjden,neighbourhood
+0180C6151,Rinkeby,suburb
+0180C6152,Rinkeby,suburb
+0180C6160,Rinkeby,suburb
+0180C6170,Solhöjden,neighbourhood
+0180C6180,Rinkeby,suburb
+0180C6190,Hässelby-Vällingby stadsdelsområde,city_district
+0180C6200,Kista,suburb
+0180C6210,Solhöjden,neighbourhood
+0180C6220,Solhöjden,neighbourhood
+0180C6230,Solhöjden,neighbourhood
+0180C6240,Lunda industriområde,suburb
+0180C6250,Solhöjden,neighbourhood
+0180C6260,Solhöjden,neighbourhood
+0180C6270,Solhöjden,neighbourhood
+0180C6280,Kista,suburb
+0180C6290,Rinkeby,suburb
+0180C6300,Rinkeby,suburb
+0180C6310,Rinkeby,suburb
+0180C6320,Rinkeby,suburb
+0180C6330,Kista,suburb
+0180C6340,Lunda industriområde,suburb
+0180C6350,Husby,suburb
+0180C6360,Rinkeby,suburb
+0180C6370,Husby,suburb
+0180C6380,Husby,suburb
+0180C6390,Kista,suburb
+0180C6400,Husby,suburb
+0180C6410,Akalla,suburb
+0180C6420,Husby,suburb
+0180C6430,Husby,suburb
+0180C6440,Akalla,suburb
+0181A0010,Backen,display_name
+0181A0020,Mölnbo,village
+0181A0030,Gerstaberg,hamlet
+0181A0040,Åtorp,display_name
+0181A0050,Ekeby,village
+0181A0060,Heleneberg,display_name
+0181B2010,Järna,village
+0181B2020,Lövsta,display_name
+0181B2031,Gerstaberg,hamlet
+0181B2032,Järna,village
+0181B2040,Lilla Vallängen,display_name
+0181B4010,Hölö,village
+0181B5010,Mölnbo,village
+0181C1010,Pershagen,village
+0181C1020,Skarmanstorp,display_name
+0181C1030,Hovsjö,suburb
+0181C1040,Saltskog,suburb
+0181C1050,Hovsjö,suburb
+0181C1060,Hovsjö,suburb
+0181C1070,Hovsjö,suburb
+0181C1080,Hovsjö,suburb
+0181C1090,Hovsjö,suburb
+0181C1100,Hovsjö,suburb
+0181C1110,Hovsjö,suburb
+0181C1120,Geneta,suburb
+0181C1130,Hovsjö,suburb
+0181C1140,Lännock,neighbourhood
+0181C1150,Igelsta,neighbourhood
+0181C1161,Hovsjö,suburb
+0181C1162,Hovsjö,suburb
+0181C1170,Hovsjö,suburb
+0181C1180,Tälje,suburb
+0181C1190,Lina hage,neighbourhood
+0181C1200,Tälje,suburb
+0181C1210,Igelsta,neighbourhood
+0181C1220,Tälje,suburb
+0181C1230,Tälje,suburb
+0181C1240,Tälje,suburb
+0181C1250,Igelsta,neighbourhood
+0181C1260,Lina hage,neighbourhood
+0181C1270,Lina hage,neighbourhood
+0181C1281,Tälje,suburb
+0181C1282,Tälje,suburb
+0181C1290,Tälje,suburb
+0181C1301,Lilla Näset,display_name
+0181C1302,Östertälje,suburb
+0181C1310,Tälje,suburb
+0181C1320,Lina hage,neighbourhood
+0181C1330,Tälje,suburb
+0181C1340,Lännock,neighbourhood
+0181C1350,Lännock,neighbourhood
+0181C1360,Lännock,neighbourhood
+0181C1370,Vattubrinken,residential
+0181C1380,Fridshäll,neighbourhood
+0181C1390,Ritorp,neighbourhood
+0182C1010,Stensö,suburb
+0182C1020,Stensö,suburb
+0182C1031,Stensö,suburb
+0182C1032,Stensö,suburb
+0182C1033,Stensö,suburb
+0182C1040,Stensö,suburb
+0182C1050,Älgö,village
+0182C1060,Kolarängen,suburb
+0182C1070,Solsidan,residential
+0182C1080,Älta,town
+0182C1090,Solsidan,residential
+0182C1100,Lännersta,suburb
+0182C1110,Lännersta,suburb
+0182C1120,Lännersta,suburb
+0182C1130,Fiskarhöjden,neighbourhood
+0182C1140,Lännersta,suburb
+0182C1150,Lännersta,suburb
+0182C1160,Lännersta,suburb
+0182C1170,Nysätra,neighbourhood
+0182C1180,Lännersta,suburb
+0182C1190,Nysätra,neighbourhood
+0182C1200,Nysätra,neighbourhood
+0182C1210,Östervik,hamlet
+0182C1220,Vikdalen,neighbourhood
+0182C1231,Vikdalen,neighbourhood
+0182C1232,Vikdalen,neighbourhood
+0182C1240,Nacka,town
+0182C1250,Nysätra,neighbourhood
+0182C1260,Finnboda,neighbourhood
+0182C1270,Lännersta,suburb
+0182C1280,Nysätra,neighbourhood
+0182C1291,Fisksätra,village
+0182C1292,Östervik,hamlet
+0182C1300,Vikdalen,neighbourhood
+0182C1310,Östervik,hamlet
+0182C1320,Nacka,town
+0182C1330,Finnboda,neighbourhood
+0182C1340,Lännersta,suburb
+0182C1350,Nysätra,neighbourhood
+0182C1360,Backeböl,suburb
+0182C1371,Finnboda,neighbourhood
+0182C1372,Nysätra,neighbourhood
+0182C1380,Vikdalen,neighbourhood
+0182C1390,Nacka,town
+0182C1400,Östervik,hamlet
+0182C1411,Vikdalen,neighbourhood
+0182C1412,Vikdalen,neighbourhood
+0182C1420,Orminge,suburb
+0182C1430,Backeböl,suburb
+0182C1440,Orminge,suburb
+0182C1450,Nacka,town
+0182C1460,Nacka,town
+0182C1470,Eriksvik,neighbourhood
+0182C1480,Orminge,suburb
+0182C1490,Orminge,suburb
+0182C1500,Orminge,suburb
+0182C1510,Vikingshill,neighbourhood
+0182C1520,Orminge,suburb
+0182C1530,Vikingshill,neighbourhood
+0183C1010,Storskogen,suburb
+0183C1020,Lilla Alby,suburb
+0183C1030,Storskogen,suburb
+0183C1040,Storskogen,suburb
+0183C1050,Storskogen,suburb
+0183C1060,Storskogen,suburb
+0183C1070,Storskogen,suburb
+0183C1080,Storskogen,suburb
+0183C1090,Storskogen,suburb
+0183C1100,Storskogen,suburb
+0183C1110,Storskogen,suburb
+0183C1120,Storskogen,suburb
+0183C1130,Storskogen,suburb
+0183C1140,Storskogen,suburb
+0183C1150,Hästhagen,neighbourhood
+0183C1161,Hästhagen,neighbourhood
+0183C1162,Hästhagen,neighbourhood
+0183C1170,Storskogen,suburb
+0183C1180,Storskogen,suburb
+0183C1190,Storskogen,suburb
+0183C1200,Storskogen,suburb
+0183C1210,Hästhagen,neighbourhood
+0183C1220,Hästhagen,neighbourhood
+0183C1230,Hästhagen,neighbourhood
+0183C1241,Hästhagen,neighbourhood
+0183C1242,Hästhagen,neighbourhood
+0183C1243,Hästhagen,neighbourhood
+0183C1250,Hästhagen,neighbourhood
+0183C1261,Hästhagen,neighbourhood
+0183C1262,Lilla Ursvik,suburb
+0184C1010,Skytteholm,suburb
+0184C1020,Skytteholm,suburb
+0184C1030,Skytteholm,suburb
+0184C1040,Skytteholm,suburb
+0184C1051,Skytteholm,suburb
+0184C1052,Karlberg,neighbourhood
+0184C1060,Huvudsta,suburb
+0184C1070,Skytteholm,suburb
+0184C1080,Skytteholm,suburb
+0184C1090,Skytteholm,suburb
+0184C1100,Skytteholm,suburb
+0184C1110,Skytteholm,suburb
+0184C1120,Skytteholm,suburb
+0184C1130,Hagalund,suburb
+0184C1140,Skytteholm,suburb
+0184C1150,Skytteholm,suburb
+0184C1160,Skytteholm,suburb
+0184C1170,Vasalund,neighbourhood
+0184C1180,Frösunda,suburb
+0184C1190,Hagalund,suburb
+0184C1200,Blåkulla,neighbourhood
+0184C1210,Skytteholm,suburb
+0184C1220,Skytteholm,suburb
+0184C1230,Skytteholm,suburb
+0184C1240,Skytteholm,suburb
+0184C1250,Vasalund,neighbourhood
+0184C1260,Råsunda,suburb
+0184C1270,Arenastaden,neighbourhood
+0184C1280,Vasalund,neighbourhood
+0184C1290,Skytteholm,suburb
+0184C1300,Arenastaden,neighbourhood
+0184C1310,Arenastaden,neighbourhood
+0184C1320,Arenastaden,neighbourhood
+0184C1330,Vasalund,neighbourhood
+0184C1340,Bergshamra,village
+0184C1350,Arenastaden,neighbourhood
+0184C1360,Bergshamra,village
+0184C1370,Agnesberg,neighbourhood
+0184C1380,Bergshamra,village
+0184C1390,Järva,suburb
+0184C1400,Bergshamra,village
+0184C1410,Arenastaden,neighbourhood
+0184C1420,Bergshamra,village
+0184C1430,Järva,suburb
+0186C1010,Bodal,neighbourhood
+0186C1020,Västra Yttringe,village
+0186C1030,Bodal,neighbourhood
+0186C1040,Skärsätra,suburb
+0186C1050,Bodal,neighbourhood
+0186C1060,Bodal,neighbourhood
+0186C1070,Kristinehäll,hamlet
+0186C1080,Bodal,neighbourhood
+0186C1090,Bodal,neighbourhood
+0186C1100,Bodal,neighbourhood
+0186C1110,Björnbo,suburb
+0186C1120,Kristinehäll,hamlet
+0186C1130,Bodal,neighbourhood
+0186C1140,Kristinehäll,hamlet
+0186C1150,Bodal,neighbourhood
+0186C1160,Kristinehäll,hamlet
+0186C1170,Bodal,neighbourhood
+0186C1180,Bodal,neighbourhood
+0186C1190,Bodal,neighbourhood
+0186C1200,Västra Yttringe,village
+0186C1210,Bodal,neighbourhood
+0186C1220,Bodal,neighbourhood
+0186C1230,Askrike,neighbourhood
+0186C1240,Askrike,neighbourhood
+0186C1250,Bodal,neighbourhood
+0186C1260,Sticklinge,suburb
+0187A0010,Kullö,village
+0187C1010,Vaxholm,town
+0187C1020,Höganäs,neighbourhood
+0187C1030,Norrängen,display_name
+0187C1040,Höganäs,neighbourhood
+0187C1050,Kullö,village
+0187C1060,Vaxholm,town
+0188A0010,Norrtälje kommun,display_name
+0188A0020,Kusboda,display_name
+0188A0030,Bergshamra varv,display_name
+0188A0040,Ösbylund,display_name
+0188A0050,Hammarby,display_name
+0188A0060,Samstorpet,display_name
+0188A0070,Tunaberg,display_name
+0188A0080,Rimbo,village
+0188A0090,Knekttuve,display_name
+0188A0100,Kråkvilan,display_name
+0188A0110,Lohärad,display_name
+0188A0120,Ekadal,display_name
+0188A0130,Harg,village
+0188A0140,Kåstalund,display_name
+0188A0150,Ladbol,display_name
+0188A0160,Johanneslund,display_name
+0188A0170,Djupdal,display_name
+0188A0180,Nytorp,display_name
+0188A0190,Hålmyren,display_name
+0188B2010,Kvarntorpet,display_name
+0188B2020,Rimbo,village
+0188B2030,Kvarntorpet,display_name
+0188B3010,Häverödal,village
+0188B3020,Hallstavik,village
+0188B3030,Hallstavik,village
+0188B4010,Älmsta,village
+0188B5010,Bergshamra varv,display_name
+0188C1010,Björktorp,display_name
+0188C1020,Malsta,village
+0188C1030,Öster Knutby,neighbourhood
+0188C1040,Öster Knutby,neighbourhood
+0188C1050,Öster Knutby,neighbourhood
+0188C1061,Öster Knutby,neighbourhood
+0188C1062,Öster Knutby,neighbourhood
+0188C1063,Öster Knutby,neighbourhood
+0188C1070,Norrtälje,town
+0188C1080,Emmaus,neighbourhood
+0188C1090,Malsta,village
+0188C1100,Stocksund,display_name
+0188C1110,Emmaus,neighbourhood
+0191A0010,Smedsboda,display_name
+0191A0020,Wenngarn,village
+0191A0030,Ekilla,village
+0191A0040,Kogsta,display_name
+0191B2010,Sigtuna,town
+0191B2020,Sigtuna,town
+0191B2031,Sigtuna,town
+0191B2032,Sigtuna,town
+0191B2040,Sigtuna,town
+0191B2050,Sigtuna,town
+0191B3010,Rosersberg,village
+0191C1010,Märsta,town
+0191C1020,Märsta,town
+0191C1030,Märsta,town
+0191C1040,Märsta,town
+0191C1050,Märsta,town
+0191C1060,Märsta,town
+0191C1070,Märsta,town
+0191C1081,Rävsta,display_name
+0191C1082,Rävsta,display_name
+0191C1083,Märsta,town
+0191C1090,Norrbacka,neighbourhood
+0191C1100,Märsta,town
+0191C1110,Märsta,town
+0191C1120,Ekilla,village
+0191C1130,Märsta,town
+0191C1140,Märsta,town
+0192A0010,Nynäshamn,town
+0192A0020,Solhem,display_name
+0192A0030,Gräsdal,display_name
+0192A0040,Grindtorp,display_name
+0192B2010,Ösmo,village
+0192B2020,Ösmo,village
+0192B3010,Sorunda,village
+0192C1010,Lövhagen,display_name
+0192C1020,Nickstahöjden,neighbourhood
+0192C1030,Nickstahöjden,neighbourhood
+0192C1040,Nickstahöjden,neighbourhood
+0192C1050,Nickstahöjden,neighbourhood
+0192C1060,Nynäshamn,town
+0192C1070,Nickstahöjden,neighbourhood
+0192C1080,Nickstahöjden,neighbourhood
+0192C1090,Nynäshamn,town
+0192C1100,Nynäshamn,town

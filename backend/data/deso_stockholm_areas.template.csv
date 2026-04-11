@@ -1,0 +1,2 @@
+id,name,municipality,lat,lon,avg_price_sek_per_sqm,monthly_rent_2br_sek,sl_commute_to_tcentralen_min,sl_departures_per_hour_peak,nearest_station_walk_min,schools_score,green_access_score,flood_risk_score,noise_score,median_income_sek,unemployment_rate_pct,crime_rate_per_1000,pm25_ugm3,healthcare_access_score,bikeability_score,broadband_coverage_pct
+# deso_XXXX,Area Name,Stockholm,59.3000,18.0000,65000,14500,24,10,7,7.2,6.8,2.1,5.6,390000,4.2,40.5,6.8,7.5,7.0,95.0

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 min-h-screen bg-canvas font-sans text-ink;
+  }
+}
+
+@layer utilities {
+  .panel {
+    @apply rounded-2xl border border-slate-300/80 bg-white/75 p-4 shadow-panel backdrop-blur;
+  }
+  .neon-ring {
+    box-shadow: 0 0 0 1px rgba(29, 78, 216, 0.12), 0 18px 35px -20px rgba(2, 132, 199, 0.55);
+  }
+}
+
+.theme-dark {
+  background: #020617;
+  color: #e2e8f0;
+}
+
+.theme-dark .panel {
+  background: rgba(7, 14, 28, 0.92);
+  border-color: rgba(148, 163, 184, 0.08);
+  color: #e2e8f0;
+  box-shadow: 0 14px 30px -24px rgba(0, 0, 0, 0.75);
+}
+
+.theme-dark .bg-white {
+  background-color: #0b1220 !important;
+}
+
+.theme-dark .bg-slate-100 {
+  background-color: #111a2e !important;
+}
+
+.theme-dark .border-slate-300,
+.theme-dark .border-slate-300\/80 {
+  border-color: rgba(148, 163, 184, 0.08) !important;
+}
+
+.theme-dark .text-slate-500 {
+  color: #94a3b8 !important;
+}
+
+.theme-dark .text-slate-600,
+.theme-dark .text-slate-700 {
+  color: #cbd5e1 !important;
+}
+
+.theme-dark .text-slate-800 {
+  color: #e2e8f0 !important;
+}
+
+.theme-dark input,
+.theme-dark select {
+  background-color: #111a2e;
+  border-color: rgba(148, 163, 184, 0.14);
+  color: #e2e8f0;
+}
+
+.theme-dark .hover\:bg-slate-100:hover {
+  background-color: #16233d !important;
+}
+
+.theme-dark .hover\:border-teal-300:hover,
+.theme-dark .hover\:border-teal-400:hover {
+  border-color: rgba(45, 212, 191, 0.45) !important;
+}
+
+.theme-dark .border-teal-600 {
+  border-color: rgba(45, 212, 191, 0.45) !important;
+}
+
+.theme-dark .bg-teal-50 {
+  background-color: #0f2231 !important;
+}
+
+.map-shell {
+  position: relative;
+  height: 100%;
+  min-height: 420px;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.map-container {
+  height: 100%;
+  width: 100%;
+}
+
+.leaflet-tooltip {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.leaflet-tooltip.leaflet-tooltip-open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 1536px) {
+  .map-shell {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .map-shell {
+    height: 62vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .map-shell {
+    height: 50vh;
+  }
+}

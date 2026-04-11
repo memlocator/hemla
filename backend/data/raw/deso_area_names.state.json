@@ -1,0 +1,5450 @@
+{
+  "0114A0010": {
+    "area_name": "Odenslunda",
+    "source": "neighbourhood"
+  },
+  "0114C1010": {
+    "area_name": "Sköldnora",
+    "source": "hamlet"
+  },
+  "0114C1020": {
+    "area_name": "Sköldnora",
+    "source": "hamlet"
+  },
+  "0114C1030": {
+    "area_name": "Sköldnora",
+    "source": "hamlet"
+  },
+  "0114C1040": {
+    "area_name": "Odenslunda",
+    "source": "neighbourhood"
+  },
+  "0114C1050": {
+    "area_name": "Sköldnora",
+    "source": "hamlet"
+  },
+  "0114C1061": {
+    "area_name": "Upplands Väsby",
+    "source": "town"
+  },
+  "0114C1062": {
+    "area_name": "Upplands Väsby",
+    "source": "town"
+  },
+  "0114C1070": {
+    "area_name": "Sköldnora",
+    "source": "hamlet"
+  },
+  "0114C1080": {
+    "area_name": "Odenslunda",
+    "source": "neighbourhood"
+  },
+  "0114C1091": {
+    "area_name": "Odenslunda",
+    "source": "neighbourhood"
+  },
+  "0114C1092": {
+    "area_name": "Odenslunda",
+    "source": "neighbourhood"
+  },
+  "0114C1100": {
+    "area_name": "Vilunda",
+    "source": "suburb"
+  },
+  "0114C1110": {
+    "area_name": "Upplands Väsby",
+    "source": "town"
+  },
+  "0114C1120": {
+    "area_name": "Odenslunda",
+    "source": "neighbourhood"
+  },
+  "0114C1130": {
+    "area_name": "Odenslunda",
+    "source": "neighbourhood"
+  },
+  "0114C1141": {
+    "area_name": "Vilunda",
+    "source": "suburb"
+  },
+  "0114C1142": {
+    "area_name": "Ekeby",
+    "source": "village"
+  },
+  "0114C1150": {
+    "area_name": "Odenslunda",
+    "source": "neighbourhood"
+  },
+  "0114C1160": {
+    "area_name": "Odenslunda",
+    "source": "neighbourhood"
+  },
+  "0114C1170": {
+    "area_name": "Odenslunda",
+    "source": "neighbourhood"
+  },
+  "0114C1180": {
+    "area_name": "Upplands Väsby",
+    "source": "town"
+  },
+  "0114C1190": {
+    "area_name": "Odenslunda",
+    "source": "neighbourhood"
+  },
+  "0114C1200": {
+    "area_name": "Odenslunda",
+    "source": "neighbourhood"
+  },
+  "0114C1210": {
+    "area_name": "Odenslunda",
+    "source": "neighbourhood"
+  },
+  "0114C1220": {
+    "area_name": "Upplands Väsby",
+    "source": "town"
+  },
+  "0115A0010": {
+    "area_name": "Lingbergs säteri",
+    "source": "display_name"
+  },
+  "0115A0020": {
+    "area_name": "Grebbtorp",
+    "source": "display_name"
+  },
+  "0115A0030": {
+    "area_name": "Långkärret",
+    "source": "display_name"
+  },
+  "0115A0040": {
+    "area_name": "Ekskogen",
+    "source": "village"
+  },
+  "0115B2010": {
+    "area_name": "Lindholmen",
+    "source": "village"
+  },
+  "0115B3010": {
+    "area_name": "Össeby-Garn",
+    "source": "hamlet"
+  },
+  "0115C1010": {
+    "area_name": "Vallentuna",
+    "source": "town"
+  },
+  "0115C1020": {
+    "area_name": "Bällsta park",
+    "source": "neighbourhood"
+  },
+  "0115C1030": {
+    "area_name": "Bällsta park",
+    "source": "neighbourhood"
+  },
+  "0115C1040": {
+    "area_name": "Vallentuna",
+    "source": "town"
+  },
+  "0115C1050": {
+    "area_name": "Rickeby",
+    "source": "suburb"
+  },
+  "0115C1060": {
+    "area_name": "Vallentuna",
+    "source": "town"
+  },
+  "0115C1070": {
+    "area_name": "Vallentuna",
+    "source": "town"
+  },
+  "0115C1080": {
+    "area_name": "Vallentuna",
+    "source": "town"
+  },
+  "0115C1090": {
+    "area_name": "Vallentuna",
+    "source": "town"
+  },
+  "0115C1100": {
+    "area_name": "Lingbergs säteri",
+    "source": "display_name"
+  },
+  "0115C1110": {
+    "area_name": "Vallentuna",
+    "source": "town"
+  },
+  "0115C1120": {
+    "area_name": "Vallentuna",
+    "source": "town"
+  },
+  "0115C1130": {
+    "area_name": "Ekeby",
+    "source": "suburb"
+  },
+  "0117A0010": {
+    "area_name": "Hagalund",
+    "source": "display_name"
+  },
+  "0117A0020": {
+    "area_name": "Blåsut",
+    "source": "display_name"
+  },
+  "0117A0030": {
+    "area_name": "Hjälmsättra",
+    "source": "display_name"
+  },
+  "0117C1010": {
+    "area_name": "Valsättra",
+    "source": "neighbourhood"
+  },
+  "0117C1020": {
+    "area_name": "Valsättra",
+    "source": "neighbourhood"
+  },
+  "0117C1030": {
+    "area_name": "Atterötorpet",
+    "source": "display_name"
+  },
+  "0117C1040": {
+    "area_name": "Söra",
+    "source": "neighbourhood"
+  },
+  "0117C1050": {
+    "area_name": "Alsro",
+    "source": "neighbourhood"
+  },
+  "0117C1060": {
+    "area_name": "Söra",
+    "source": "neighbourhood"
+  },
+  "0117C1070": {
+    "area_name": "Söra",
+    "source": "neighbourhood"
+  },
+  "0117C1081": {
+    "area_name": "Kylan",
+    "source": "display_name"
+  },
+  "0117C1082": {
+    "area_name": "Lill-Bo",
+    "source": "display_name"
+  },
+  "0117C1090": {
+    "area_name": "Skånsta",
+    "source": "neighbourhood"
+  },
+  "0117C1100": {
+    "area_name": "Söra",
+    "source": "neighbourhood"
+  },
+  "0117C1110": {
+    "area_name": "Runö",
+    "source": "neighbourhood"
+  },
+  "0117C1120": {
+    "area_name": "Söra",
+    "source": "neighbourhood"
+  },
+  "0117C1130": {
+    "area_name": "Runö",
+    "source": "neighbourhood"
+  },
+  "0117C1140": {
+    "area_name": "Runö",
+    "source": "neighbourhood"
+  },
+  "0117C1150": {
+    "area_name": "Runö",
+    "source": "neighbourhood"
+  },
+  "0117C1160": {
+    "area_name": "Skånsta",
+    "source": "neighbourhood"
+  },
+  "0117C1170": {
+    "area_name": "Runö",
+    "source": "neighbourhood"
+  },
+  "0117C1180": {
+    "area_name": "Norrö",
+    "source": "village"
+  },
+  "0117C1190": {
+    "area_name": "Skånsta",
+    "source": "neighbourhood"
+  },
+  "0117C1200": {
+    "area_name": "Nytorp",
+    "source": "display_name"
+  },
+  "0120A0010": {
+    "area_name": "Kopparmora",
+    "source": "village"
+  },
+  "0120C1010": {
+    "area_name": "Mörtviken",
+    "source": "village"
+  },
+  "0120C1020": {
+    "area_name": "Långvik",
+    "source": "village"
+  },
+  "0120C1030": {
+    "area_name": "Nykvarn",
+    "source": "village"
+  },
+  "0120C1040": {
+    "area_name": "Långstrandsudd",
+    "source": "village"
+  },
+  "0120C1050": {
+    "area_name": "Bullandö",
+    "source": "village"
+  },
+  "0120C1060": {
+    "area_name": "Lövhamra",
+    "source": "neighbourhood"
+  },
+  "0120C1070": {
+    "area_name": "Nykvarn",
+    "source": "village"
+  },
+  "0120C1080": {
+    "area_name": "Charlottendal",
+    "source": "suburb"
+  },
+  "0120C1090": {
+    "area_name": "Näverängen",
+    "source": "neighbourhood"
+  },
+  "0120C1100": {
+    "area_name": "Nya Mörtnäs",
+    "source": "neighbourhood"
+  },
+  "0120C1111": {
+    "area_name": "Charlottendal",
+    "source": "suburb"
+  },
+  "0120C1112": {
+    "area_name": "Charlottendal",
+    "source": "suburb"
+  },
+  "0120C1120": {
+    "area_name": "Charlottendal",
+    "source": "suburb"
+  },
+  "0120C1130": {
+    "area_name": "Herrviksnäs",
+    "source": "village"
+  },
+  "0120C1140": {
+    "area_name": "Hästhagen",
+    "source": "suburb"
+  },
+  "0120C1150": {
+    "area_name": "Mor",
+    "source": "display_name"
+  },
+  "0120C1160": {
+    "area_name": "Haghulta",
+    "source": "suburb"
+  },
+  "0120C1170": {
+    "area_name": "Höjdhagen",
+    "source": "suburb"
+  },
+  "0120C1180": {
+    "area_name": "Ösby",
+    "source": "display_name"
+  },
+  "0120C1190": {
+    "area_name": "Bergudden",
+    "source": "display_name"
+  },
+  "0120C1200": {
+    "area_name": "Kopparmora",
+    "source": "village"
+  },
+  "0120C1210": {
+    "area_name": "Ekudden",
+    "source": "display_name"
+  },
+  "0120C1220": {
+    "area_name": "Bergudden",
+    "source": "display_name"
+  },
+  "0120C1230": {
+    "area_name": "Torsby",
+    "source": "village"
+  },
+  "0123C1010": {
+    "area_name": "Björkeby",
+    "source": "neighbourhood"
+  },
+  "0123C1020": {
+    "area_name": "Björkeby",
+    "source": "neighbourhood"
+  },
+  "0123C1030": {
+    "area_name": "Björkeby",
+    "source": "neighbourhood"
+  },
+  "0123C1040": {
+    "area_name": "Järfälla kommun",
+    "source": "town"
+  },
+  "0123C1050": {
+    "area_name": "Björkeby",
+    "source": "neighbourhood"
+  },
+  "0123C1060": {
+    "area_name": "Björkeby",
+    "source": "neighbourhood"
+  },
+  "0123C1070": {
+    "area_name": "Viksjö",
+    "source": "suburb"
+  },
+  "0123C1080": {
+    "area_name": "Järfälla kommun",
+    "source": "town"
+  },
+  "0123C1091": {
+    "area_name": "Björkeby",
+    "source": "neighbourhood"
+  },
+  "0123C1092": {
+    "area_name": "Söderhöjden",
+    "source": "suburb"
+  },
+  "0123C1100": {
+    "area_name": "Järfälla kommun",
+    "source": "town"
+  },
+  "0123C1110": {
+    "area_name": "Hammaren",
+    "source": "neighbourhood"
+  },
+  "0123C1120": {
+    "area_name": "Järfälla kommun",
+    "source": "town"
+  },
+  "0123C1130": {
+    "area_name": "Söderhöjden",
+    "source": "suburb"
+  },
+  "0123C1141": {
+    "area_name": "Söderhöjden",
+    "source": "suburb"
+  },
+  "0123C1142": {
+    "area_name": "Söderhöjden",
+    "source": "suburb"
+  },
+  "0123C1143": {
+    "area_name": "Söderhöjden",
+    "source": "suburb"
+  },
+  "0123C1150": {
+    "area_name": "Järfälla kommun",
+    "source": "town"
+  },
+  "0123C1160": {
+    "area_name": "Hammaren",
+    "source": "neighbourhood"
+  },
+  "0123C1170": {
+    "area_name": "Hammaren",
+    "source": "neighbourhood"
+  },
+  "0123C1180": {
+    "area_name": "Järfälla kommun",
+    "source": "town"
+  },
+  "0123C1190": {
+    "area_name": "Hammaren",
+    "source": "neighbourhood"
+  },
+  "0123C1200": {
+    "area_name": "Söderhöjden",
+    "source": "suburb"
+  },
+  "0123C1210": {
+    "area_name": "Hammaren",
+    "source": "neighbourhood"
+  },
+  "0123C1221": {
+    "area_name": "Hammaren",
+    "source": "neighbourhood"
+  },
+  "0123C1222": {
+    "area_name": "Hammaren",
+    "source": "neighbourhood"
+  },
+  "0123C1230": {
+    "area_name": "Hammaren",
+    "source": "neighbourhood"
+  },
+  "0123C1240": {
+    "area_name": "Hammaren",
+    "source": "neighbourhood"
+  },
+  "0123C1250": {
+    "area_name": "Hammaren",
+    "source": "neighbourhood"
+  },
+  "0123C1260": {
+    "area_name": "Hammaren",
+    "source": "neighbourhood"
+  },
+  "0123C1270": {
+    "area_name": "Järfälla kommun",
+    "source": "town"
+  },
+  "0123C1280": {
+    "area_name": "Hammaren",
+    "source": "neighbourhood"
+  },
+  "0123C1290": {
+    "area_name": "Hammaren",
+    "source": "neighbourhood"
+  },
+  "0123C1300": {
+    "area_name": "Hammaren",
+    "source": "neighbourhood"
+  },
+  "0123C1310": {
+    "area_name": "Grönvreten",
+    "source": "neighbourhood"
+  },
+  "0123C1320": {
+    "area_name": "Söderhöjden",
+    "source": "suburb"
+  },
+  "0123C1330": {
+    "area_name": "Kolarängen",
+    "source": "neighbourhood"
+  },
+  "0123C1340": {
+    "area_name": "Kolarängen",
+    "source": "neighbourhood"
+  },
+  "0123C1350": {
+    "area_name": "Kolarängen",
+    "source": "neighbourhood"
+  },
+  "0123C1360": {
+    "area_name": "Kolarängen",
+    "source": "neighbourhood"
+  },
+  "0123C1370": {
+    "area_name": "Järfälla kommun",
+    "source": "town"
+  },
+  "0123C1380": {
+    "area_name": "Kolarängen",
+    "source": "neighbourhood"
+  },
+  "0123C1390": {
+    "area_name": "Järfälla kommun",
+    "source": "town"
+  },
+  "0123C1400": {
+    "area_name": "Järfälla kommun",
+    "source": "town"
+  },
+  "0125A0010": {
+    "area_name": "Ekerö kommun",
+    "source": "town"
+  },
+  "0125A0020": {
+    "area_name": "Ekerö kommun",
+    "source": "town"
+  },
+  "0125A0030": {
+    "area_name": "Ekerö kommun",
+    "source": "town"
+  },
+  "0125A0040": {
+    "area_name": "Ekerö kommun",
+    "source": "town"
+  },
+  "0125B2010": {
+    "area_name": "Ekerö kommun",
+    "source": "town"
+  },
+  "0125B2020": {
+    "area_name": "Ekerö kommun",
+    "source": "town"
+  },
+  "0125B2030": {
+    "area_name": "Lövhagen",
+    "source": "neighbourhood"
+  },
+  "0125B3010": {
+    "area_name": "Ekerö kommun",
+    "source": "town"
+  },
+  "0125B3020": {
+    "area_name": "Ekerö kommun",
+    "source": "town"
+  },
+  "0125C1010": {
+    "area_name": "Ekerö kommun",
+    "source": "town"
+  },
+  "0125C1020": {
+    "area_name": "Ängsvik",
+    "source": "neighbourhood"
+  },
+  "0125C1030": {
+    "area_name": "Ekerö kommun",
+    "source": "town"
+  },
+  "0125C1040": {
+    "area_name": "Ekerö kommun",
+    "source": "town"
+  },
+  "0125C1050": {
+    "area_name": "Ekerö kommun",
+    "source": "town"
+  },
+  "0125C1060": {
+    "area_name": "Ekerö kommun",
+    "source": "town"
+  },
+  "0125C1070": {
+    "area_name": "Ekerö kommun",
+    "source": "town"
+  },
+  "0125C1080": {
+    "area_name": "Ekerö kommun",
+    "source": "town"
+  },
+  "0126A0010": {
+    "area_name": "Huddinge",
+    "source": "town"
+  },
+  "0126C1010": {
+    "area_name": "Länna industriområde",
+    "source": "display_name"
+  },
+  "0126C1020": {
+    "area_name": "Flemingsberg",
+    "source": "suburb"
+  },
+  "0126C1030": {
+    "area_name": "Flemingsberg",
+    "source": "suburb"
+  },
+  "0126C1040": {
+    "area_name": "Trångsund",
+    "source": "display_name"
+  },
+  "0126C1050": {
+    "area_name": "Pumphusängen",
+    "source": "display_name"
+  },
+  "0126C1060": {
+    "area_name": "Flemingsberg",
+    "source": "suburb"
+  },
+  "0126C1070": {
+    "area_name": "Trångsund",
+    "source": "display_name"
+  },
+  "0126C1081": {
+    "area_name": "Flemingsberg",
+    "source": "suburb"
+  },
+  "0126C1082": {
+    "area_name": "Flemingsberg",
+    "source": "suburb"
+  },
+  "0126C1090": {
+    "area_name": "Trångsund",
+    "source": "display_name"
+  },
+  "0126C1100": {
+    "area_name": "Trångsund",
+    "source": "display_name"
+  },
+  "0126C1110": {
+    "area_name": "Flemingsberg",
+    "source": "suburb"
+  },
+  "0126C1120": {
+    "area_name": "Huddinge",
+    "source": "town"
+  },
+  "0126C1130": {
+    "area_name": "Trångsund",
+    "source": "display_name"
+  },
+  "0126C1140": {
+    "area_name": "Flemingsberg",
+    "source": "suburb"
+  },
+  "0126C1150": {
+    "area_name": "Huddinge",
+    "source": "town"
+  },
+  "0126C1160": {
+    "area_name": "Trångsund",
+    "source": "display_name"
+  },
+  "0126C1170": {
+    "area_name": "Trångsund",
+    "source": "display_name"
+  },
+  "0126C1180": {
+    "area_name": "Glömsta",
+    "source": "suburb"
+  },
+  "0126C1191": {
+    "area_name": "Huddinge",
+    "source": "town"
+  },
+  "0126C1192": {
+    "area_name": "Huddinge",
+    "source": "town"
+  },
+  "0126C1200": {
+    "area_name": "Trångsund",
+    "source": "display_name"
+  },
+  "0126C1210": {
+    "area_name": "Huddinge",
+    "source": "town"
+  },
+  "0126C1220": {
+    "area_name": "Trångsund",
+    "source": "suburb"
+  },
+  "0126C1230": {
+    "area_name": "Huddinge",
+    "source": "town"
+  },
+  "0126C1240": {
+    "area_name": "Trångsund",
+    "source": "display_name"
+  },
+  "0126C1250": {
+    "area_name": "Trångsund",
+    "source": "suburb"
+  },
+  "0126C1260": {
+    "area_name": "Huddinge",
+    "source": "town"
+  },
+  "0126C1270": {
+    "area_name": "Vistaberg",
+    "source": "neighbourhood"
+  },
+  "0126C1280": {
+    "area_name": "Huddinge",
+    "source": "town"
+  },
+  "0126C1290": {
+    "area_name": "Kynäs",
+    "source": "neighbourhood"
+  },
+  "0126C1300": {
+    "area_name": "Huddinge",
+    "source": "town"
+  },
+  "0126C1311": {
+    "area_name": "Glömsta",
+    "source": "suburb"
+  },
+  "0126C1312": {
+    "area_name": "Glömsta",
+    "source": "suburb"
+  },
+  "0126C1320": {
+    "area_name": "Huddinge",
+    "source": "town"
+  },
+  "0126C1330": {
+    "area_name": "Trångsund",
+    "source": "suburb"
+  },
+  "0126C1340": {
+    "area_name": "Kynäs",
+    "source": "neighbourhood"
+  },
+  "0126C1350": {
+    "area_name": "Kynäs",
+    "source": "neighbourhood"
+  },
+  "0126C1360": {
+    "area_name": "Huddinge",
+    "source": "town"
+  },
+  "0126C1370": {
+    "area_name": "Vårby",
+    "source": "suburb"
+  },
+  "0126C1380": {
+    "area_name": "Fullersta kvarn",
+    "source": "display_name"
+  },
+  "0126C1390": {
+    "area_name": "Huddinge",
+    "source": "town"
+  },
+  "0126C1400": {
+    "area_name": "Kynäs",
+    "source": "neighbourhood"
+  },
+  "0126C1410": {
+    "area_name": "Kynäs",
+    "source": "neighbourhood"
+  },
+  "0126C1420": {
+    "area_name": "Vårby",
+    "source": "suburb"
+  },
+  "0126C1430": {
+    "area_name": "Kynäs",
+    "source": "neighbourhood"
+  },
+  "0126C1440": {
+    "area_name": "Fullersta",
+    "source": "suburb"
+  },
+  "0126C1450": {
+    "area_name": "Kvarnbergsplan",
+    "source": "neighbourhood"
+  },
+  "0126C1460": {
+    "area_name": "Skogsäng",
+    "source": "neighbourhood"
+  },
+  "0126C1470": {
+    "area_name": "Snättringe",
+    "source": "suburb"
+  },
+  "0126C1480": {
+    "area_name": "Snättringe",
+    "source": "suburb"
+  },
+  "0126C1490": {
+    "area_name": "Vårby",
+    "source": "suburb"
+  },
+  "0126C1500": {
+    "area_name": "Snättringe",
+    "source": "suburb"
+  },
+  "0126C1510": {
+    "area_name": "Vårby",
+    "source": "suburb"
+  },
+  "0126C1520": {
+    "area_name": "Vårby",
+    "source": "suburb"
+  },
+  "0126C1530": {
+    "area_name": "Jakobslund",
+    "source": "neighbourhood"
+  },
+  "0126C1540": {
+    "area_name": "Vårby",
+    "source": "suburb"
+  },
+  "0126C1550": {
+    "area_name": "Vårby",
+    "source": "suburb"
+  },
+  "0126C1560": {
+    "area_name": "Jakobslund",
+    "source": "neighbourhood"
+  },
+  "0126C1570": {
+    "area_name": "Kungens kurva",
+    "source": "suburb"
+  },
+  "0126C1580": {
+    "area_name": "Jakobslund",
+    "source": "neighbourhood"
+  },
+  "0126C1590": {
+    "area_name": "Jakobslund",
+    "source": "neighbourhood"
+  },
+  "0127A0010": {
+    "area_name": "Malmbro gård",
+    "source": "display_name"
+  },
+  "0127A0020": {
+    "area_name": "Fiskarhagen",
+    "source": "village"
+  },
+  "0127C1010": {
+    "area_name": "Lillmalm",
+    "source": "neighbourhood"
+  },
+  "0127C1020": {
+    "area_name": "Lillmalm",
+    "source": "neighbourhood"
+  },
+  "0127C1030": {
+    "area_name": "Hästmossen",
+    "source": "neighbourhood"
+  },
+  "0127C1040": {
+    "area_name": "Hästmossen",
+    "source": "neighbourhood"
+  },
+  "0127C1051": {
+    "area_name": "Norra Riksten",
+    "source": "residential"
+  },
+  "0127C1052": {
+    "area_name": "Norra Riksten",
+    "source": "residential"
+  },
+  "0127C1060": {
+    "area_name": "Vårsta",
+    "source": "village"
+  },
+  "0127C1070": {
+    "area_name": "Hästmossen",
+    "source": "neighbourhood"
+  },
+  "0127C1080": {
+    "area_name": "Röda villorna",
+    "source": "neighbourhood"
+  },
+  "0127C1090": {
+    "area_name": "Hästmossen",
+    "source": "neighbourhood"
+  },
+  "0127C1100": {
+    "area_name": "Tumba",
+    "source": "town"
+  },
+  "0127C1110": {
+    "area_name": "Röda villorna",
+    "source": "neighbourhood"
+  },
+  "0127C1120": {
+    "area_name": "Brantbrink",
+    "source": "neighbourhood"
+  },
+  "0127C1130": {
+    "area_name": "Brantbrink",
+    "source": "neighbourhood"
+  },
+  "0127C1140": {
+    "area_name": "Brantbrink",
+    "source": "neighbourhood"
+  },
+  "0127C1150": {
+    "area_name": "Brantbrink",
+    "source": "neighbourhood"
+  },
+  "0127C1160": {
+    "area_name": "Solbacken",
+    "source": "neighbourhood"
+  },
+  "0127C1170": {
+    "area_name": "Solbacken",
+    "source": "neighbourhood"
+  },
+  "0127C1181": {
+    "area_name": "Tumba",
+    "source": "town"
+  },
+  "0127C1182": {
+    "area_name": "Tumba",
+    "source": "town"
+  },
+  "0127C1190": {
+    "area_name": "Brantbrink",
+    "source": "neighbourhood"
+  },
+  "0127C1200": {
+    "area_name": "Tumba",
+    "source": "town"
+  },
+  "0127C1210": {
+    "area_name": "Brantbrink",
+    "source": "neighbourhood"
+  },
+  "0127C1220": {
+    "area_name": "Solbacken",
+    "source": "neighbourhood"
+  },
+  "0127C1230": {
+    "area_name": "Brantbrink",
+    "source": "neighbourhood"
+  },
+  "0127C1240": {
+    "area_name": "Brantbrink",
+    "source": "neighbourhood"
+  },
+  "0127C1250": {
+    "area_name": "Gula radhusen",
+    "source": "neighbourhood"
+  },
+  "0127C1260": {
+    "area_name": "Gula radhusen",
+    "source": "neighbourhood"
+  },
+  "0127C1270": {
+    "area_name": "Brunna",
+    "source": "suburb"
+  },
+  "0127C1280": {
+    "area_name": "Elvesta säteri",
+    "source": "display_name"
+  },
+  "0127C1290": {
+    "area_name": "Brunna",
+    "source": "suburb"
+  },
+  "0127C1300": {
+    "area_name": "Brunna",
+    "source": "suburb"
+  },
+  "0127C1310": {
+    "area_name": "Brunna",
+    "source": "suburb"
+  },
+  "0127C1320": {
+    "area_name": "Hallunda",
+    "source": "suburb"
+  },
+  "0127C1330": {
+    "area_name": "Brunna",
+    "source": "suburb"
+  },
+  "0127C1340": {
+    "area_name": "Brunna",
+    "source": "suburb"
+  },
+  "0127C1351": {
+    "area_name": "Brunna",
+    "source": "suburb"
+  },
+  "0127C1352": {
+    "area_name": "Brunna",
+    "source": "suburb"
+  },
+  "0127C1360": {
+    "area_name": "Hallunda",
+    "source": "suburb"
+  },
+  "0127C1370": {
+    "area_name": "Brunna",
+    "source": "suburb"
+  },
+  "0127C1380": {
+    "area_name": "Hallunda",
+    "source": "suburb"
+  },
+  "0127C1390": {
+    "area_name": "Hallunda",
+    "source": "suburb"
+  },
+  "0127C1400": {
+    "area_name": "Brunna",
+    "source": "suburb"
+  },
+  "0127C1410": {
+    "area_name": "Fiskarhagen",
+    "source": "village"
+  },
+  "0127C1420": {
+    "area_name": "Brunna",
+    "source": "suburb"
+  },
+  "0127C1431": {
+    "area_name": "Hallunda",
+    "source": "suburb"
+  },
+  "0127C1432": {
+    "area_name": "Brunna",
+    "source": "suburb"
+  },
+  "0127C1440": {
+    "area_name": "Brunna",
+    "source": "suburb"
+  },
+  "0127C1450": {
+    "area_name": "Brunna",
+    "source": "suburb"
+  },
+  "0127C1460": {
+    "area_name": "Fiskarhagen",
+    "source": "village"
+  },
+  "0127C1470": {
+    "area_name": "Alby",
+    "source": "suburb"
+  },
+  "0127C1480": {
+    "area_name": "Brunna",
+    "source": "suburb"
+  },
+  "0128A0010": {
+    "area_name": "Nyboda",
+    "source": "display_name"
+  },
+  "0128C1010": {
+    "area_name": "Hallsta",
+    "source": "display_name"
+  },
+  "0128C1020": {
+    "area_name": "Hallsta",
+    "source": "display_name"
+  },
+  "0128C1030": {
+    "area_name": "Övre Söderby",
+    "source": "display_name"
+  },
+  "0128C1040": {
+    "area_name": "Hallsta",
+    "source": "display_name"
+  },
+  "0128C1050": {
+    "area_name": "Övre Söderby",
+    "source": "display_name"
+  },
+  "0128C1060": {
+    "area_name": "Övre Söderby",
+    "source": "display_name"
+  },
+  "0128C1070": {
+    "area_name": "Övre Söderby",
+    "source": "display_name"
+  },
+  "0136A0010": {
+    "area_name": "Muskö",
+    "source": "village"
+  },
+  "0136A0020": {
+    "area_name": "Risseln",
+    "source": "display_name"
+  },
+  "0136A0030": {
+    "area_name": "Ekeby säteri",
+    "source": "display_name"
+  },
+  "0136B2010": {
+    "area_name": "Sjötäppan",
+    "source": "display_name"
+  },
+  "0136C1010": {
+    "area_name": "Mulsta",
+    "source": "hamlet"
+  },
+  "0136C1020": {
+    "area_name": "Ålsta",
+    "source": "residential"
+  },
+  "0136C1030": {
+    "area_name": "Västerhaninge",
+    "source": "town"
+  },
+  "0136C1040": {
+    "area_name": "Mulsta",
+    "source": "hamlet"
+  },
+  "0136C1050": {
+    "area_name": "Västerhaninge",
+    "source": "town"
+  },
+  "0136C1060": {
+    "area_name": "Krigslida",
+    "source": "village"
+  },
+  "0136C1070": {
+    "area_name": "Västerhaninge",
+    "source": "town"
+  },
+  "0136C1080": {
+    "area_name": "Krigslida",
+    "source": "village"
+  },
+  "0136C1090": {
+    "area_name": "Handen",
+    "source": "town"
+  },
+  "0136C1100": {
+    "area_name": "Handen",
+    "source": "town"
+  },
+  "0136C1110": {
+    "area_name": "Krigslida",
+    "source": "village"
+  },
+  "0136C1120": {
+    "area_name": "Handen",
+    "source": "town"
+  },
+  "0136C1130": {
+    "area_name": "Handen",
+    "source": "town"
+  },
+  "0136C1140": {
+    "area_name": "Handen",
+    "source": "town"
+  },
+  "0136C1150": {
+    "area_name": "Handen",
+    "source": "town"
+  },
+  "0136C1160": {
+    "area_name": "Handen",
+    "source": "town"
+  },
+  "0136C1170": {
+    "area_name": "Kvarteret Sjögläntan",
+    "source": "residential"
+  },
+  "0136C1180": {
+    "area_name": "Vendelsömalm",
+    "source": "suburb"
+  },
+  "0136C1190": {
+    "area_name": "Kvarntorp",
+    "source": "suburb"
+  },
+  "0136C1200": {
+    "area_name": "Kvarntorp",
+    "source": "suburb"
+  },
+  "0136C1210": {
+    "area_name": "Kvarntorp",
+    "source": "suburb"
+  },
+  "0136C1220": {
+    "area_name": "Kvarntorp",
+    "source": "suburb"
+  },
+  "0136C1230": {
+    "area_name": "Vendelsömalm",
+    "source": "suburb"
+  },
+  "0136C1240": {
+    "area_name": "Vendelsömalm",
+    "source": "suburb"
+  },
+  "0136C1250": {
+    "area_name": "Kvarntorp",
+    "source": "suburb"
+  },
+  "0136C1260": {
+    "area_name": "Vendelsömalm",
+    "source": "suburb"
+  },
+  "0136C1270": {
+    "area_name": "Vendelsömalm",
+    "source": "suburb"
+  },
+  "0136C1280": {
+    "area_name": "Vendelsömalm",
+    "source": "suburb"
+  },
+  "0136C1290": {
+    "area_name": "Kvarntorp",
+    "source": "suburb"
+  },
+  "0136C1300": {
+    "area_name": "Ramsdalen",
+    "source": "suburb"
+  },
+  "0136C1311": {
+    "area_name": "Kvarntorp",
+    "source": "suburb"
+  },
+  "0136C1312": {
+    "area_name": "Kvarntorp",
+    "source": "suburb"
+  },
+  "0136C1313": {
+    "area_name": "Kvarntorp",
+    "source": "suburb"
+  },
+  "0136C1314": {
+    "area_name": "Kvarntorp",
+    "source": "suburb"
+  },
+  "0136C1320": {
+    "area_name": "Vendelsömalm",
+    "source": "suburb"
+  },
+  "0136C1330": {
+    "area_name": "Vendelsömalm",
+    "source": "suburb"
+  },
+  "0136C1341": {
+    "area_name": "Kvarntorp",
+    "source": "suburb"
+  },
+  "0136C1342": {
+    "area_name": "Kvarntorp",
+    "source": "suburb"
+  },
+  "0136C1343": {
+    "area_name": "Kvarntorp",
+    "source": "suburb"
+  },
+  "0136C1350": {
+    "area_name": "Vendelsömalm",
+    "source": "suburb"
+  },
+  "0136C1360": {
+    "area_name": "Vendelsömalm",
+    "source": "suburb"
+  },
+  "0136C1370": {
+    "area_name": "Vendelsömalm",
+    "source": "suburb"
+  },
+  "0136C1380": {
+    "area_name": "Sågen",
+    "source": "suburb"
+  },
+  "0136C1390": {
+    "area_name": "Sågen",
+    "source": "suburb"
+  },
+  "0136C1400": {
+    "area_name": "Handen",
+    "source": "town"
+  },
+  "0136C1410": {
+    "area_name": "Handen",
+    "source": "town"
+  },
+  "0136C1420": {
+    "area_name": "Sågen",
+    "source": "suburb"
+  },
+  "0136C1430": {
+    "area_name": "Forsen",
+    "source": "display_name"
+  },
+  "0136C1440": {
+    "area_name": "Sågen",
+    "source": "suburb"
+  },
+  "0136C1450": {
+    "area_name": "Mannhem",
+    "source": "display_name"
+  },
+  "0138A0010": {
+    "area_name": "Raksta",
+    "source": "village"
+  },
+  "0138C1010": {
+    "area_name": "Kumla",
+    "source": "display_name"
+  },
+  "0138C1020": {
+    "area_name": "Kumla",
+    "source": "display_name"
+  },
+  "0138C1030": {
+    "area_name": "Kumla",
+    "source": "display_name"
+  },
+  "0138C1040": {
+    "area_name": "Kumla",
+    "source": "display_name"
+  },
+  "0138C1050": {
+    "area_name": "Kumla",
+    "source": "display_name"
+  },
+  "0138C1060": {
+    "area_name": "Ängmaren",
+    "source": "display_name"
+  },
+  "0138C1070": {
+    "area_name": "Björktickegången",
+    "source": "neighbourhood"
+  },
+  "0138C1080": {
+    "area_name": "Farmarstigen",
+    "source": "neighbourhood"
+  },
+  "0138C1090": {
+    "area_name": "Farmarstigen",
+    "source": "neighbourhood"
+  },
+  "0138C1100": {
+    "area_name": "Farmarstigen",
+    "source": "neighbourhood"
+  },
+  "0138C1110": {
+    "area_name": "Kumla",
+    "source": "display_name"
+  },
+  "0138C1120": {
+    "area_name": "Farmarstigen",
+    "source": "neighbourhood"
+  },
+  "0138C1130": {
+    "area_name": "Farmarstigen",
+    "source": "neighbourhood"
+  },
+  "0138C1140": {
+    "area_name": "Farmarstigen",
+    "source": "neighbourhood"
+  },
+  "0138C1150": {
+    "area_name": "Farmarstigen",
+    "source": "neighbourhood"
+  },
+  "0138C1160": {
+    "area_name": "Farmarstigen",
+    "source": "neighbourhood"
+  },
+  "0138C1170": {
+    "area_name": "Farmarstigen",
+    "source": "neighbourhood"
+  },
+  "0138C1180": {
+    "area_name": "Björktickegången",
+    "source": "neighbourhood"
+  },
+  "0138C1190": {
+    "area_name": "Strand",
+    "source": "neighbourhood"
+  },
+  "0138C1200": {
+    "area_name": "Farmarstigen",
+    "source": "neighbourhood"
+  },
+  "0138C1210": {
+    "area_name": "Farmarstigen",
+    "source": "neighbourhood"
+  },
+  "0138C1220": {
+    "area_name": "Strand",
+    "source": "neighbourhood"
+  },
+  "0138C1230": {
+    "area_name": "Rotvik",
+    "source": "neighbourhood"
+  },
+  "0138C1240": {
+    "area_name": "Gimmersta",
+    "source": "village"
+  },
+  "0138C1250": {
+    "area_name": "Nytorp",
+    "source": "neighbourhood"
+  },
+  "0139A0010": {
+    "area_name": "Österhagen",
+    "source": "neighbourhood"
+  },
+  "0139A0020": {
+    "area_name": "Håbo-Tibble kyrkby",
+    "source": "village"
+  },
+  "0139B2010": {
+    "area_name": "Österhagen",
+    "source": "neighbourhood"
+  },
+  "0139B2020": {
+    "area_name": "Ekboda",
+    "source": "neighbourhood"
+  },
+  "0139B2030": {
+    "area_name": "Bro",
+    "source": "town"
+  },
+  "0139B2040": {
+    "area_name": "Bro",
+    "source": "town"
+  },
+  "0139B2050": {
+    "area_name": "Bro",
+    "source": "town"
+  },
+  "0139B2060": {
+    "area_name": "Bro",
+    "source": "town"
+  },
+  "0139B2070": {
+    "area_name": "Rättarboda",
+    "source": "village"
+  },
+  "0139C1011": {
+    "area_name": "Kungsängen",
+    "source": "town"
+  },
+  "0139C1012": {
+    "area_name": "Kungsängen",
+    "source": "town"
+  },
+  "0139C1020": {
+    "area_name": "Kungsängen",
+    "source": "town"
+  },
+  "0139C1030": {
+    "area_name": "Sylta",
+    "source": "village"
+  },
+  "0139C1040": {
+    "area_name": "Kungsängen",
+    "source": "town"
+  },
+  "0139C1051": {
+    "area_name": "Örnäs",
+    "source": "display_name"
+  },
+  "0139C1052": {
+    "area_name": "Kungsängen",
+    "source": "town"
+  },
+  "0139C1060": {
+    "area_name": "Hammartorp",
+    "source": "display_name"
+  },
+  "0139C1070": {
+    "area_name": "Hammartorp",
+    "source": "display_name"
+  },
+  "0140A0010": {
+    "area_name": "Nykvarn",
+    "source": "town"
+  },
+  "0140A0020": {
+    "area_name": "Aldal",
+    "source": "display_name"
+  },
+  "0140C1011": {
+    "area_name": "Nykvarn",
+    "source": "town"
+  },
+  "0140C1012": {
+    "area_name": "Nykvarn",
+    "source": "town"
+  },
+  "0140C1020": {
+    "area_name": "Nykvarn",
+    "source": "town"
+  },
+  "0140C1030": {
+    "area_name": "Nykvarn",
+    "source": "town"
+  },
+  "0140C1040": {
+    "area_name": "Nykvarn",
+    "source": "town"
+  },
+  "0160C1010": {
+    "area_name": "Grindtorp",
+    "source": "suburb"
+  },
+  "0160C1020": {
+    "area_name": "Grindtorp",
+    "source": "suburb"
+  },
+  "0160C1030": {
+    "area_name": "Grindtorp",
+    "source": "suburb"
+  },
+  "0160C1040": {
+    "area_name": "Grindtorp",
+    "source": "suburb"
+  },
+  "0160C1050": {
+    "area_name": "Grindtorp",
+    "source": "suburb"
+  },
+  "0160C1060": {
+    "area_name": "Grindtorp",
+    "source": "suburb"
+  },
+  "0160C1070": {
+    "area_name": "Viggbyholm",
+    "source": "suburb"
+  },
+  "0160C1080": {
+    "area_name": "Grindtorp",
+    "source": "suburb"
+  },
+  "0160C1090": {
+    "area_name": "Grindtorp",
+    "source": "suburb"
+  },
+  "0160C1100": {
+    "area_name": "Grindtorp",
+    "source": "suburb"
+  },
+  "0160C1110": {
+    "area_name": "Ella",
+    "source": "neighbourhood"
+  },
+  "0160C1120": {
+    "area_name": "Ella",
+    "source": "neighbourhood"
+  },
+  "0160C1130": {
+    "area_name": "Ella",
+    "source": "neighbourhood"
+  },
+  "0160C1141": {
+    "area_name": "Grindtorp",
+    "source": "suburb"
+  },
+  "0160C1142": {
+    "area_name": "Grindtorp",
+    "source": "suburb"
+  },
+  "0160C1143": {
+    "area_name": "Grindtorp",
+    "source": "suburb"
+  },
+  "0160C1150": {
+    "area_name": "Grindtorp",
+    "source": "suburb"
+  },
+  "0160C1160": {
+    "area_name": "Viggbyholm",
+    "source": "suburb"
+  },
+  "0160C1170": {
+    "area_name": "Ella",
+    "source": "neighbourhood"
+  },
+  "0160C1180": {
+    "area_name": "Ella",
+    "source": "neighbourhood"
+  },
+  "0160C1190": {
+    "area_name": "Täby",
+    "source": "town"
+  },
+  "0160C1200": {
+    "area_name": "Täby",
+    "source": "town"
+  },
+  "0160C1210": {
+    "area_name": "Ella",
+    "source": "neighbourhood"
+  },
+  "0160C1220": {
+    "area_name": "Viggbyholm",
+    "source": "suburb"
+  },
+  "0160C1230": {
+    "area_name": "Täby",
+    "source": "town"
+  },
+  "0160C1240": {
+    "area_name": "Täby",
+    "source": "town"
+  },
+  "0160C1250": {
+    "area_name": "Täby",
+    "source": "town"
+  },
+  "0160C1260": {
+    "area_name": "Marielund",
+    "source": "display_name"
+  },
+  "0160C1270": {
+    "area_name": "Ella",
+    "source": "neighbourhood"
+  },
+  "0160C1280": {
+    "area_name": "Karlslund",
+    "source": "suburb"
+  },
+  "0160C1290": {
+    "area_name": "Täby",
+    "source": "town"
+  },
+  "0160C1300": {
+    "area_name": "Marielund",
+    "source": "display_name"
+  },
+  "0160C1310": {
+    "area_name": "Marielund",
+    "source": "display_name"
+  },
+  "0160C1320": {
+    "area_name": "Karlslund",
+    "source": "suburb"
+  },
+  "0160C1330": {
+    "area_name": "Karlslund",
+    "source": "suburb"
+  },
+  "0160C1341": {
+    "area_name": "Vågsjö",
+    "source": "hamlet"
+  },
+  "0160C1342": {
+    "area_name": "Löttingelund",
+    "source": "suburb"
+  },
+  "0160C1350": {
+    "area_name": "Täby kyrkby",
+    "source": "village"
+  },
+  "0160C1360": {
+    "area_name": "Täby kyrkby",
+    "source": "village"
+  },
+  "0160C1370": {
+    "area_name": "Täby kyrkby",
+    "source": "village"
+  },
+  "0160C1380": {
+    "area_name": "Täby kyrkby",
+    "source": "village"
+  },
+  "0162C1010": {
+    "area_name": "Utsikten",
+    "source": "residential"
+  },
+  "0162C1020": {
+    "area_name": "Utsikten",
+    "source": "residential"
+  },
+  "0162C1030": {
+    "area_name": "Utsikten",
+    "source": "residential"
+  },
+  "0162C1040": {
+    "area_name": "Utsikten",
+    "source": "residential"
+  },
+  "0162C1050": {
+    "area_name": "Utsikten",
+    "source": "residential"
+  },
+  "0162C1060": {
+    "area_name": "Klingsta",
+    "source": "suburb"
+  },
+  "0162C1070": {
+    "area_name": "Charlottenberg",
+    "source": "neighbourhood"
+  },
+  "0162C1080": {
+    "area_name": "Djursholm",
+    "source": "town"
+  },
+  "0162C1090": {
+    "area_name": "Charlottenberg",
+    "source": "neighbourhood"
+  },
+  "0162C1100": {
+    "area_name": "Djursholm",
+    "source": "town"
+  },
+  "0162C1110": {
+    "area_name": "Charlottenberg",
+    "source": "neighbourhood"
+  },
+  "0162C1120": {
+    "area_name": "Charlottenberg",
+    "source": "neighbourhood"
+  },
+  "0162C1130": {
+    "area_name": "Charlottenberg",
+    "source": "neighbourhood"
+  },
+  "0162C1140": {
+    "area_name": "Charlottenberg",
+    "source": "neighbourhood"
+  },
+  "0162C1150": {
+    "area_name": "Svalnäs",
+    "source": "neighbourhood"
+  },
+  "0162C1160": {
+    "area_name": "Svalnäs",
+    "source": "neighbourhood"
+  },
+  "0162C1170": {
+    "area_name": "Nora",
+    "source": "suburb"
+  },
+  "0162C1180": {
+    "area_name": "Danderyds kommun",
+    "source": "town"
+  },
+  "0162C1190": {
+    "area_name": "Danderyds kommun",
+    "source": "town"
+  },
+  "0162C1200": {
+    "area_name": "Danderyds kommun",
+    "source": "town"
+  },
+  "0163C1011": {
+    "area_name": "Sollentuna kommun",
+    "source": "town"
+  },
+  "0163C1012": {
+    "area_name": "Sollentuna kommun",
+    "source": "town"
+  },
+  "0163C1020": {
+    "area_name": "Sollentuna kommun",
+    "source": "town"
+  },
+  "0163C1030": {
+    "area_name": "Helenelund",
+    "source": "suburb"
+  },
+  "0163C1040": {
+    "area_name": "Helenelund",
+    "source": "suburb"
+  },
+  "0163C1050": {
+    "area_name": "Helenelund",
+    "source": "suburb"
+  },
+  "0163C1060": {
+    "area_name": "Helenelund",
+    "source": "suburb"
+  },
+  "0163C1070": {
+    "area_name": "Häggvik",
+    "source": "suburb"
+  },
+  "0163C1080": {
+    "area_name": "Helenelund",
+    "source": "suburb"
+  },
+  "0163C1090": {
+    "area_name": "Edsberg",
+    "source": "suburb"
+  },
+  "0163C1100": {
+    "area_name": "Häggvik",
+    "source": "suburb"
+  },
+  "0163C1110": {
+    "area_name": "Häggvik",
+    "source": "suburb"
+  },
+  "0163C1120": {
+    "area_name": "Edsberg",
+    "source": "suburb"
+  },
+  "0163C1130": {
+    "area_name": "Kärrdal",
+    "source": "suburb"
+  },
+  "0163C1140": {
+    "area_name": "Helenelund",
+    "source": "suburb"
+  },
+  "0163C1150": {
+    "area_name": "Häggvik",
+    "source": "suburb"
+  },
+  "0163C1160": {
+    "area_name": "Häggvik",
+    "source": "suburb"
+  },
+  "0163C1170": {
+    "area_name": "Kärrdal",
+    "source": "suburb"
+  },
+  "0163C1180": {
+    "area_name": "Häggvik",
+    "source": "suburb"
+  },
+  "0163C1190": {
+    "area_name": "Kärrdal",
+    "source": "suburb"
+  },
+  "0163C1200": {
+    "area_name": "Häggvik",
+    "source": "suburb"
+  },
+  "0163C1210": {
+    "area_name": "Edsberg",
+    "source": "suburb"
+  },
+  "0163C1220": {
+    "area_name": "Häggvik",
+    "source": "suburb"
+  },
+  "0163C1230": {
+    "area_name": "Häggvik",
+    "source": "suburb"
+  },
+  "0163C1240": {
+    "area_name": "Pommern",
+    "source": "neighbourhood"
+  },
+  "0163C1250": {
+    "area_name": "Edsberg",
+    "source": "suburb"
+  },
+  "0163C1260": {
+    "area_name": "Edsberg",
+    "source": "suburb"
+  },
+  "0163C1270": {
+    "area_name": "Edsberg",
+    "source": "suburb"
+  },
+  "0163C1280": {
+    "area_name": "Viby",
+    "source": "suburb"
+  },
+  "0163C1290": {
+    "area_name": "Edsängen",
+    "source": "neighbourhood"
+  },
+  "0163C1300": {
+    "area_name": "Pommern",
+    "source": "neighbourhood"
+  },
+  "0163C1311": {
+    "area_name": "Edsberg",
+    "source": "suburb"
+  },
+  "0163C1312": {
+    "area_name": "Kärrdal",
+    "source": "suburb"
+  },
+  "0163C1320": {
+    "area_name": "Rotebro",
+    "source": "suburb"
+  },
+  "0163C1330": {
+    "area_name": "Pommern",
+    "source": "neighbourhood"
+  },
+  "0163C1340": {
+    "area_name": "Rotebro",
+    "source": "suburb"
+  },
+  "0163C1350": {
+    "area_name": "Rotebro",
+    "source": "suburb"
+  },
+  "0163C1360": {
+    "area_name": "Rotebro",
+    "source": "suburb"
+  },
+  "0163C1370": {
+    "area_name": "Sollentuna kommun",
+    "source": "town"
+  },
+  "0163C1380": {
+    "area_name": "Gillbo",
+    "source": "neighbourhood"
+  },
+  "0163C1390": {
+    "area_name": "Sollentuna kommun",
+    "source": "town"
+  },
+  "0163C1400": {
+    "area_name": "Sollentuna kommun",
+    "source": "town"
+  },
+  "0180C1010": {
+    "area_name": "Farsta strand",
+    "source": "suburb"
+  },
+  "0180C1020": {
+    "area_name": "Farsta strand",
+    "source": "suburb"
+  },
+  "0180C1030": {
+    "area_name": "Farsta strand",
+    "source": "suburb"
+  },
+  "0180C1040": {
+    "area_name": "Larsboda",
+    "source": "suburb"
+  },
+  "0180C1050": {
+    "area_name": "Farsta strand",
+    "source": "suburb"
+  },
+  "0180C1060": {
+    "area_name": "Larsboda",
+    "source": "suburb"
+  },
+  "0180C1070": {
+    "area_name": "Larsboda",
+    "source": "suburb"
+  },
+  "0180C1080": {
+    "area_name": "Larsboda",
+    "source": "suburb"
+  },
+  "0180C1090": {
+    "area_name": "Larsboda",
+    "source": "suburb"
+  },
+  "0180C1101": {
+    "area_name": "Larsboda",
+    "source": "suburb"
+  },
+  "0180C1102": {
+    "area_name": "Larsboda",
+    "source": "suburb"
+  },
+  "0180C1110": {
+    "area_name": "Farsta",
+    "source": "suburb"
+  },
+  "0180C1120": {
+    "area_name": "Yrkesgatsområdet",
+    "source": "neighbourhood"
+  },
+  "0180C1130": {
+    "area_name": "Larsboda",
+    "source": "suburb"
+  },
+  "0180C1140": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1150": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1160": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1170": {
+    "area_name": "Larsboda",
+    "source": "suburb"
+  },
+  "0180C1180": {
+    "area_name": "Farsta",
+    "source": "suburb"
+  },
+  "0180C1190": {
+    "area_name": "DeSO 0180C1190",
+    "source": "error-fallback"
+  },
+  "0180C1200": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1210": {
+    "area_name": "Flaten",
+    "source": "suburb"
+  },
+  "0180C1220": {
+    "area_name": "Larsboda",
+    "source": "suburb"
+  },
+  "0180C1230": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1241": {
+    "area_name": "Skarpnäcks gård",
+    "source": "suburb"
+  },
+  "0180C1242": {
+    "area_name": "Skarpnäcks gård",
+    "source": "suburb"
+  },
+  "0180C1250": {
+    "area_name": "Gubbängen",
+    "source": "suburb"
+  },
+  "0180C1260": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1270": {
+    "area_name": "Larsboda",
+    "source": "suburb"
+  },
+  "0180C1280": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1290": {
+    "area_name": "Larsboda",
+    "source": "suburb"
+  },
+  "0180C1300": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1310": {
+    "area_name": "Larsboda",
+    "source": "suburb"
+  },
+  "0180C1320": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1330": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1340": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1350": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1360": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1370": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1380": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1390": {
+    "area_name": "Gubbängen",
+    "source": "suburb"
+  },
+  "0180C1400": {
+    "area_name": "Kryddhyllan",
+    "source": "neighbourhood"
+  },
+  "0180C1410": {
+    "area_name": "Svedmyra",
+    "source": "suburb"
+  },
+  "0180C1420": {
+    "area_name": "Skarpnäcks gård",
+    "source": "suburb"
+  },
+  "0180C1430": {
+    "area_name": "Långsjö",
+    "source": "suburb"
+  },
+  "0180C1440": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1450": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1460": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1470": {
+    "area_name": "Bandhagen",
+    "source": "suburb"
+  },
+  "0180C1480": {
+    "area_name": "Bandhagen",
+    "source": "suburb"
+  },
+  "0180C1490": {
+    "area_name": "Johannesdal",
+    "source": "neighbourhood"
+  },
+  "0180C1500": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1510": {
+    "area_name": "Skarpnäcks gård",
+    "source": "suburb"
+  },
+  "0180C1520": {
+    "area_name": "Skarpnäcks gård",
+    "source": "suburb"
+  },
+  "0180C1530": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1540": {
+    "area_name": "Svedmyra",
+    "source": "suburb"
+  },
+  "0180C1550": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1560": {
+    "area_name": "Johannesdal",
+    "source": "neighbourhood"
+  },
+  "0180C1570": {
+    "area_name": "Tallkrogen",
+    "source": "suburb"
+  },
+  "0180C1580": {
+    "area_name": "Svedmyra",
+    "source": "suburb"
+  },
+  "0180C1591": {
+    "area_name": "Johannesdal",
+    "source": "neighbourhood"
+  },
+  "0180C1592": {
+    "area_name": "Johannesdal",
+    "source": "neighbourhood"
+  },
+  "0180C1600": {
+    "area_name": "Älvsjö",
+    "source": "suburb"
+  },
+  "0180C1610": {
+    "area_name": "Skarpnäcks gård",
+    "source": "suburb"
+  },
+  "0180C1620": {
+    "area_name": "Långsjö",
+    "source": "suburb"
+  },
+  "0180C1630": {
+    "area_name": "Svedmyra",
+    "source": "suburb"
+  },
+  "0180C1640": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1650": {
+    "area_name": "Stureby",
+    "source": "suburb"
+  },
+  "0180C1660": {
+    "area_name": "Johannesdal",
+    "source": "neighbourhood"
+  },
+  "0180C1670": {
+    "area_name": "Älvsjö",
+    "source": "suburb"
+  },
+  "0180C1680": {
+    "area_name": "Johannesdal",
+    "source": "neighbourhood"
+  },
+  "0180C1690": {
+    "area_name": "Johannesdal",
+    "source": "neighbourhood"
+  },
+  "0180C1700": {
+    "area_name": "Älvsjö",
+    "source": "suburb"
+  },
+  "0180C1710": {
+    "area_name": "Högdalen",
+    "source": "suburb"
+  },
+  "0180C1720": {
+    "area_name": "Johannesdal",
+    "source": "neighbourhood"
+  },
+  "0180C1730": {
+    "area_name": "Johannesdal",
+    "source": "neighbourhood"
+  },
+  "0180C1740": {
+    "area_name": "Bagarmossen",
+    "source": "suburb"
+  },
+  "0180C1750": {
+    "area_name": "Bagarmossen",
+    "source": "suburb"
+  },
+  "0180C1760": {
+    "area_name": "Tallkrogen",
+    "source": "suburb"
+  },
+  "0180C1770": {
+    "area_name": "Älvsjö",
+    "source": "suburb"
+  },
+  "0180C1780": {
+    "area_name": "Johannesdal",
+    "source": "neighbourhood"
+  },
+  "0180C1790": {
+    "area_name": "Svedmyra",
+    "source": "suburb"
+  },
+  "0180C1800": {
+    "area_name": "Skarpnäcks gård",
+    "source": "suburb"
+  },
+  "0180C1810": {
+    "area_name": "Skarpnäcks gård",
+    "source": "suburb"
+  },
+  "0180C1820": {
+    "area_name": "Västertorp",
+    "source": "suburb"
+  },
+  "0180C1830": {
+    "area_name": "Älvsjö",
+    "source": "suburb"
+  },
+  "0180C1840": {
+    "area_name": "Östberga",
+    "source": "suburb"
+  },
+  "0180C1850": {
+    "area_name": "Gamla Enskede",
+    "source": "suburb"
+  },
+  "0180C1860": {
+    "area_name": "Johannesdal",
+    "source": "neighbourhood"
+  },
+  "0180C1871": {
+    "area_name": "Älvsjö",
+    "source": "suburb"
+  },
+  "0180C1872": {
+    "area_name": "Älvsjö",
+    "source": "suburb"
+  },
+  "0180C1873": {
+    "area_name": "Älvsjö",
+    "source": "suburb"
+  },
+  "0180C1880": {
+    "area_name": "Älvsjö",
+    "source": "suburb"
+  },
+  "0180C1890": {
+    "area_name": "Svedmyra",
+    "source": "suburb"
+  },
+  "0180C1900": {
+    "area_name": "Bagarmossen",
+    "source": "suburb"
+  },
+  "0180C1910": {
+    "area_name": "Bredäng",
+    "source": "suburb"
+  },
+  "0180C1920": {
+    "area_name": "Älvsjö",
+    "source": "suburb"
+  },
+  "0180C1930": {
+    "area_name": "Svedmyra",
+    "source": "suburb"
+  },
+  "0180C1940": {
+    "area_name": "Bagarmossen",
+    "source": "suburb"
+  },
+  "0180C1950": {
+    "area_name": "Bagarmossen",
+    "source": "suburb"
+  },
+  "0180C1960": {
+    "area_name": "Enskededalen",
+    "source": "suburb"
+  },
+  "0180C1970": {
+    "area_name": "Älvsjö",
+    "source": "suburb"
+  },
+  "0180C1980": {
+    "area_name": "Västertorp",
+    "source": "suburb"
+  },
+  "0180C1990": {
+    "area_name": "Enskededalen",
+    "source": "suburb"
+  },
+  "0180C2000": {
+    "area_name": "Svedmyra",
+    "source": "suburb"
+  },
+  "0180C2010": {
+    "area_name": "Bredäng",
+    "source": "suburb"
+  },
+  "0180C2020": {
+    "area_name": "Älvsjö",
+    "source": "suburb"
+  },
+  "0180C2030": {
+    "area_name": "Fruängen",
+    "source": "suburb"
+  },
+  "0180C2040": {
+    "area_name": "Bagarmossen",
+    "source": "suburb"
+  },
+  "0180C2050": {
+    "area_name": "Västertorp",
+    "source": "suburb"
+  },
+  "0180C2060": {
+    "area_name": "Bredäng",
+    "source": "suburb"
+  },
+  "0180C2070": {
+    "area_name": "Årsta",
+    "source": "suburb"
+  },
+  "0180C2080": {
+    "area_name": "Västertorp",
+    "source": "suburb"
+  },
+  "0180C2090": {
+    "area_name": "Västertorp",
+    "source": "suburb"
+  },
+  "0180C2100": {
+    "area_name": "Älvsjö",
+    "source": "suburb"
+  },
+  "0180C2111": {
+    "area_name": "Älvsjö",
+    "source": "suburb"
+  },
+  "0180C2112": {
+    "area_name": "Älvsjö",
+    "source": "suburb"
+  },
+  "0180C2113": {
+    "area_name": "Älvsjö",
+    "source": "suburb"
+  },
+  "0180C2120": {
+    "area_name": "Gamla Enskede",
+    "source": "suburb"
+  },
+  "0180C2130": {
+    "area_name": "Bagarmossen",
+    "source": "suburb"
+  },
+  "0180C2140": {
+    "area_name": "Älvsjö",
+    "source": "suburb"
+  },
+  "0180C2150": {
+    "area_name": "Bredäng",
+    "source": "suburb"
+  },
+  "0180C2160": {
+    "area_name": "Årsta",
+    "source": "suburb"
+  },
+  "0180C2170": {
+    "area_name": "Svedmyra",
+    "source": "suburb"
+  },
+  "0180C2180": {
+    "area_name": "Älvsjö",
+    "source": "suburb"
+  },
+  "0180C2190": {
+    "area_name": "Enskedefältet",
+    "source": "suburb"
+  },
+  "0180C2200": {
+    "area_name": "Skarpnäcks stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C2210": {
+    "area_name": "Skarpnäcks stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C2220": {
+    "area_name": "Bredäng",
+    "source": "suburb"
+  },
+  "0180C2230": {
+    "area_name": "Bagarmossen",
+    "source": "suburb"
+  },
+  "0180C2240": {
+    "area_name": "Skarpnäcks stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C2250": {
+    "area_name": "Bredäng",
+    "source": "suburb"
+  },
+  "0180C2260": {
+    "area_name": "Skarpnäcks stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C2270": {
+    "area_name": "Västertorp",
+    "source": "suburb"
+  },
+  "0180C2280": {
+    "area_name": "Västertorp",
+    "source": "suburb"
+  },
+  "0180C2290": {
+    "area_name": "Bredäng",
+    "source": "suburb"
+  },
+  "0180C2300": {
+    "area_name": "Västertorp",
+    "source": "suburb"
+  },
+  "0180C2310": {
+    "area_name": "Västertorp",
+    "source": "suburb"
+  },
+  "0180C2320": {
+    "area_name": "Västertorp",
+    "source": "suburb"
+  },
+  "0180C2330": {
+    "area_name": "Bagarmossen",
+    "source": "suburb"
+  },
+  "0180C2340": {
+    "area_name": "Årsta",
+    "source": "suburb"
+  },
+  "0180C2350": {
+    "area_name": "Årsta",
+    "source": "suburb"
+  },
+  "0180C2360": {
+    "area_name": "Skarpnäcks stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C2370": {
+    "area_name": "Bagarmossen",
+    "source": "suburb"
+  },
+  "0180C2380": {
+    "area_name": "Älvsjö",
+    "source": "suburb"
+  },
+  "0180C2390": {
+    "area_name": "Skarpnäcks stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C2400": {
+    "area_name": "Skarpnäcks stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C2410": {
+    "area_name": "Skarpnäcks stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C2420": {
+    "area_name": "Västertorp",
+    "source": "suburb"
+  },
+  "0180C2431": {
+    "area_name": "Årsta",
+    "source": "suburb"
+  },
+  "0180C2432": {
+    "area_name": "Årsta",
+    "source": "suburb"
+  },
+  "0180C2440": {
+    "area_name": "Hägerstensåsen",
+    "source": "suburb"
+  },
+  "0180C2450": {
+    "area_name": "Älvsjö",
+    "source": "suburb"
+  },
+  "0180C2460": {
+    "area_name": "Skarpnäcks stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C2470": {
+    "area_name": "Midsommarkransen",
+    "source": "suburb"
+  },
+  "0180C2480": {
+    "area_name": "Årsta",
+    "source": "suburb"
+  },
+  "0180C2490": {
+    "area_name": "Skarpnäcks stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C2500": {
+    "area_name": "Bredäng",
+    "source": "suburb"
+  },
+  "0180C2510": {
+    "area_name": "Västertorp",
+    "source": "suburb"
+  },
+  "0180C2520": {
+    "area_name": "Enskede-Årsta-Vantörs stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C2530": {
+    "area_name": "Årsta",
+    "source": "suburb"
+  },
+  "0180C2540": {
+    "area_name": "Årsta",
+    "source": "suburb"
+  },
+  "0180C2550": {
+    "area_name": "Bredäng",
+    "source": "suburb"
+  },
+  "0180C2560": {
+    "area_name": "Årsta",
+    "source": "suburb"
+  },
+  "0180C2570": {
+    "area_name": "Midsommarkransen",
+    "source": "suburb"
+  },
+  "0180C2580": {
+    "area_name": "Hägersten",
+    "source": "suburb"
+  },
+  "0180C2590": {
+    "area_name": "Årsta",
+    "source": "suburb"
+  },
+  "0180C2600": {
+    "area_name": "Västertorp",
+    "source": "suburb"
+  },
+  "0180C2610": {
+    "area_name": "Skarpnäcks stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C2620": {
+    "area_name": "Midsommarkransen",
+    "source": "suburb"
+  },
+  "0180C2630": {
+    "area_name": "Midsommarkransen",
+    "source": "suburb"
+  },
+  "0180C2640": {
+    "area_name": "Hägersten",
+    "source": "suburb"
+  },
+  "0180C2650": {
+    "area_name": "Skarpnäcks stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C2660": {
+    "area_name": "Skarpnäcks stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C2670": {
+    "area_name": "Hammarbyhöjden",
+    "source": "suburb"
+  },
+  "0180C2680": {
+    "area_name": "Midsommarkransen",
+    "source": "suburb"
+  },
+  "0180C2690": {
+    "area_name": "Johanneshov",
+    "source": "suburb"
+  },
+  "0180C2700": {
+    "area_name": "Årsta",
+    "source": "suburb"
+  },
+  "0180C2710": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C2720": {
+    "area_name": "Midsommarkransen",
+    "source": "suburb"
+  },
+  "0180C2730": {
+    "area_name": "Midsommarkransen",
+    "source": "suburb"
+  },
+  "0180C2740": {
+    "area_name": "Midsommarkransen",
+    "source": "suburb"
+  },
+  "0180C2750": {
+    "area_name": "Årsta",
+    "source": "suburb"
+  },
+  "0180C2760": {
+    "area_name": "Midsommarkransen",
+    "source": "suburb"
+  },
+  "0180C2770": {
+    "area_name": "Midsommarkransen",
+    "source": "suburb"
+  },
+  "0180C2781": {
+    "area_name": "Liljeholmen",
+    "source": "suburb"
+  },
+  "0180C2782": {
+    "area_name": "Liljeholmen",
+    "source": "suburb"
+  },
+  "0180C2783": {
+    "area_name": "Liljeholmen",
+    "source": "suburb"
+  },
+  "0180C2790": {
+    "area_name": "Skarpnäcks stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C2800": {
+    "area_name": "Årsta",
+    "source": "suburb"
+  },
+  "0180C2810": {
+    "area_name": "Södermalms stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C2820": {
+    "area_name": "Hägersten",
+    "source": "suburb"
+  },
+  "0180C2830": {
+    "area_name": "Skarpnäcks stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C2840": {
+    "area_name": "Skarpnäcks stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C2850": {
+    "area_name": "Midsommarkransen",
+    "source": "suburb"
+  },
+  "0180C2860": {
+    "area_name": "Södra Hammarbyhamnen",
+    "source": "suburb"
+  },
+  "0180C2870": {
+    "area_name": "Aspudden",
+    "source": "suburb"
+  },
+  "0180C2881": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C2882": {
+    "area_name": "Skarpnäcks stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C2890": {
+    "area_name": "Aspudden",
+    "source": "suburb"
+  },
+  "0180C2900": {
+    "area_name": "Hägersten",
+    "source": "suburb"
+  },
+  "0180C2910": {
+    "area_name": "Södermalm",
+    "source": "suburb"
+  },
+  "0180C2920": {
+    "area_name": "Hägersten",
+    "source": "suburb"
+  },
+  "0180C2930": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C2940": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C2951": {
+    "area_name": "Liljeholmen",
+    "source": "suburb"
+  },
+  "0180C2952": {
+    "area_name": "Liljeholmen",
+    "source": "suburb"
+  },
+  "0180C2953": {
+    "area_name": "Liljeholmen",
+    "source": "suburb"
+  },
+  "0180C2960": {
+    "area_name": "Södra Hammarbyhamnen",
+    "source": "suburb"
+  },
+  "0180C2970": {
+    "area_name": "Aspudden",
+    "source": "suburb"
+  },
+  "0180C2980": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C2990": {
+    "area_name": "Midsommarkransen",
+    "source": "suburb"
+  },
+  "0180C3000": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C3010": {
+    "area_name": "Midsommarkransen",
+    "source": "suburb"
+  },
+  "0180C3020": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C3030": {
+    "area_name": "Aspudden",
+    "source": "suburb"
+  },
+  "0180C3040": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C3050": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C3060": {
+    "area_name": "Liljeholmen",
+    "source": "suburb"
+  },
+  "0180C3070": {
+    "area_name": "Nybohov",
+    "source": "neighbourhood"
+  },
+  "0180C3080": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3090": {
+    "area_name": "Aspudden",
+    "source": "suburb"
+  },
+  "0180C3100": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C3110": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C3120": {
+    "area_name": "Liljeholmen",
+    "source": "suburb"
+  },
+  "0180C3130": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C3140": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C3150": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C3160": {
+    "area_name": "Södermalm",
+    "source": "suburb"
+  },
+  "0180C3170": {
+    "area_name": "Södermalm",
+    "source": "suburb"
+  },
+  "0180C3180": {
+    "area_name": "Södermalm",
+    "source": "suburb"
+  },
+  "0180C3190": {
+    "area_name": "Södermalm",
+    "source": "suburb"
+  },
+  "0180C3201": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C3202": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C3210": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3220": {
+    "area_name": "Gröndal",
+    "source": "suburb"
+  },
+  "0180C3230": {
+    "area_name": "Liljeholmen",
+    "source": "suburb"
+  },
+  "0180C3240": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C3250": {
+    "area_name": "Södermalm",
+    "source": "suburb"
+  },
+  "0180C3260": {
+    "area_name": "Södermalm",
+    "source": "suburb"
+  },
+  "0180C3270": {
+    "area_name": "Ekensberg",
+    "source": "neighbourhood"
+  },
+  "0180C3280": {
+    "area_name": "Södermalm",
+    "source": "suburb"
+  },
+  "0180C3290": {
+    "area_name": "Skanstull",
+    "source": "neighbourhood"
+  },
+  "0180C3300": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C3310": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3320": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C3330": {
+    "area_name": "Lilla Essingen",
+    "source": "suburb"
+  },
+  "0180C3340": {
+    "area_name": "Skanstull",
+    "source": "neighbourhood"
+  },
+  "0180C3350": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3360": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C3370": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3380": {
+    "area_name": "Södermalm",
+    "source": "suburb"
+  },
+  "0180C3390": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C3400": {
+    "area_name": "Hornstull",
+    "source": "neighbourhood"
+  },
+  "0180C3410": {
+    "area_name": "Hägersten",
+    "source": "suburb"
+  },
+  "0180C3420": {
+    "area_name": "Södermalm",
+    "source": "suburb"
+  },
+  "0180C3430": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C3440": {
+    "area_name": "Södermalm",
+    "source": "suburb"
+  },
+  "0180C3450": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C3460": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3470": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3480": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3490": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3500": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3510": {
+    "area_name": "Gröndal",
+    "source": "suburb"
+  },
+  "0180C3520": {
+    "area_name": "Skanstull",
+    "source": "neighbourhood"
+  },
+  "0180C3530": {
+    "area_name": "Ekensberg",
+    "source": "neighbourhood"
+  },
+  "0180C3540": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C3550": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3560": {
+    "area_name": "Lilla Essingen",
+    "source": "suburb"
+  },
+  "0180C3570": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3580": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3590": {
+    "area_name": "Reimersholme",
+    "source": "suburb"
+  },
+  "0180C3600": {
+    "area_name": "Södermalm",
+    "source": "suburb"
+  },
+  "0180C3610": {
+    "area_name": "Ålsten",
+    "source": "suburb"
+  },
+  "0180C3620": {
+    "area_name": "Hornstull",
+    "source": "neighbourhood"
+  },
+  "0180C3630": {
+    "area_name": "Hornstull",
+    "source": "neighbourhood"
+  },
+  "0180C3640": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3650": {
+    "area_name": "Danvikstull",
+    "source": "neighbourhood"
+  },
+  "0180C3660": {
+    "area_name": "Hornstull",
+    "source": "neighbourhood"
+  },
+  "0180C3670": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3680": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3690": {
+    "area_name": "Skanstull",
+    "source": "neighbourhood"
+  },
+  "0180C3700": {
+    "area_name": "Hornstull",
+    "source": "neighbourhood"
+  },
+  "0180C3710": {
+    "area_name": "Södermalm",
+    "source": "suburb"
+  },
+  "0180C3720": {
+    "area_name": "Smedslätten",
+    "source": "suburb"
+  },
+  "0180C3730": {
+    "area_name": "Stora Essingen",
+    "source": "suburb"
+  },
+  "0180C3740": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3750": {
+    "area_name": "Skanstull",
+    "source": "neighbourhood"
+  },
+  "0180C3760": {
+    "area_name": "Ålsten",
+    "source": "suburb"
+  },
+  "0180C3770": {
+    "area_name": "Södermalm",
+    "source": "suburb"
+  },
+  "0180C3780": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3790": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3800": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3810": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3820": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3830": {
+    "area_name": "Lilla Essingen",
+    "source": "suburb"
+  },
+  "0180C3840": {
+    "area_name": "Ålsten",
+    "source": "suburb"
+  },
+  "0180C3850": {
+    "area_name": "Ålsten",
+    "source": "suburb"
+  },
+  "0180C3860": {
+    "area_name": "Lilla Essingen",
+    "source": "suburb"
+  },
+  "0180C3870": {
+    "area_name": "Lilla Essingen",
+    "source": "suburb"
+  },
+  "0180C3880": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3890": {
+    "area_name": "Lilla Essingen",
+    "source": "suburb"
+  },
+  "0180C3900": {
+    "area_name": "Lilla Essingen",
+    "source": "suburb"
+  },
+  "0180C3910": {
+    "area_name": "Äppelviken",
+    "source": "suburb"
+  },
+  "0180C3920": {
+    "area_name": "Djurgården",
+    "source": "suburb"
+  },
+  "0180C3930": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3940": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3950": {
+    "area_name": "Lilla Essingen",
+    "source": "suburb"
+  },
+  "0180C3960": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3970": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C3980": {
+    "area_name": "Kungsholmen",
+    "source": "suburb"
+  },
+  "0180C3990": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C4000": {
+    "area_name": "Bromma",
+    "source": "suburb"
+  },
+  "0180C4010": {
+    "area_name": "Kungsholmen",
+    "source": "suburb"
+  },
+  "0180C4020": {
+    "area_name": "Marieberg",
+    "source": "suburb"
+  },
+  "0180C4030": {
+    "area_name": "Lilla Essingen",
+    "source": "suburb"
+  },
+  "0180C4040": {
+    "area_name": "Norrmalm",
+    "source": "suburb"
+  },
+  "0180C4050": {
+    "area_name": "Bromma",
+    "source": "suburb"
+  },
+  "0180C4060": {
+    "area_name": "Nockebyhov",
+    "source": "suburb"
+  },
+  "0180C4070": {
+    "area_name": "Lilla Essingen",
+    "source": "suburb"
+  },
+  "0180C4080": {
+    "area_name": "Lilla Essingen",
+    "source": "suburb"
+  },
+  "0180C4090": {
+    "area_name": "Fredhäll",
+    "source": "suburb"
+  },
+  "0180C4100": {
+    "area_name": "Kungsholmen",
+    "source": "suburb"
+  },
+  "0180C4110": {
+    "area_name": "Ålsten",
+    "source": "suburb"
+  },
+  "0180C4120": {
+    "area_name": "Kungsholmen",
+    "source": "suburb"
+  },
+  "0180C4130": {
+    "area_name": "Marieberg",
+    "source": "suburb"
+  },
+  "0180C4140": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C4150": {
+    "area_name": "Kungsholmen",
+    "source": "suburb"
+  },
+  "0180C4160": {
+    "area_name": "Kungsholmen",
+    "source": "suburb"
+  },
+  "0180C4170": {
+    "area_name": "Kristineberg",
+    "source": "suburb"
+  },
+  "0180C4180": {
+    "area_name": "Traneberg",
+    "source": "suburb"
+  },
+  "0180C4190": {
+    "area_name": "Bromma",
+    "source": "suburb"
+  },
+  "0180C4200": {
+    "area_name": "Åkeshov",
+    "source": "suburb"
+  },
+  "0180C4210": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C4220": {
+    "area_name": "Kungsholmen",
+    "source": "suburb"
+  },
+  "0180C4230": {
+    "area_name": "Kungsholmen",
+    "source": "suburb"
+  },
+  "0180C4240": {
+    "area_name": "Kungsholmen",
+    "source": "suburb"
+  },
+  "0180C4250": {
+    "area_name": "Lilla Essingen",
+    "source": "suburb"
+  },
+  "0180C4260": {
+    "area_name": "Bromma",
+    "source": "suburb"
+  },
+  "0180C4270": {
+    "area_name": "Kristineberg",
+    "source": "suburb"
+  },
+  "0180C4280": {
+    "area_name": "Kungsholmen",
+    "source": "suburb"
+  },
+  "0180C4290": {
+    "area_name": "Zinkensdamm",
+    "source": "neighbourhood"
+  },
+  "0180C4300": {
+    "area_name": "Bromma",
+    "source": "suburb"
+  },
+  "0180C4310": {
+    "area_name": "Östermalm",
+    "source": "suburb"
+  },
+  "0180C4320": {
+    "area_name": "Kungsholmen",
+    "source": "suburb"
+  },
+  "0180C4330": {
+    "area_name": "Kristineberg",
+    "source": "suburb"
+  },
+  "0180C4340": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C4350": {
+    "area_name": "Traneberg",
+    "source": "suburb"
+  },
+  "0180C4360": {
+    "area_name": "Kungsholmen",
+    "source": "suburb"
+  },
+  "0180C4370": {
+    "area_name": "Kungsholmen",
+    "source": "suburb"
+  },
+  "0180C4380": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C4390": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C4400": {
+    "area_name": "Klara",
+    "source": "neighbourhood"
+  },
+  "0180C4410": {
+    "area_name": "Kungsholmen",
+    "source": "suburb"
+  },
+  "0180C4420": {
+    "area_name": "Kungsholmen",
+    "source": "suburb"
+  },
+  "0180C4430": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C4440": {
+    "area_name": "Traneberg",
+    "source": "suburb"
+  },
+  "0180C4450": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C4460": {
+    "area_name": "Blackeberg",
+    "source": "suburb"
+  },
+  "0180C4470": {
+    "area_name": "Kungsholmen",
+    "source": "suburb"
+  },
+  "0180C4480": {
+    "area_name": "Bromma",
+    "source": "suburb"
+  },
+  "0180C4490": {
+    "area_name": "Kungsholmen",
+    "source": "suburb"
+  },
+  "0180C4500": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C4510": {
+    "area_name": "Södra Ängby",
+    "source": "suburb"
+  },
+  "0180C4520": {
+    "area_name": "Hornsberg",
+    "source": "neighbourhood"
+  },
+  "0180C4530": {
+    "area_name": "Bromma",
+    "source": "suburb"
+  },
+  "0180C4540": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C4550": {
+    "area_name": "Hornsberg",
+    "source": "neighbourhood"
+  },
+  "0180C4560": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C4570": {
+    "area_name": "Traneberg",
+    "source": "suburb"
+  },
+  "0180C4580": {
+    "area_name": "Kristineberg",
+    "source": "suburb"
+  },
+  "0180C4590": {
+    "area_name": "Bromma",
+    "source": "suburb"
+  },
+  "0180C4600": {
+    "area_name": "Kungsholmen",
+    "source": "suburb"
+  },
+  "0180C4610": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C4620": {
+    "area_name": "Klara",
+    "source": "neighbourhood"
+  },
+  "0180C4630": {
+    "area_name": "Atlasområdet",
+    "source": "neighbourhood"
+  },
+  "0180C4640": {
+    "area_name": "Östermalm",
+    "source": "suburb"
+  },
+  "0180C4650": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C4660": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C4670": {
+    "area_name": "Traneberg",
+    "source": "suburb"
+  },
+  "0180C4680": {
+    "area_name": "Traneberg",
+    "source": "suburb"
+  },
+  "0180C4690": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C4700": {
+    "area_name": "Ladugårdsgärdet",
+    "source": "suburb"
+  },
+  "0180C4710": {
+    "area_name": "Klara",
+    "source": "neighbourhood"
+  },
+  "0180C4720": {
+    "area_name": "Östermalm",
+    "source": "suburb"
+  },
+  "0180C4730": {
+    "area_name": "Hornsberg",
+    "source": "neighbourhood"
+  },
+  "0180C4740": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C4750": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C4760": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C4770": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C4780": {
+    "area_name": "Torsplan",
+    "source": "neighbourhood"
+  },
+  "0180C4790": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C4800": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C4810": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C4820": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C4830": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C4840": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C4850": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C4860": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C4870": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C4880": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C4890": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C4900": {
+    "area_name": "Sibirien",
+    "source": "neighbourhood"
+  },
+  "0180C4910": {
+    "area_name": "Gärdeshöjden",
+    "source": "neighbourhood"
+  },
+  "0180C4920": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C4930": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C4940": {
+    "area_name": "Blackeberg",
+    "source": "suburb"
+  },
+  "0180C4950": {
+    "area_name": "Blackeberg",
+    "source": "suburb"
+  },
+  "0180C4960": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C4970": {
+    "area_name": "Bromma kyrka",
+    "source": "suburb"
+  },
+  "0180C4980": {
+    "area_name": "Torsplan",
+    "source": "neighbourhood"
+  },
+  "0180C4990": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C5000": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C5010": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C5020": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C5030": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C5040": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C5050": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C5060": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C5070": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C5080": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C5090": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C5100": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C5110": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C5120": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C5130": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C5140": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C5150": {
+    "area_name": "Norra Ängby",
+    "source": "suburb"
+  },
+  "0180C5160": {
+    "area_name": "Blackeberg",
+    "source": "suburb"
+  },
+  "0180C5170": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C5180": {
+    "area_name": "Bromma stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C5190": {
+    "area_name": "Ulvsunda industriområde",
+    "source": "suburb"
+  },
+  "0180C5200": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C5210": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C5220": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C5230": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C5240": {
+    "area_name": "Blackeberg",
+    "source": "suburb"
+  },
+  "0180C5250": {
+    "area_name": "Beckomberga",
+    "source": "suburb"
+  },
+  "0180C5261": {
+    "area_name": "Torsplan",
+    "source": "neighbourhood"
+  },
+  "0180C5262": {
+    "area_name": "Torsplan",
+    "source": "neighbourhood"
+  },
+  "0180C5263": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C5264": {
+    "area_name": "Atlasområdet",
+    "source": "neighbourhood"
+  },
+  "0180C5270": {
+    "area_name": "Sibirien",
+    "source": "neighbourhood"
+  },
+  "0180C5280": {
+    "area_name": "Östermalm",
+    "source": "suburb"
+  },
+  "0180C5290": {
+    "area_name": "Gärdeshöjden",
+    "source": "neighbourhood"
+  },
+  "0180C5300": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C5310": {
+    "area_name": "Hagastaden",
+    "source": "neighbourhood"
+  },
+  "0180C5320": {
+    "area_name": "Mariehäll",
+    "source": "suburb"
+  },
+  "0180C5330": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C5340": {
+    "area_name": "Mariehäll",
+    "source": "suburb"
+  },
+  "0180C5350": {
+    "area_name": "Gärdeshöjden",
+    "source": "neighbourhood"
+  },
+  "0180C5360": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C5370": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C5380": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C5390": {
+    "area_name": "Lärkstaden",
+    "source": "neighbourhood"
+  },
+  "0180C5400": {
+    "area_name": "Bromma kyrka",
+    "source": "suburb"
+  },
+  "0180C5410": {
+    "area_name": "Vinsta",
+    "source": "suburb"
+  },
+  "0180C5421": {
+    "area_name": "Vällingby",
+    "source": "suburb"
+  },
+  "0180C5422": {
+    "area_name": "Vällingby",
+    "source": "suburb"
+  },
+  "0180C5431": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C5432": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C5440": {
+    "area_name": "Sabbatsberg",
+    "source": "neighbourhood"
+  },
+  "0180C5450": {
+    "area_name": "Hässelby strand",
+    "source": "suburb"
+  },
+  "0180C5460": {
+    "area_name": "Bromma kyrka",
+    "source": "suburb"
+  },
+  "0180C5470": {
+    "area_name": "Hässelby strand",
+    "source": "suburb"
+  },
+  "0180C5480": {
+    "area_name": "Vällingby",
+    "source": "suburb"
+  },
+  "0180C5490": {
+    "area_name": "Norra Djurgården",
+    "source": "suburb"
+  },
+  "0180C5500": {
+    "area_name": "Blackeberg",
+    "source": "suburb"
+  },
+  "0180C5510": {
+    "area_name": "Vällingby",
+    "source": "suburb"
+  },
+  "0180C5520": {
+    "area_name": "Gasverket",
+    "source": "neighbourhood"
+  },
+  "0180C5530": {
+    "area_name": "Villastaden",
+    "source": "neighbourhood"
+  },
+  "0180C5540": {
+    "area_name": "Bromma kyrka",
+    "source": "suburb"
+  },
+  "0180C5550": {
+    "area_name": "Annedal",
+    "source": "neighbourhood"
+  },
+  "0180C5560": {
+    "area_name": "Bromma kyrka",
+    "source": "suburb"
+  },
+  "0180C5570": {
+    "area_name": "Gasverket",
+    "source": "neighbourhood"
+  },
+  "0180C5580": {
+    "area_name": "Vinsta",
+    "source": "suburb"
+  },
+  "0180C5590": {
+    "area_name": "Vällingby",
+    "source": "suburb"
+  },
+  "0180C5600": {
+    "area_name": "Råcksta",
+    "source": "suburb"
+  },
+  "0180C5610": {
+    "area_name": "Vällingby",
+    "source": "suburb"
+  },
+  "0180C5620": {
+    "area_name": "Annedal",
+    "source": "neighbourhood"
+  },
+  "0180C5630": {
+    "area_name": "Råcksta",
+    "source": "suburb"
+  },
+  "0180C5640": {
+    "area_name": "Hässelby strand",
+    "source": "suburb"
+  },
+  "0180C5651": {
+    "area_name": "Hjorthagen",
+    "source": "suburb"
+  },
+  "0180C5652": {
+    "area_name": "Gasverket",
+    "source": "neighbourhood"
+  },
+  "0180C5653": {
+    "area_name": "Hjorthagen",
+    "source": "suburb"
+  },
+  "0180C5660": {
+    "area_name": "Hässelby strand",
+    "source": "suburb"
+  },
+  "0180C5670": {
+    "area_name": "Vinsta",
+    "source": "suburb"
+  },
+  "0180C5680": {
+    "area_name": "Råcksta",
+    "source": "suburb"
+  },
+  "0180C5691": {
+    "area_name": "Mariehäll",
+    "source": "suburb"
+  },
+  "0180C5692": {
+    "area_name": "Mariehäll",
+    "source": "suburb"
+  },
+  "0180C5700": {
+    "area_name": "Vällingby",
+    "source": "suburb"
+  },
+  "0180C5710": {
+    "area_name": "Hässelby gård",
+    "source": "suburb"
+  },
+  "0180C5720": {
+    "area_name": "Vinsta",
+    "source": "suburb"
+  },
+  "0180C5730": {
+    "area_name": "Vinsta",
+    "source": "suburb"
+  },
+  "0180C5740": {
+    "area_name": "Sörgården",
+    "source": "neighbourhood"
+  },
+  "0180C5751": {
+    "area_name": "Annedal",
+    "source": "neighbourhood"
+  },
+  "0180C5752": {
+    "area_name": "Mariehäll",
+    "source": "suburb"
+  },
+  "0180C5760": {
+    "area_name": "Vinsta",
+    "source": "suburb"
+  },
+  "0180C5770": {
+    "area_name": "Lappkärrsberget",
+    "source": "neighbourhood"
+  },
+  "0180C5780": {
+    "area_name": "Hässelby gård",
+    "source": "suburb"
+  },
+  "0180C5790": {
+    "area_name": "Vinsta",
+    "source": "suburb"
+  },
+  "0180C5800": {
+    "area_name": "Vällingby",
+    "source": "suburb"
+  },
+  "0180C5810": {
+    "area_name": "Hässelby strand",
+    "source": "suburb"
+  },
+  "0180C5820": {
+    "area_name": "Solhöjden",
+    "source": "neighbourhood"
+  },
+  "0180C5830": {
+    "area_name": "Hässelby strand",
+    "source": "suburb"
+  },
+  "0180C5840": {
+    "area_name": "Nälsta",
+    "source": "suburb"
+  },
+  "0180C5850": {
+    "area_name": "Hässelby strand",
+    "source": "suburb"
+  },
+  "0180C5861": {
+    "area_name": "Sörgården",
+    "source": "neighbourhood"
+  },
+  "0180C5862": {
+    "area_name": "Sörgården",
+    "source": "neighbourhood"
+  },
+  "0180C5870": {
+    "area_name": "Vällingby",
+    "source": "suburb"
+  },
+  "0180C5880": {
+    "area_name": "Vinsta",
+    "source": "suburb"
+  },
+  "0180C5890": {
+    "area_name": "Hässelby strand",
+    "source": "suburb"
+  },
+  "0180C5900": {
+    "area_name": "Lappkärrsberget",
+    "source": "neighbourhood"
+  },
+  "0180C5910": {
+    "area_name": "Sörgården",
+    "source": "neighbourhood"
+  },
+  "0180C5920": {
+    "area_name": "Vällingby",
+    "source": "suburb"
+  },
+  "0180C5930": {
+    "area_name": "Vinsta",
+    "source": "suburb"
+  },
+  "0180C5940": {
+    "area_name": "Vinsta",
+    "source": "suburb"
+  },
+  "0180C5950": {
+    "area_name": "Hässelby strand",
+    "source": "suburb"
+  },
+  "0180C5960": {
+    "area_name": "Solhöjden",
+    "source": "neighbourhood"
+  },
+  "0180C5970": {
+    "area_name": "Solhöjden",
+    "source": "neighbourhood"
+  },
+  "0180C5980": {
+    "area_name": "Hässelby strand",
+    "source": "suburb"
+  },
+  "0180C5990": {
+    "area_name": "Kälvesta",
+    "source": "suburb"
+  },
+  "0180C6000": {
+    "area_name": "Sörgården",
+    "source": "neighbourhood"
+  },
+  "0180C6010": {
+    "area_name": "Hässelby strand",
+    "source": "suburb"
+  },
+  "0180C6020": {
+    "area_name": "Kälvesta",
+    "source": "suburb"
+  },
+  "0180C6030": {
+    "area_name": "Solhöjden",
+    "source": "neighbourhood"
+  },
+  "0180C6040": {
+    "area_name": "Solhöjden",
+    "source": "neighbourhood"
+  },
+  "0180C6050": {
+    "area_name": "Hässelby-Vällingby stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C6060": {
+    "area_name": "Hässelby strand",
+    "source": "suburb"
+  },
+  "0180C6070": {
+    "area_name": "Rinkeby",
+    "source": "suburb"
+  },
+  "0180C6080": {
+    "area_name": "Solhöjden",
+    "source": "neighbourhood"
+  },
+  "0180C6090": {
+    "area_name": "Rinkeby",
+    "source": "suburb"
+  },
+  "0180C6100": {
+    "area_name": "Rinkeby",
+    "source": "suburb"
+  },
+  "0180C6110": {
+    "area_name": "Rinkeby",
+    "source": "suburb"
+  },
+  "0180C6120": {
+    "area_name": "Rinkeby",
+    "source": "suburb"
+  },
+  "0180C6130": {
+    "area_name": "Solhöjden",
+    "source": "neighbourhood"
+  },
+  "0180C6140": {
+    "area_name": "Solhöjden",
+    "source": "neighbourhood"
+  },
+  "0180C6151": {
+    "area_name": "Rinkeby",
+    "source": "suburb"
+  },
+  "0180C6152": {
+    "area_name": "Rinkeby",
+    "source": "suburb"
+  },
+  "0180C6160": {
+    "area_name": "Rinkeby",
+    "source": "suburb"
+  },
+  "0180C6170": {
+    "area_name": "Solhöjden",
+    "source": "neighbourhood"
+  },
+  "0180C6180": {
+    "area_name": "Rinkeby",
+    "source": "suburb"
+  },
+  "0180C6190": {
+    "area_name": "Hässelby-Vällingby stadsdelsområde",
+    "source": "city_district"
+  },
+  "0180C6200": {
+    "area_name": "Kista",
+    "source": "suburb"
+  },
+  "0180C6210": {
+    "area_name": "Solhöjden",
+    "source": "neighbourhood"
+  },
+  "0180C6220": {
+    "area_name": "Solhöjden",
+    "source": "neighbourhood"
+  },
+  "0180C6230": {
+    "area_name": "Solhöjden",
+    "source": "neighbourhood"
+  },
+  "0180C6240": {
+    "area_name": "Lunda industriområde",
+    "source": "suburb"
+  },
+  "0180C6250": {
+    "area_name": "Solhöjden",
+    "source": "neighbourhood"
+  },
+  "0180C6260": {
+    "area_name": "Solhöjden",
+    "source": "neighbourhood"
+  },
+  "0180C6270": {
+    "area_name": "Solhöjden",
+    "source": "neighbourhood"
+  },
+  "0180C6280": {
+    "area_name": "Kista",
+    "source": "suburb"
+  },
+  "0180C6290": {
+    "area_name": "Rinkeby",
+    "source": "suburb"
+  },
+  "0180C6300": {
+    "area_name": "Rinkeby",
+    "source": "suburb"
+  },
+  "0180C6310": {
+    "area_name": "Rinkeby",
+    "source": "suburb"
+  },
+  "0180C6320": {
+    "area_name": "Rinkeby",
+    "source": "suburb"
+  },
+  "0180C6330": {
+    "area_name": "Kista",
+    "source": "suburb"
+  },
+  "0180C6340": {
+    "area_name": "Lunda industriområde",
+    "source": "suburb"
+  },
+  "0180C6350": {
+    "area_name": "Husby",
+    "source": "suburb"
+  },
+  "0180C6360": {
+    "area_name": "Rinkeby",
+    "source": "suburb"
+  },
+  "0180C6370": {
+    "area_name": "Husby",
+    "source": "suburb"
+  },
+  "0180C6380": {
+    "area_name": "Husby",
+    "source": "suburb"
+  },
+  "0180C6390": {
+    "area_name": "Kista",
+    "source": "suburb"
+  },
+  "0180C6400": {
+    "area_name": "Husby",
+    "source": "suburb"
+  },
+  "0180C6410": {
+    "area_name": "Akalla",
+    "source": "suburb"
+  },
+  "0180C6420": {
+    "area_name": "Husby",
+    "source": "suburb"
+  },
+  "0180C6430": {
+    "area_name": "Husby",
+    "source": "suburb"
+  },
+  "0180C6440": {
+    "area_name": "Akalla",
+    "source": "suburb"
+  },
+  "0181A0010": {
+    "area_name": "Backen",
+    "source": "display_name"
+  },
+  "0181A0020": {
+    "area_name": "Mölnbo",
+    "source": "village"
+  },
+  "0181A0030": {
+    "area_name": "Gerstaberg",
+    "source": "hamlet"
+  },
+  "0181A0040": {
+    "area_name": "Åtorp",
+    "source": "display_name"
+  },
+  "0181A0050": {
+    "area_name": "Ekeby",
+    "source": "village"
+  },
+  "0181A0060": {
+    "area_name": "Heleneberg",
+    "source": "display_name"
+  },
+  "0181B2010": {
+    "area_name": "Järna",
+    "source": "village"
+  },
+  "0181B2020": {
+    "area_name": "Lövsta",
+    "source": "display_name"
+  },
+  "0181B2031": {
+    "area_name": "Gerstaberg",
+    "source": "hamlet"
+  },
+  "0181B2032": {
+    "area_name": "Järna",
+    "source": "village"
+  },
+  "0181B2040": {
+    "area_name": "Lilla Vallängen",
+    "source": "display_name"
+  },
+  "0181B4010": {
+    "area_name": "Hölö",
+    "source": "village"
+  },
+  "0181B5010": {
+    "area_name": "Mölnbo",
+    "source": "village"
+  },
+  "0181C1010": {
+    "area_name": "Pershagen",
+    "source": "village"
+  },
+  "0181C1020": {
+    "area_name": "Skarmanstorp",
+    "source": "display_name"
+  },
+  "0181C1030": {
+    "area_name": "Hovsjö",
+    "source": "suburb"
+  },
+  "0181C1040": {
+    "area_name": "Saltskog",
+    "source": "suburb"
+  },
+  "0181C1050": {
+    "area_name": "Hovsjö",
+    "source": "suburb"
+  },
+  "0181C1060": {
+    "area_name": "Hovsjö",
+    "source": "suburb"
+  },
+  "0181C1070": {
+    "area_name": "Hovsjö",
+    "source": "suburb"
+  },
+  "0181C1080": {
+    "area_name": "Hovsjö",
+    "source": "suburb"
+  },
+  "0181C1090": {
+    "area_name": "Hovsjö",
+    "source": "suburb"
+  },
+  "0181C1100": {
+    "area_name": "Hovsjö",
+    "source": "suburb"
+  },
+  "0181C1110": {
+    "area_name": "Hovsjö",
+    "source": "suburb"
+  },
+  "0181C1120": {
+    "area_name": "Geneta",
+    "source": "suburb"
+  },
+  "0181C1130": {
+    "area_name": "Hovsjö",
+    "source": "suburb"
+  },
+  "0181C1140": {
+    "area_name": "Lännock",
+    "source": "neighbourhood"
+  },
+  "0181C1150": {
+    "area_name": "Igelsta",
+    "source": "neighbourhood"
+  },
+  "0181C1161": {
+    "area_name": "Hovsjö",
+    "source": "suburb"
+  },
+  "0181C1162": {
+    "area_name": "Hovsjö",
+    "source": "suburb"
+  },
+  "0181C1170": {
+    "area_name": "Hovsjö",
+    "source": "suburb"
+  },
+  "0181C1180": {
+    "area_name": "Tälje",
+    "source": "suburb"
+  },
+  "0181C1190": {
+    "area_name": "Lina hage",
+    "source": "neighbourhood"
+  },
+  "0181C1200": {
+    "area_name": "Tälje",
+    "source": "suburb"
+  },
+  "0181C1210": {
+    "area_name": "Igelsta",
+    "source": "neighbourhood"
+  },
+  "0181C1220": {
+    "area_name": "Tälje",
+    "source": "suburb"
+  },
+  "0181C1230": {
+    "area_name": "Tälje",
+    "source": "suburb"
+  },
+  "0181C1240": {
+    "area_name": "Tälje",
+    "source": "suburb"
+  },
+  "0181C1250": {
+    "area_name": "Igelsta",
+    "source": "neighbourhood"
+  },
+  "0181C1260": {
+    "area_name": "Lina hage",
+    "source": "neighbourhood"
+  },
+  "0181C1270": {
+    "area_name": "Lina hage",
+    "source": "neighbourhood"
+  },
+  "0181C1281": {
+    "area_name": "Tälje",
+    "source": "suburb"
+  },
+  "0181C1282": {
+    "area_name": "Tälje",
+    "source": "suburb"
+  },
+  "0181C1290": {
+    "area_name": "Tälje",
+    "source": "suburb"
+  },
+  "0181C1301": {
+    "area_name": "Lilla Näset",
+    "source": "display_name"
+  },
+  "0181C1302": {
+    "area_name": "Östertälje",
+    "source": "suburb"
+  },
+  "0181C1310": {
+    "area_name": "Tälje",
+    "source": "suburb"
+  },
+  "0181C1320": {
+    "area_name": "Lina hage",
+    "source": "neighbourhood"
+  },
+  "0181C1330": {
+    "area_name": "Tälje",
+    "source": "suburb"
+  },
+  "0181C1340": {
+    "area_name": "Lännock",
+    "source": "neighbourhood"
+  },
+  "0181C1350": {
+    "area_name": "Lännock",
+    "source": "neighbourhood"
+  },
+  "0181C1360": {
+    "area_name": "Lännock",
+    "source": "neighbourhood"
+  },
+  "0181C1370": {
+    "area_name": "Vattubrinken",
+    "source": "residential"
+  },
+  "0181C1380": {
+    "area_name": "Fridshäll",
+    "source": "neighbourhood"
+  },
+  "0181C1390": {
+    "area_name": "Ritorp",
+    "source": "neighbourhood"
+  },
+  "0182C1010": {
+    "area_name": "Stensö",
+    "source": "suburb"
+  },
+  "0182C1020": {
+    "area_name": "Stensö",
+    "source": "suburb"
+  },
+  "0182C1031": {
+    "area_name": "Stensö",
+    "source": "suburb"
+  },
+  "0182C1032": {
+    "area_name": "Stensö",
+    "source": "suburb"
+  },
+  "0182C1033": {
+    "area_name": "Stensö",
+    "source": "suburb"
+  },
+  "0182C1040": {
+    "area_name": "Stensö",
+    "source": "suburb"
+  },
+  "0182C1050": {
+    "area_name": "Älgö",
+    "source": "village"
+  },
+  "0182C1060": {
+    "area_name": "Kolarängen",
+    "source": "suburb"
+  },
+  "0182C1070": {
+    "area_name": "Solsidan",
+    "source": "residential"
+  },
+  "0182C1080": {
+    "area_name": "Älta",
+    "source": "town"
+  },
+  "0182C1090": {
+    "area_name": "Solsidan",
+    "source": "residential"
+  },
+  "0182C1100": {
+    "area_name": "Lännersta",
+    "source": "suburb"
+  },
+  "0182C1110": {
+    "area_name": "Lännersta",
+    "source": "suburb"
+  },
+  "0182C1120": {
+    "area_name": "Lännersta",
+    "source": "suburb"
+  },
+  "0182C1130": {
+    "area_name": "Fiskarhöjden",
+    "source": "neighbourhood"
+  },
+  "0182C1140": {
+    "area_name": "Lännersta",
+    "source": "suburb"
+  },
+  "0182C1150": {
+    "area_name": "Lännersta",
+    "source": "suburb"
+  },
+  "0182C1160": {
+    "area_name": "Lännersta",
+    "source": "suburb"
+  },
+  "0182C1170": {
+    "area_name": "Nysätra",
+    "source": "neighbourhood"
+  },
+  "0182C1180": {
+    "area_name": "Lännersta",
+    "source": "suburb"
+  },
+  "0182C1190": {
+    "area_name": "Nysätra",
+    "source": "neighbourhood"
+  },
+  "0182C1200": {
+    "area_name": "Nysätra",
+    "source": "neighbourhood"
+  },
+  "0182C1210": {
+    "area_name": "Östervik",
+    "source": "hamlet"
+  },
+  "0182C1220": {
+    "area_name": "Vikdalen",
+    "source": "neighbourhood"
+  },
+  "0182C1231": {
+    "area_name": "Vikdalen",
+    "source": "neighbourhood"
+  },
+  "0182C1232": {
+    "area_name": "Vikdalen",
+    "source": "neighbourhood"
+  },
+  "0182C1240": {
+    "area_name": "Nacka",
+    "source": "town"
+  },
+  "0182C1250": {
+    "area_name": "Nysätra",
+    "source": "neighbourhood"
+  },
+  "0182C1260": {
+    "area_name": "Finnboda",
+    "source": "neighbourhood"
+  },
+  "0182C1270": {
+    "area_name": "Lännersta",
+    "source": "suburb"
+  },
+  "0182C1280": {
+    "area_name": "Nysätra",
+    "source": "neighbourhood"
+  },
+  "0182C1291": {
+    "area_name": "Fisksätra",
+    "source": "village"
+  },
+  "0182C1292": {
+    "area_name": "Östervik",
+    "source": "hamlet"
+  },
+  "0182C1300": {
+    "area_name": "Vikdalen",
+    "source": "neighbourhood"
+  },
+  "0182C1310": {
+    "area_name": "Östervik",
+    "source": "hamlet"
+  },
+  "0182C1320": {
+    "area_name": "Nacka",
+    "source": "town"
+  },
+  "0182C1330": {
+    "area_name": "Finnboda",
+    "source": "neighbourhood"
+  },
+  "0182C1340": {
+    "area_name": "Lännersta",
+    "source": "suburb"
+  },
+  "0182C1350": {
+    "area_name": "Nysätra",
+    "source": "neighbourhood"
+  },
+  "0182C1360": {
+    "area_name": "Backeböl",
+    "source": "suburb"
+  },
+  "0182C1371": {
+    "area_name": "Finnboda",
+    "source": "neighbourhood"
+  },
+  "0182C1372": {
+    "area_name": "Nysätra",
+    "source": "neighbourhood"
+  },
+  "0182C1380": {
+    "area_name": "Vikdalen",
+    "source": "neighbourhood"
+  },
+  "0182C1390": {
+    "area_name": "Nacka",
+    "source": "town"
+  },
+  "0182C1400": {
+    "area_name": "Östervik",
+    "source": "hamlet"
+  },
+  "0182C1411": {
+    "area_name": "Vikdalen",
+    "source": "neighbourhood"
+  },
+  "0182C1412": {
+    "area_name": "Vikdalen",
+    "source": "neighbourhood"
+  },
+  "0182C1420": {
+    "area_name": "Orminge",
+    "source": "suburb"
+  },
+  "0182C1430": {
+    "area_name": "Backeböl",
+    "source": "suburb"
+  },
+  "0182C1440": {
+    "area_name": "Orminge",
+    "source": "suburb"
+  },
+  "0182C1450": {
+    "area_name": "Nacka",
+    "source": "town"
+  },
+  "0182C1460": {
+    "area_name": "Nacka",
+    "source": "town"
+  },
+  "0182C1470": {
+    "area_name": "Eriksvik",
+    "source": "neighbourhood"
+  },
+  "0182C1480": {
+    "area_name": "Orminge",
+    "source": "suburb"
+  },
+  "0182C1490": {
+    "area_name": "Orminge",
+    "source": "suburb"
+  },
+  "0182C1500": {
+    "area_name": "Orminge",
+    "source": "suburb"
+  },
+  "0182C1510": {
+    "area_name": "Vikingshill",
+    "source": "neighbourhood"
+  },
+  "0182C1520": {
+    "area_name": "Orminge",
+    "source": "suburb"
+  },
+  "0182C1530": {
+    "area_name": "Vikingshill",
+    "source": "neighbourhood"
+  },
+  "0183C1010": {
+    "area_name": "Storskogen",
+    "source": "suburb"
+  },
+  "0183C1020": {
+    "area_name": "Lilla Alby",
+    "source": "suburb"
+  },
+  "0183C1030": {
+    "area_name": "Storskogen",
+    "source": "suburb"
+  },
+  "0183C1040": {
+    "area_name": "Storskogen",
+    "source": "suburb"
+  },
+  "0183C1050": {
+    "area_name": "Storskogen",
+    "source": "suburb"
+  },
+  "0183C1060": {
+    "area_name": "Storskogen",
+    "source": "suburb"
+  },
+  "0183C1070": {
+    "area_name": "Storskogen",
+    "source": "suburb"
+  },
+  "0183C1080": {
+    "area_name": "Storskogen",
+    "source": "suburb"
+  },
+  "0183C1090": {
+    "area_name": "Storskogen",
+    "source": "suburb"
+  },
+  "0183C1100": {
+    "area_name": "Storskogen",
+    "source": "suburb"
+  },
+  "0183C1110": {
+    "area_name": "Storskogen",
+    "source": "suburb"
+  },
+  "0183C1120": {
+    "area_name": "Storskogen",
+    "source": "suburb"
+  },
+  "0183C1130": {
+    "area_name": "Storskogen",
+    "source": "suburb"
+  },
+  "0183C1140": {
+    "area_name": "Storskogen",
+    "source": "suburb"
+  },
+  "0183C1150": {
+    "area_name": "Hästhagen",
+    "source": "neighbourhood"
+  },
+  "0183C1161": {
+    "area_name": "Hästhagen",
+    "source": "neighbourhood"
+  },
+  "0183C1162": {
+    "area_name": "Hästhagen",
+    "source": "neighbourhood"
+  },
+  "0183C1170": {
+    "area_name": "Storskogen",
+    "source": "suburb"
+  },
+  "0183C1180": {
+    "area_name": "Storskogen",
+    "source": "suburb"
+  },
+  "0183C1190": {
+    "area_name": "Storskogen",
+    "source": "suburb"
+  },
+  "0183C1200": {
+    "area_name": "Storskogen",
+    "source": "suburb"
+  },
+  "0183C1210": {
+    "area_name": "Hästhagen",
+    "source": "neighbourhood"
+  },
+  "0183C1220": {
+    "area_name": "Hästhagen",
+    "source": "neighbourhood"
+  },
+  "0183C1230": {
+    "area_name": "Hästhagen",
+    "source": "neighbourhood"
+  },
+  "0183C1241": {
+    "area_name": "Hästhagen",
+    "source": "neighbourhood"
+  },
+  "0183C1242": {
+    "area_name": "Hästhagen",
+    "source": "neighbourhood"
+  },
+  "0183C1243": {
+    "area_name": "Hästhagen",
+    "source": "neighbourhood"
+  },
+  "0183C1250": {
+    "area_name": "Hästhagen",
+    "source": "neighbourhood"
+  },
+  "0183C1261": {
+    "area_name": "Hästhagen",
+    "source": "neighbourhood"
+  },
+  "0183C1262": {
+    "area_name": "Lilla Ursvik",
+    "source": "suburb"
+  },
+  "0184C1010": {
+    "area_name": "Skytteholm",
+    "source": "suburb"
+  },
+  "0184C1020": {
+    "area_name": "Skytteholm",
+    "source": "suburb"
+  },
+  "0184C1030": {
+    "area_name": "Skytteholm",
+    "source": "suburb"
+  },
+  "0184C1040": {
+    "area_name": "Skytteholm",
+    "source": "suburb"
+  },
+  "0184C1051": {
+    "area_name": "Skytteholm",
+    "source": "suburb"
+  },
+  "0184C1052": {
+    "area_name": "Karlberg",
+    "source": "neighbourhood"
+  },
+  "0184C1060": {
+    "area_name": "Huvudsta",
+    "source": "suburb"
+  },
+  "0184C1070": {
+    "area_name": "Skytteholm",
+    "source": "suburb"
+  },
+  "0184C1080": {
+    "area_name": "Skytteholm",
+    "source": "suburb"
+  },
+  "0184C1090": {
+    "area_name": "Skytteholm",
+    "source": "suburb"
+  },
+  "0184C1100": {
+    "area_name": "Skytteholm",
+    "source": "suburb"
+  },
+  "0184C1110": {
+    "area_name": "Skytteholm",
+    "source": "suburb"
+  },
+  "0184C1120": {
+    "area_name": "Skytteholm",
+    "source": "suburb"
+  },
+  "0184C1130": {
+    "area_name": "Hagalund",
+    "source": "suburb"
+  },
+  "0184C1140": {
+    "area_name": "Skytteholm",
+    "source": "suburb"
+  },
+  "0184C1150": {
+    "area_name": "Skytteholm",
+    "source": "suburb"
+  },
+  "0184C1160": {
+    "area_name": "Skytteholm",
+    "source": "suburb"
+  },
+  "0184C1170": {
+    "area_name": "Vasalund",
+    "source": "neighbourhood"
+  },
+  "0184C1180": {
+    "area_name": "Frösunda",
+    "source": "suburb"
+  },
+  "0184C1190": {
+    "area_name": "Hagalund",
+    "source": "suburb"
+  },
+  "0184C1200": {
+    "area_name": "Blåkulla",
+    "source": "neighbourhood"
+  },
+  "0184C1210": {
+    "area_name": "Skytteholm",
+    "source": "suburb"
+  },
+  "0184C1220": {
+    "area_name": "Skytteholm",
+    "source": "suburb"
+  },
+  "0184C1230": {
+    "area_name": "Skytteholm",
+    "source": "suburb"
+  },
+  "0184C1240": {
+    "area_name": "Skytteholm",
+    "source": "suburb"
+  },
+  "0184C1250": {
+    "area_name": "Vasalund",
+    "source": "neighbourhood"
+  },
+  "0184C1260": {
+    "area_name": "Råsunda",
+    "source": "suburb"
+  },
+  "0184C1270": {
+    "area_name": "Arenastaden",
+    "source": "neighbourhood"
+  },
+  "0184C1280": {
+    "area_name": "Vasalund",
+    "source": "neighbourhood"
+  },
+  "0184C1290": {
+    "area_name": "Skytteholm",
+    "source": "suburb"
+  },
+  "0184C1300": {
+    "area_name": "Arenastaden",
+    "source": "neighbourhood"
+  },
+  "0184C1310": {
+    "area_name": "Arenastaden",
+    "source": "neighbourhood"
+  },
+  "0184C1320": {
+    "area_name": "Arenastaden",
+    "source": "neighbourhood"
+  },
+  "0184C1330": {
+    "area_name": "Vasalund",
+    "source": "neighbourhood"
+  },
+  "0184C1340": {
+    "area_name": "Bergshamra",
+    "source": "village"
+  },
+  "0184C1350": {
+    "area_name": "Arenastaden",
+    "source": "neighbourhood"
+  },
+  "0184C1360": {
+    "area_name": "Bergshamra",
+    "source": "village"
+  },
+  "0184C1370": {
+    "area_name": "Agnesberg",
+    "source": "neighbourhood"
+  },
+  "0184C1380": {
+    "area_name": "Bergshamra",
+    "source": "village"
+  },
+  "0184C1390": {
+    "area_name": "Järva",
+    "source": "suburb"
+  },
+  "0184C1400": {
+    "area_name": "Bergshamra",
+    "source": "village"
+  },
+  "0184C1410": {
+    "area_name": "Arenastaden",
+    "source": "neighbourhood"
+  },
+  "0184C1420": {
+    "area_name": "Bergshamra",
+    "source": "village"
+  },
+  "0184C1430": {
+    "area_name": "Järva",
+    "source": "suburb"
+  },
+  "0186C1010": {
+    "area_name": "Bodal",
+    "source": "neighbourhood"
+  },
+  "0186C1020": {
+    "area_name": "Västra Yttringe",
+    "source": "village"
+  },
+  "0186C1030": {
+    "area_name": "Bodal",
+    "source": "neighbourhood"
+  },
+  "0186C1040": {
+    "area_name": "Skärsätra",
+    "source": "suburb"
+  },
+  "0186C1050": {
+    "area_name": "Bodal",
+    "source": "neighbourhood"
+  },
+  "0186C1060": {
+    "area_name": "Bodal",
+    "source": "neighbourhood"
+  },
+  "0186C1070": {
+    "area_name": "Kristinehäll",
+    "source": "hamlet"
+  },
+  "0186C1080": {
+    "area_name": "Bodal",
+    "source": "neighbourhood"
+  },
+  "0186C1090": {
+    "area_name": "Bodal",
+    "source": "neighbourhood"
+  },
+  "0186C1100": {
+    "area_name": "Bodal",
+    "source": "neighbourhood"
+  },
+  "0186C1110": {
+    "area_name": "Björnbo",
+    "source": "suburb"
+  },
+  "0186C1120": {
+    "area_name": "Kristinehäll",
+    "source": "hamlet"
+  },
+  "0186C1130": {
+    "area_name": "Bodal",
+    "source": "neighbourhood"
+  },
+  "0186C1140": {
+    "area_name": "Kristinehäll",
+    "source": "hamlet"
+  },
+  "0186C1150": {
+    "area_name": "Bodal",
+    "source": "neighbourhood"
+  },
+  "0186C1160": {
+    "area_name": "Kristinehäll",
+    "source": "hamlet"
+  },
+  "0186C1170": {
+    "area_name": "Bodal",
+    "source": "neighbourhood"
+  },
+  "0186C1180": {
+    "area_name": "Bodal",
+    "source": "neighbourhood"
+  },
+  "0186C1190": {
+    "area_name": "Bodal",
+    "source": "neighbourhood"
+  },
+  "0186C1200": {
+    "area_name": "Västra Yttringe",
+    "source": "village"
+  },
+  "0186C1210": {
+    "area_name": "Bodal",
+    "source": "neighbourhood"
+  },
+  "0186C1220": {
+    "area_name": "Bodal",
+    "source": "neighbourhood"
+  },
+  "0186C1230": {
+    "area_name": "Askrike",
+    "source": "neighbourhood"
+  },
+  "0186C1240": {
+    "area_name": "Askrike",
+    "source": "neighbourhood"
+  },
+  "0186C1250": {
+    "area_name": "Bodal",
+    "source": "neighbourhood"
+  },
+  "0186C1260": {
+    "area_name": "Sticklinge",
+    "source": "suburb"
+  },
+  "0187A0010": {
+    "area_name": "Kullö",
+    "source": "village"
+  },
+  "0187C1010": {
+    "area_name": "Vaxholm",
+    "source": "town"
+  },
+  "0187C1020": {
+    "area_name": "Höganäs",
+    "source": "neighbourhood"
+  },
+  "0187C1030": {
+    "area_name": "Norrängen",
+    "source": "display_name"
+  },
+  "0187C1040": {
+    "area_name": "Höganäs",
+    "source": "neighbourhood"
+  },
+  "0187C1050": {
+    "area_name": "Kullö",
+    "source": "village"
+  },
+  "0187C1060": {
+    "area_name": "Vaxholm",
+    "source": "town"
+  },
+  "0188A0010": {
+    "area_name": "Norrtälje kommun",
+    "source": "display_name"
+  },
+  "0188A0020": {
+    "area_name": "Kusboda",
+    "source": "display_name"
+  },
+  "0188A0030": {
+    "area_name": "Bergshamra varv",
+    "source": "display_name"
+  },
+  "0188A0040": {
+    "area_name": "Ösbylund",
+    "source": "display_name"
+  },
+  "0188A0050": {
+    "area_name": "Hammarby",
+    "source": "display_name"
+  },
+  "0188A0060": {
+    "area_name": "Samstorpet",
+    "source": "display_name"
+  },
+  "0188A0070": {
+    "area_name": "Tunaberg",
+    "source": "display_name"
+  },
+  "0188A0080": {
+    "area_name": "Rimbo",
+    "source": "village"
+  },
+  "0188A0090": {
+    "area_name": "Knekttuve",
+    "source": "display_name"
+  },
+  "0188A0100": {
+    "area_name": "Kråkvilan",
+    "source": "display_name"
+  },
+  "0188A0110": {
+    "area_name": "Lohärad",
+    "source": "display_name"
+  },
+  "0188A0120": {
+    "area_name": "Ekadal",
+    "source": "display_name"
+  },
+  "0188A0130": {
+    "area_name": "Harg",
+    "source": "village"
+  },
+  "0188A0140": {
+    "area_name": "Kåstalund",
+    "source": "display_name"
+  },
+  "0188A0150": {
+    "area_name": "Ladbol",
+    "source": "display_name"
+  },
+  "0188A0160": {
+    "area_name": "Johanneslund",
+    "source": "display_name"
+  },
+  "0188A0170": {
+    "area_name": "Djupdal",
+    "source": "display_name"
+  },
+  "0188A0180": {
+    "area_name": "Nytorp",
+    "source": "display_name"
+  },
+  "0188A0190": {
+    "area_name": "Hålmyren",
+    "source": "display_name"
+  },
+  "0188B2010": {
+    "area_name": "Kvarntorpet",
+    "source": "display_name"
+  },
+  "0188B2020": {
+    "area_name": "Rimbo",
+    "source": "village"
+  },
+  "0188B2030": {
+    "area_name": "Kvarntorpet",
+    "source": "display_name"
+  },
+  "0188B3010": {
+    "area_name": "Häverödal",
+    "source": "village"
+  },
+  "0188B3020": {
+    "area_name": "Hallstavik",
+    "source": "village"
+  },
+  "0188B3030": {
+    "area_name": "Hallstavik",
+    "source": "village"
+  },
+  "0188B4010": {
+    "area_name": "Älmsta",
+    "source": "village"
+  },
+  "0188B5010": {
+    "area_name": "Bergshamra varv",
+    "source": "display_name"
+  },
+  "0188C1010": {
+    "area_name": "Björktorp",
+    "source": "display_name"
+  },
+  "0188C1020": {
+    "area_name": "Malsta",
+    "source": "village"
+  },
+  "0188C1030": {
+    "area_name": "Öster Knutby",
+    "source": "neighbourhood"
+  },
+  "0188C1040": {
+    "area_name": "Öster Knutby",
+    "source": "neighbourhood"
+  },
+  "0188C1050": {
+    "area_name": "Öster Knutby",
+    "source": "neighbourhood"
+  },
+  "0188C1061": {
+    "area_name": "Öster Knutby",
+    "source": "neighbourhood"
+  },
+  "0188C1062": {
+    "area_name": "Öster Knutby",
+    "source": "neighbourhood"
+  },
+  "0188C1063": {
+    "area_name": "Öster Knutby",
+    "source": "neighbourhood"
+  },
+  "0188C1070": {
+    "area_name": "Norrtälje",
+    "source": "town"
+  },
+  "0188C1080": {
+    "area_name": "Emmaus",
+    "source": "neighbourhood"
+  },
+  "0188C1090": {
+    "area_name": "Malsta",
+    "source": "village"
+  },
+  "0188C1100": {
+    "area_name": "Stocksund",
+    "source": "display_name"
+  },
+  "0188C1110": {
+    "area_name": "Emmaus",
+    "source": "neighbourhood"
+  },
+  "0191A0010": {
+    "area_name": "Smedsboda",
+    "source": "display_name"
+  },
+  "0191A0020": {
+    "area_name": "Wenngarn",
+    "source": "village"
+  },
+  "0191A0030": {
+    "area_name": "Ekilla",
+    "source": "village"
+  },
+  "0191A0040": {
+    "area_name": "Kogsta",
+    "source": "display_name"
+  },
+  "0191B2010": {
+    "area_name": "Sigtuna",
+    "source": "town"
+  },
+  "0191B2020": {
+    "area_name": "Sigtuna",
+    "source": "town"
+  },
+  "0191B2031": {
+    "area_name": "Sigtuna",
+    "source": "town"
+  },
+  "0191B2032": {
+    "area_name": "Sigtuna",
+    "source": "town"
+  },
+  "0191B2040": {
+    "area_name": "Sigtuna",
+    "source": "town"
+  },
+  "0191B2050": {
+    "area_name": "Sigtuna",
+    "source": "town"
+  },
+  "0191B3010": {
+    "area_name": "Rosersberg",
+    "source": "village"
+  },
+  "0191C1010": {
+    "area_name": "Märsta",
+    "source": "town"
+  },
+  "0191C1020": {
+    "area_name": "Märsta",
+    "source": "town"
+  },
+  "0191C1030": {
+    "area_name": "Märsta",
+    "source": "town"
+  },
+  "0191C1040": {
+    "area_name": "Märsta",
+    "source": "town"
+  },
+  "0191C1050": {
+    "area_name": "Märsta",
+    "source": "town"
+  },
+  "0191C1060": {
+    "area_name": "Märsta",
+    "source": "town"
+  },
+  "0191C1070": {
+    "area_name": "Märsta",
+    "source": "town"
+  },
+  "0191C1081": {
+    "area_name": "Rävsta",
+    "source": "display_name"
+  },
+  "0191C1082": {
+    "area_name": "Rävsta",
+    "source": "display_name"
+  },
+  "0191C1083": {
+    "area_name": "Märsta",
+    "source": "town"
+  },
+  "0191C1090": {
+    "area_name": "Norrbacka",
+    "source": "neighbourhood"
+  },
+  "0191C1100": {
+    "area_name": "Märsta",
+    "source": "town"
+  },
+  "0191C1110": {
+    "area_name": "Märsta",
+    "source": "town"
+  },
+  "0191C1120": {
+    "area_name": "Ekilla",
+    "source": "village"
+  },
+  "0191C1130": {
+    "area_name": "Märsta",
+    "source": "town"
+  },
+  "0191C1140": {
+    "area_name": "Märsta",
+    "source": "town"
+  },
+  "0192A0010": {
+    "area_name": "Nynäshamn",
+    "source": "town"
+  },
+  "0192A0020": {
+    "area_name": "Solhem",
+    "source": "display_name"
+  },
+  "0192A0030": {
+    "area_name": "Gräsdal",
+    "source": "display_name"
+  },
+  "0192A0040": {
+    "area_name": "Grindtorp",
+    "source": "display_name"
+  },
+  "0192B2010": {
+    "area_name": "Ösmo",
+    "source": "village"
+  },
+  "0192B2020": {
+    "area_name": "Ösmo",
+    "source": "village"
+  },
+  "0192B3010": {
+    "area_name": "Sorunda",
+    "source": "village"
+  },
+  "0192C1010": {
+    "area_name": "Lövhagen",
+    "source": "display_name"
+  },
+  "0192C1020": {
+    "area_name": "Nickstahöjden",
+    "source": "neighbourhood"
+  },
+  "0192C1030": {
+    "area_name": "Nickstahöjden",
+    "source": "neighbourhood"
+  },
+  "0192C1040": {
+    "area_name": "Nickstahöjden",
+    "source": "neighbourhood"
+  },
+  "0192C1050": {
+    "area_name": "Nickstahöjden",
+    "source": "neighbourhood"
+  },
+  "0192C1060": {
+    "area_name": "Nynäshamn",
+    "source": "town"
+  },
+  "0192C1070": {
+    "area_name": "Nickstahöjden",
+    "source": "neighbourhood"
+  },
+  "0192C1080": {
+    "area_name": "Nickstahöjden",
+    "source": "neighbourhood"
+  },
+  "0192C1090": {
+    "area_name": "Nynäshamn",
+    "source": "town"
+  },
+  "0192C1100": {
+    "area_name": "Nynäshamn",
+    "source": "town"
+  }
+}
