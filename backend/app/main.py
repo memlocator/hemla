@@ -11,6 +11,7 @@ from typing import Dict, List, Literal
 import httpx
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 
 try:
@@ -996,6 +997,14 @@ def list_municipalities() -> List[str]:
 @app.get("/api/geocode", response_model=List[GeocodeCandidate])
 async def geocode(q: str = Query(min_length=2, max_length=300), limit: int = Query(default=6, ge=1, le=10)) -> List[GeocodeCandidate]:
     return await geocode_destination(q, limit=limit)
+
+
+@app.get("/api/deso_geojson")
+def deso_geojson() -> FileResponse:
+    path = Path(__file__).resolve().parent.parent / "data" / "raw" / "deso_2025_stockholm.geojson"
+    if not path.exists():
+        raise HTTPException(status_code=404, detail="DeSO GeoJSON not found")
+    return FileResponse(path, media_type="application/geo+json")
 
 
 @app.post("/api/refresh")
