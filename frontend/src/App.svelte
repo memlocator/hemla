@@ -3,6 +3,7 @@
   import L from 'leaflet';
   import 'leaflet/dist/leaflet.css';
   import 'leaflet.heat/dist/leaflet-heat.js';
+  import { MAP_METRIC_OPTIONS, commuteBucket, constrainedGoodness, metricValue, normalizeDesoId } from './mapMetrics.js';
 
   let municipality = '';
   let municipalityOptions = [''];
@@ -25,8 +26,8 @@
   let priorityCrime = 33;
 
   let showHeatmap = true;
-  let showMarkers = true;
-  let heatMetric = 'fit';
+  let showMarkers = false;
+  let heatMetric = 'weighted';
   let minTransitType = '';
   let referencePresetId = '2r-55';
 
@@ -59,7 +60,7 @@
     if (priorityCrime !== 33) p.set('ps', priorityCrime);
     if (minTransitType) p.set('transit', minTransitType);
     if (referencePresetId !== '2r-55') p.set('ref', referencePresetId);
-    if (heatMetric !== 'fit') p.set('heat', heatMetric);
+    if (heatMetric !== 'weighted') p.set('heat', heatMetric);
     const qs = p.toString();
     const newUrl = qs ? `${window.location.pathname}?${qs}` : window.location.pathname;
     if (newUrl !== window.location.href.replace(window.location.origin, '')) {
@@ -77,19 +78,21 @@
   let map;
   let markerLayer;
   let heatLayer;
+  let polygonLayer;
   let baseTileLayer;
   let searchResultLayer;
+  let destinationLayer;
+  let desoGeojson = null;
+  let geojsonError = '';
   let lastAreaKey = '';
   let autoRefreshTimer;
   let isDark = false;
   let suppressMarkerClicksUntil = 0;
   let hoverTooltipTimer;
+  let detailCardWidth = 320;
+  let detailCardHeight = 360;
 
-  const heatOptions = [
-    { id: 'fit', label: 'Personal fit' },
-    { id: 'income', label: 'Income level' },
-    { id: 'unemployment', label: 'Employment strength' }
-  ];
+  const heatOptions = MAP_METRIC_OPTIONS;
   const referencePresets = [
     { id: '1r-30', label: '1 rok · 30 sqm', rooms: 1, sqm: 30 },
     { id: '1r-35', label: '1 rok · 35 sqm', rooms: 1, sqm: 35 },
@@ -181,6 +184,11 @@
     const commute = item.breakdown.commute_minutes ?? item.area.metrics.sl_commute_to_tcentralen_min;
     if (commute == null) return 'N/A';
     return `${Math.round(commute)} min`;
+  }
+
+  function commuteMinutes(item) {
+    const commute = item?.breakdown?.commute_minutes ?? item?.area?.metrics?.sl_commute_to_tcentralen_min;
+    return Number.isFinite(commute) ? Number(commute) : null;
   }
 
   function transitIconSvg(type, { size = 14, color = 'currentColor' } = {}) {
@@ -391,6 +399,20 @@
     }
   }
 
+  async function loadDesoGeojson() {
+    geojsonError = '';
+    try {
+      const res = await fetch('/api/deso_geojson');
+      if (!res.ok) throw new Error(`DeSO GeoJSON returned ${res.status}`);
+      desoGeojson = await res.json();
+      renderMap();
+    } catch (e) {
+      geojsonError = e instanceof Error ? e.message : 'Could not load DeSO polygons';
+      desoGeojson = null;
+      renderMap();
+    }
+  }
+
   async function loadAreas() {
     loading = true;
     error = '';
@@ -441,8 +463,11 @@
       suppressMarkerClicksUntil = Date.now() + 350;
     });
 
+    map.createPane('polygonPane').style.zIndex = '330';
     map.createPane('heatPane').style.zIndex = '350';
+    polygonLayer = L.layerGroup().addTo(map);
     markerLayer = L.layerGroup().addTo(map);
+    destinationLayer = L.layerGroup().addTo(map);
     searchResultLayer = L.layerGroup().addTo(map);
 
     requestAnimationFrame(() => map && map.invalidateSize());
@@ -486,20 +511,104 @@
   }
 
   function metricRaw(item) {
-    const m = item.area.metrics;
-    if (heatMetric === 'fit') return item.value_score;
-    if (heatMetric === 'income') return m.median_income_sek;
-    if (heatMetric === 'unemployment') return m.unemployment_rate_pct;
-    return item.value_score;
+    return metricValue(item, heatMetric);
   }
 
   function metricIsLowerBetter() {
-    return heatMetric === 'unemployment';
+    return heatMetric === 'commute' || heatMetric === 'price';
+  }
+
+  function metricColor(item, min, max) {
+    if (heatMetric === 'commute') {
+      return commuteBucket(commuteMinutes(item)).color;
+    }
+
+    const raw = metricRaw(item);
+    if (!Number.isFinite(raw)) return '#94a3b8';
+    const base = max === min ? 0.5 : (raw - min) / (max - min);
+    const good = constrainedGoodness(
+      item,
+      heatMetric,
+      metricIsLowerBetter() ? 1 - base : base,
+      { budgetCapPerSqm, maxCommute },
+    );
+    if (good >= 0.66) return '#0f766e';
+    if (good >= 0.33) return '#0ea5e9';
+    return '#f97316';
+  }
+
+  function polygonStyle(item, { hovered = false } = {}) {
+    const values = filteredAreas.map((area) => metricRaw(area)).filter((value) => Number.isFinite(value));
+    const min = values.length ? Math.min(...values) : 0;
+    const max = values.length ? Math.max(...values) : 1;
+    const commute = commuteMinutes(item);
+    const inRange = commute == null || commute <= maxCommute;
+    const active = item?.area?.id === selectedId;
+    const unavailable = !item || (heatMetric === 'commute' && commute == null);
+
+    return {
+      pane: 'polygonPane',
+      color: active ? '#0f172a' : hovered ? '#334155' : '#ffffff',
+      weight: active ? 2.5 : hovered ? 1.8 : 0.7,
+      opacity: unavailable ? 0.45 : 0.85,
+      fillColor: metricColor(item, min, max),
+      fillOpacity: unavailable ? 0.08 : inRange ? 0.38 : 0.14,
+      interactive: Boolean(item),
+    };
+  }
+
+  function renderDestinationMarker() {
+    if (!map || !destinationLayer) return;
+    destinationLayer.clearLayers();
+    if (!Number.isFinite(destinationLat) || !Number.isFinite(destinationLon)) return;
+
+    L.circleMarker([destinationLat, destinationLon], {
+      radius: 7,
+      color: '#ffffff',
+      weight: 3,
+      fillColor: '#0f172a',
+      fillOpacity: 1,
+    }).addTo(destinationLayer);
+
+    L.circleMarker([destinationLat, destinationLon], {
+      radius: 16,
+      color: '#0f172a',
+      weight: 2,
+      fillOpacity: 0.08,
+    }).addTo(destinationLayer);
+  }
+
+  function renderPolygons(areaById) {
+    if (!map || !polygonLayer) return;
+    polygonLayer.clearLayers();
+    if (!showHeatmap || !desoGeojson) return;
+
+    const layer = L.geoJSON(desoGeojson, {
+      pane: 'polygonPane',
+      filter: (feature) => areaById.has(normalizeDesoId(feature?.properties?.desokod)),
+      style: (feature) => {
+        const id = normalizeDesoId(feature?.properties?.desokod);
+        return polygonStyle(areaById.get(id));
+      },
+      onEachFeature: (feature, layer) => {
+        const id = normalizeDesoId(feature?.properties?.desokod);
+        const item = areaById.get(id);
+        if (!item) return;
+
+        layer.on('mouseover', () => layer.setStyle(polygonStyle(item, { hovered: true })));
+        layer.on('mouseout', () => layer.setStyle(polygonStyle(item)));
+        layer.on('click', () => {
+          selectedId = item.area.id;
+          renderMap();
+        });
+      },
+    });
+    layer.addTo(polygonLayer);
   }
 
 
   function renderMap() {
-    if (!map || !markerLayer) return;
+    if (!map || !markerLayer || !polygonLayer) return;
 
     if (hoverTooltipTimer) {
       clearTimeout(hoverTooltipTimer);
@@ -507,17 +616,21 @@
     }
 
     markerLayer.clearLayers();
+    polygonLayer.clearLayers();
     removeHeat();
+    renderDestinationMarker();
 
     if (!filteredAreas.length) return;
 
     const bounds = [];
+    const areaById = new Map(filteredAreas.map((item) => [item.area.id, item]));
+    renderPolygons(areaById);
 
     for (const item of filteredAreas) {
       const latLng = [item.area.coordinates.lat, item.area.coordinates.lon];
       bounds.push(latLng);
-      if (!showMarkers) continue;
       const active = item.area.id === selectedId;
+      if (!showMarkers && !active) continue;
       const markerSize = active ? 22 : 16;
       const withinRange = item.area.metrics.nearest_station_walk_min != null && item.area.metrics.nearest_station_walk_min <= 9;
       const transitIconSize = Math.round(markerSize * 0.72);
@@ -580,31 +693,7 @@
       });
     }
 
-    if (showHeatmap) {
-      const lowerBetter = metricIsLowerBetter();
-      const raw = filteredAreas.map((r) => metricRaw(r) ?? 0);
-      const min = Math.min(...raw);
-      const max = Math.max(...raw);
-      heatLayer = L.layerGroup();
-      filteredAreas.forEach((item, idx) => {
-        const base = max === min ? 0.5 : (raw[idx] - min) / (max - min);
-        const good = lowerBetter ? 1 - base : base;
-        const color = good >= 0.66 ? '#22c55e' : good >= 0.33 ? '#f59e0b' : '#dc2626';
-        L.circleMarker([item.area.coordinates.lat, item.area.coordinates.lon], {
-          radius: 22,
-          color: 'none',
-          fillColor: color,
-          fillOpacity: 0.45,
-          interactive: false,
-          pane: 'heatPane',
-        }).addTo(heatLayer);
-      });
-      heatLayer.addTo(map);
-      const pane = map.getPane('heatPane');
-      if (pane) pane.style.filter = 'blur(18px)';
-    }
-
-    const currentKey = filteredAreas.map((a) => a.area.id).join('|');
+    const currentKey = `${filteredAreas.map((a) => a.area.id).join('|')}|${Boolean(desoGeojson)}`;
     if (currentKey !== lastAreaKey) {
       lastAreaKey = currentKey;
       if (bounds.length === 1) {
@@ -647,6 +736,36 @@
 
   }
 
+  function startDetailCardResize(event) {
+    event.preventDefault();
+    const card = event.currentTarget.closest('.resizable-detail-card');
+    const shell = card?.closest('.map-shell');
+    if (!card || !shell) return;
+
+    const startX = event.clientX;
+    const startY = event.clientY;
+    const startWidth = card.getBoundingClientRect().width;
+    const startHeight = card.getBoundingClientRect().height;
+    const shellRect = shell.getBoundingClientRect();
+    const maxWidth = Math.max(260, shellRect.width - 24);
+    const maxHeight = Math.max(220, shellRect.height - 24);
+
+    const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
+
+    function onMove(moveEvent) {
+      detailCardWidth = clamp(startWidth + moveEvent.clientX - startX, 260, maxWidth);
+      detailCardHeight = clamp(startHeight + startY - moveEvent.clientY, 220, maxHeight);
+    }
+
+    function onUp() {
+      window.removeEventListener('pointermove', onMove);
+      window.removeEventListener('pointerup', onUp);
+    }
+
+    window.addEventListener('pointermove', onMove);
+    window.addEventListener('pointerup', onUp, { once: true });
+  }
+
   $: if (map) {
     filteredAreas;
     selectedId;
@@ -654,6 +773,8 @@
     showMarkers;
     heatMetric;
     referencePresetId;
+    maxCommute;
+    desoGeojson;
     renderMap();
   }
 
@@ -711,7 +832,7 @@
     }
 
     initMap();
-    await Promise.all([loadMunicipalities(), loadAreas()]);
+    await Promise.all([loadMunicipalities(), loadDesoGeojson(), loadAreas()]);
 
     return () => {
       if (autoRefreshTimer) clearTimeout(autoRefreshTimer);
@@ -720,8 +841,10 @@
         map = undefined;
         markerLayer = undefined;
         heatLayer = undefined;
+        polygonLayer = undefined;
         baseTileLayer = undefined;
         searchResultLayer = undefined;
+        destinationLayer = undefined;
       }
     };
   });
@@ -810,8 +933,8 @@
           <button
             class={`pointer-events-auto rounded-lg border px-2 py-1 text-[11px] font-medium shadow-sm transition ${showHeatmap ? 'border-teal-600 bg-teal-600 text-white hover:bg-teal-700' : 'border-slate-300 bg-white/80 text-slate-500 hover:bg-white'}`}
             on:click={() => { showHeatmap = !showHeatmap; }}
-            title="Toggle heatmap"
-          >▦ Heatmap</button>
+            title="Toggle area layer"
+          >▦ Areas</button>
           {#if showHeatmap}
             <select
               class="pointer-events-auto rounded-lg border border-slate-300 bg-white/90 px-2 py-1 text-[11px] font-medium shadow-sm"
@@ -822,10 +945,23 @@
               {/each}
             </select>
           {/if}
+          {#if geojsonError}
+            <div class={`pointer-events-auto max-w-40 rounded-lg border px-2 py-1 text-[11px] shadow-sm ${isDark ? 'border-rose-400/30 bg-[#080f1ee6] text-rose-200' : 'border-red-200 bg-white/90 text-red-700'}`}>{geojsonError}</div>
+          {/if}
         </div>
 
         {#if selected}
-          <div class={`pointer-events-auto absolute bottom-3 left-3 z-[1000] hidden w-[min(320px,calc(100%-1.5rem))] rounded-2xl border p-[0.8rem] shadow-[0_20px_40px_-26px_rgba(15,23,42,0.55)] backdrop-blur md:block xl:w-[min(360px,calc(100%-1.5rem))] xl:p-[0.9rem] ${isDark ? 'border-slate-400/15 bg-[#080f1ee0] text-slate-200' : 'border-slate-400/30 bg-white/92 text-slate-900'}`}>
+          <div
+            class={`resizable-detail-card pointer-events-auto absolute bottom-3 left-3 z-[1000] hidden rounded-2xl border p-[0.8rem] shadow-[0_20px_40px_-26px_rgba(15,23,42,0.55)] backdrop-blur md:block xl:p-[0.9rem] ${isDark ? 'border-slate-400/15 bg-[#080f1ee0] text-slate-200' : 'border-slate-400/30 bg-white/92 text-slate-900'}`}
+            style={`width:${detailCardWidth}px;height:${detailCardHeight}px`}
+          >
+            <button
+              class={`detail-card-resize-handle ${isDark ? 'border-white/15 bg-white/10' : 'border-slate-300 bg-white/90'}`}
+              type="button"
+              aria-label="Resize selected area panel"
+              title="Resize"
+              on:pointerdown={startDetailCardResize}
+            ></button>
             <p class={`m-0 text-[11px] font-semibold uppercase tracking-[0.12em] ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>Selected area</p>
             <div class="mt-2 flex items-start justify-between gap-3">
               <div>
