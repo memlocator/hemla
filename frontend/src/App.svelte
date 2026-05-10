@@ -87,10 +87,19 @@
   let lastAreaKey = '';
   let autoRefreshTimer;
   let isDark = false;
+  let sidebarOpen = true;
   let suppressMarkerClicksUntil = 0;
   let hoverTooltipTimer;
   let detailCardWidth = 320;
   let detailCardHeight = 360;
+
+  let showSales = false;
+  let salesData = null;
+  let salesLoading = false;
+
+  let showSalesLayer = false;
+  let salesLayer = null;
+  let salesLayerLoading = false;
 
   const heatOptions = MAP_METRIC_OPTIONS;
   const referencePresets = [
@@ -129,6 +138,7 @@
     : areas;
 
   $: selected = filteredAreas.find((x) => x.area.id === selectedId) ?? null;
+  $: if (selectedId) { showSales = false; salesData = null; }
   $: activeReferencePreset = referencePresets.find((x) => x.id === referencePresetId) ?? referencePresets[4];
   $: scoreBreaks = (() => {
     const values = filteredAreas.map((x) => x.value_score).filter((x) => Number.isFinite(x)).sort((a, b) => a - b);
@@ -388,6 +398,62 @@
     }
   }
 
+  function salePriceColor(ppm) {
+    // 30k–130k SEK/sqm → green→yellow→red
+    const t = Math.max(0, Math.min(1, (ppm - 30000) / 100000));
+    const r = Math.round(t < 0.5 ? t * 2 * 255 : 255);
+    const g = Math.round(t < 0.5 ? 255 : (1 - t) * 2 * 255);
+    return `rgb(${r},${g},50)`;
+  }
+
+  async function toggleSalesLayer() {
+    if (!map || !salesLayer) return;
+    if (showSalesLayer) {
+      salesLayer.clearLayers();
+      showSalesLayer = false;
+      return;
+    }
+    salesLayerLoading = true;
+    try {
+      const res = await fetch('/api/sold_listings_all');
+      const data = await res.json();
+      salesLayer.clearLayers();
+      for (const s of data.listings) {
+        const date = s.t ? new Date(s.t * 1000).toLocaleDateString('sv-SE') : '';
+        L.circleMarker([s.la, s.lo], {
+          radius: 5,
+          color: salePriceColor(s.p),
+          fillColor: salePriceColor(s.p),
+          fillOpacity: 0.85,
+          weight: 0,
+          pane: 'markerPane',
+        }).bindPopup(
+          `<b>${s.a}</b><br>${s.r} · ${s.s} m²<br>${s.p.toLocaleString('sv-SE')} SEK/m²<br>${s.f.toLocaleString('sv-SE')} SEK total<br>${date}`,
+          { maxWidth: 200 }
+        ).addTo(salesLayer);
+      }
+      showSalesLayer = true;
+    } catch (e) { console.error(e); }
+    salesLayerLoading = false;
+  }
+
+  async function toggleSales() {
+    if (showSales) { showSales = false; return; }
+    if (!selected) return;
+    salesLoading = true;
+    try {
+      const res = await fetch(`/api/areas/${selected.area.id}/sold_listings?limit=100`);
+      salesData = await res.json();
+      showSales = true;
+    } catch { salesData = null; }
+    salesLoading = false;
+  }
+
+  function formatDate(ts) {
+    if (!ts) return '';
+    return new Date(ts * 1000).toLocaleDateString('sv-SE');
+  }
+
   async function loadMunicipalities() {
     try {
       const res = await fetch('/api/municipalities');
@@ -467,6 +533,7 @@
     map.createPane('heatPane').style.zIndex = '350';
     polygonLayer = L.layerGroup().addTo(map);
     markerLayer = L.layerGroup().addTo(map);
+    salesLayer = L.layerGroup().addTo(map);
     destinationLayer = L.layerGroup().addTo(map);
     searchResultLayer = L.layerGroup().addTo(map);
 
@@ -548,8 +615,8 @@
 
     return {
       pane: 'polygonPane',
-      color: active ? '#0f172a' : hovered ? '#334155' : '#ffffff',
-      weight: active ? 2.5 : hovered ? 1.8 : 0.7,
+      color: active ? '#0f172a' : '#334155',
+      weight: active ? 2.5 : hovered ? 1.5 : 0,
       opacity: unavailable ? 0.45 : 0.85,
       fillColor: metricColor(item, min, max),
       fillOpacity: unavailable ? 0.08 : inRange ? 0.38 : 0.14,
@@ -842,6 +909,7 @@
         markerLayer = undefined;
         heatLayer = undefined;
         polygonLayer = undefined;
+        salesLayer = undefined;
         baseTileLayer = undefined;
         searchResultLayer = undefined;
         destinationLayer = undefined;
@@ -870,16 +938,19 @@
           {/each}
         </select>
       </div>
+      <button class={`flex items-center justify-center rounded-md px-3 py-1.5 text-xs font-medium transition ${isDark ? 'bg-white/10 text-white/70 hover:bg-white/15' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`} on:click={() => { sidebarOpen = !sidebarOpen; }} title={sidebarOpen ? 'Hide panel' : 'Show panel'}>
+        {sidebarOpen ? '▶' : '◀'}
+      </button>
       <button class={`flex items-center justify-center rounded-md px-3 py-1.5 text-xs font-medium transition ${isDark ? 'bg-white/10 text-white/70 hover:bg-white/15' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`} on:click={toggleTheme} aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}>
         {@html themeIconSvg(isDark ? 'sun' : 'moon', { color: isDark ? '#fbbf24' : '#0f172a' })}
       </button>
     </div>
   </header>
 
-  <section class="grid min-h-0 gap-4 p-4 lg:h-full lg:px-6 lg:py-4 2xl:grid-cols-[2.25fr,1fr]">
+  <section class={`grid min-h-0 gap-4 p-4 lg:h-full lg:px-6 lg:py-4 ${sidebarOpen ? '2xl:grid-cols-[2.25fr,1fr]' : ''}`}>
     <div class="panel h-full min-h-0 p-3 md:p-4">
       <div class="map-shell border border-slate-300/80 bg-slate-100">
-        <div bind:this={mapContainer} class="map-container"></div>
+        <div bind:this={mapContainer} class="map-container" style={isDark ? 'background:#0b1222' : ''}></div>
 
         <div class="pointer-events-none absolute inset-x-3 top-3 z-[1000] flex justify-center md:pr-28">
           <div class="pointer-events-auto relative w-full max-w-md">
@@ -935,6 +1006,12 @@
             on:click={() => { showHeatmap = !showHeatmap; }}
             title="Toggle area layer"
           >▦ Areas</button>
+          <button
+            class={`pointer-events-auto rounded-lg border px-2 py-1 text-[11px] font-medium shadow-sm transition ${showSalesLayer ? 'border-teal-600 bg-teal-600 text-white hover:bg-teal-700' : 'border-slate-300 bg-white/80 text-slate-500 hover:bg-white'}`}
+            on:click={toggleSalesLayer}
+            title="Toggle real sales layer"
+            disabled={salesLayerLoading}
+          >{#if salesLayerLoading}…{:else}<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 16 16" fill="currentColor" style="display:inline;vertical-align:-1px;margin-right:3px"><path d="M2 2h5.5l6.5 6.5a1.5 1.5 0 0 1 0 2.1l-3.4 3.4a1.5 1.5 0 0 1-2.1 0L2 7.5V2zm2 1v3.9l5.8 5.8.7-.7L4.6 6.3 4 3H4zm2 2a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>Sales{/if}</button>
           {#if showHeatmap}
             <select
               class="pointer-events-auto rounded-lg border border-slate-300 bg-white/90 px-2 py-1 text-[11px] font-medium shadow-sm"
@@ -971,12 +1048,47 @@
               <p class="m-0 text-2xl font-bold leading-none" style={`color:${scoreColor(selected.value_score)}`}>{selected.value_score}</p>
             </div>
             <div class="mt-3 grid gap-1.5 text-sm">
-              <p class="m-0">Price: <span class="font-semibold">{priceLabel(selected.area.metrics)}</span></p>
+              <p class="m-0">Price: <span class="font-semibold">{priceLabel(selected.area.metrics)}</span>
+                {#if selected.area.metrics.price_source === 'real'}
+                  <span class={`ml-1 text-xs ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>based on {selected.area.metrics.price_n_listings} sales</span>
+                {:else if selected.area.metrics.price_source === 'municipality_median'}
+                  <span class={`ml-1 text-xs ${isDark ? 'text-amber-400' : 'text-amber-600'}`}>municipality avg</span>
+                {/if}
+              </p>
               <p class="m-0">Commute: <span class="font-semibold">{commuteLabel(selected)}</span></p>
               {#if transitLabel(selected.area.metrics)}<p class="m-0">Transit: <span class="font-semibold">{@html transitLabel(selected.area.metrics, { iconColor: isDark ? '#e2e8f0' : '#0f172a' })}</span></p>{/if}
               <p class="m-0">Crime: <span class="font-semibold">{crimeLabel(selected.area.metrics)}</span></p>
               <p class="m-0">Ref ({activeReferencePreset.rooms} rok, {activeReferencePreset.sqm} sqm): <span class="font-semibold">{referencePrice(selected) == null ? 'N/A' : formatSek(referencePrice(selected))}</span></p>
             </div>
+            <button
+              on:click={toggleSales}
+              class={`mt-3 w-full rounded px-3 py-1.5 text-xs font-medium transition-colors ${showSales ? (isDark ? 'bg-cyan-700 text-white' : 'bg-cyan-600 text-white') : (isDark ? 'bg-white/10 text-slate-200 hover:bg-white/20' : 'bg-slate-100 text-slate-700 hover:bg-slate-200')}`}
+            >
+              {salesLoading ? 'Loading…' : showSales ? 'Hide sales' : 'Show recent sales'}
+            </button>
+            {#if showSales && salesData}
+              <div class={`mt-2 max-h-60 overflow-y-auto rounded text-xs ${isDark ? 'bg-white/5' : 'bg-slate-50'}`}>
+                {#if salesData.listings.length === 0}
+                  <p class={`px-3 py-2 ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>No sales data for this zone.</p>
+                {:else}
+                  <div class={`sticky top-0 grid grid-cols-4 gap-1 px-3 py-1.5 font-semibold ${isDark ? 'bg-slate-800 text-slate-300' : 'bg-slate-200 text-slate-600'}`}>
+                    <span class="col-span-2">Address</span>
+                    <span class="text-right">Price/sqm</span>
+                    <span class="text-right">Date</span>
+                  </div>
+                  {#each salesData.listings as s}
+                    <div class={`grid grid-cols-4 gap-1 border-t px-3 py-1 ${isDark ? 'border-white/5 text-slate-300' : 'border-slate-100 text-slate-700'}`}>
+                      <span class="col-span-2 truncate" title={s.street_address}>{s.street_address} · {s.rooms} · {s.sqm} m²</span>
+                      <span class="text-right">{s.price_per_sqm_sek.toLocaleString('sv-SE')}</span>
+                      <span class="text-right">{formatDate(s.sold_at)}</span>
+                    </div>
+                  {/each}
+                  {#if salesData.total > salesData.listings.length}
+                    <p class={`px-3 py-1.5 ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>Showing {salesData.listings.length} of {salesData.total} sales</p>
+                  {/if}
+                {/if}
+              </div>
+            {/if}
             <div class={`mt-3 hidden rounded-lg px-3 py-2 text-xs sm:block ${isDark ? 'bg-white/5 text-white/70' : 'bg-slate-100 text-slate-700'}`}>
               {#each roomRanges as rr}
                 <p class="m-0">{rr.label} ({rr.minSqm}-{rr.maxSqm} sqm): <span class="font-semibold">{roomRangeLabel(selected, rr.minSqm, rr.maxSqm)}</span></p>
@@ -1015,17 +1127,53 @@
           </summary>
           <div class={`border-t px-4 pb-4 pt-3 ${isDark ? 'border-white/10' : 'border-slate-200'}`}>
             <div class="grid gap-1.5 text-sm">
-              <p class="m-0">Price: <span class="font-semibold">{priceLabel(selected.area.metrics)}</span></p>
+              <p class="m-0">Price: <span class="font-semibold">{priceLabel(selected.area.metrics)}</span>
+                {#if selected.area.metrics.price_source === 'real'}
+                  <span class={`ml-1 text-xs ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>based on {selected.area.metrics.price_n_listings} sales</span>
+                {:else if selected.area.metrics.price_source === 'municipality_median'}
+                  <span class={`ml-1 text-xs ${isDark ? 'text-amber-400' : 'text-amber-600'}`}>municipality avg</span>
+                {/if}
+              </p>
               <p class="m-0">Commute: <span class="font-semibold">{commuteLabel(selected)}</span></p>
               {#if transitLabel(selected.area.metrics)}<p class="m-0">Transit: <span class="font-semibold">{@html transitLabel(selected.area.metrics, { iconColor: isDark ? '#e2e8f0' : '#0f172a' })}</span></p>{/if}
               <p class="m-0">Crime: <span class="font-semibold">{crimeLabel(selected.area.metrics)}</span></p>
               <p class="m-0">Ref ({activeReferencePreset.rooms} rok, {activeReferencePreset.sqm} sqm): <span class="font-semibold">{referencePrice(selected) == null ? 'N/A' : formatSek(referencePrice(selected))}</span></p>
             </div>
+            <button
+              on:click={toggleSales}
+              class={`mt-3 w-full rounded px-3 py-1.5 text-xs font-medium transition-colors ${showSales ? (isDark ? 'bg-cyan-700 text-white' : 'bg-cyan-600 text-white') : (isDark ? 'bg-white/10 text-slate-200 hover:bg-white/20' : 'bg-slate-100 text-slate-700 hover:bg-slate-200')}`}
+            >
+              {salesLoading ? 'Loading…' : showSales ? 'Hide sales' : 'Show recent sales'}
+            </button>
+            {#if showSales && salesData}
+              <div class={`mt-2 max-h-60 overflow-y-auto rounded text-xs ${isDark ? 'bg-white/5' : 'bg-slate-50'}`}>
+                {#if salesData.listings.length === 0}
+                  <p class={`px-3 py-2 ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>No sales data for this zone.</p>
+                {:else}
+                  <div class={`sticky top-0 grid grid-cols-4 gap-1 px-3 py-1.5 font-semibold ${isDark ? 'bg-slate-800 text-slate-300' : 'bg-slate-200 text-slate-600'}`}>
+                    <span class="col-span-2">Address</span>
+                    <span class="text-right">Price/sqm</span>
+                    <span class="text-right">Date</span>
+                  </div>
+                  {#each salesData.listings as s}
+                    <div class={`grid grid-cols-4 gap-1 border-t px-3 py-1 ${isDark ? 'border-white/5 text-slate-300' : 'border-slate-100 text-slate-700'}`}>
+                      <span class="col-span-2 truncate" title={s.street_address}>{s.street_address} · {s.rooms} · {s.sqm} m²</span>
+                      <span class="text-right">{s.price_per_sqm_sek.toLocaleString('sv-SE')}</span>
+                      <span class="text-right">{formatDate(s.sold_at)}</span>
+                    </div>
+                  {/each}
+                  {#if salesData.total > salesData.listings.length}
+                    <p class={`px-3 py-1.5 ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>Showing {salesData.listings.length} of {salesData.total} sales</p>
+                  {/if}
+                {/if}
+              </div>
+            {/if}
           </div>
         </details>
       {/if}
     </div>
 
+    {#if sidebarOpen}
     <aside class="panel h-full overflow-y-auto">
       <div class="grid gap-3">
         <div class="rounded-xl border border-slate-300 bg-white p-3">
@@ -1169,5 +1317,6 @@
 
       </div>
     </aside>
+    {/if}
   </section>
 </div>
