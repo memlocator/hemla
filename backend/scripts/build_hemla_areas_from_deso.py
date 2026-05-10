@@ -9,6 +9,7 @@ IN_CSV = RAW / "deso_stockholm_indicators_2024.csv"
 NAMES_CSV = RAW / "deso_area_names.csv"
 COMMUTE_CSV = RAW / "deso_commute_tcentralen.csv"
 PRICES_CSV = RAW / "municipality_prices_brf.csv"
+DESO_PRICES_CSV = RAW / "deso_prices_hemnet.csv"   # per-DeSO prices, preferred over municipality
 TRANSIT_CSV = RAW / "deso_transit_type.csv"
 OUT_CSV = ROOT / "data" / "deso_stockholm_areas.csv"
 
@@ -77,15 +78,31 @@ def load_price_map(path: Path) -> dict[str, dict[str, str]]:
     return out
 
 
+def load_deso_price_map(path: Path) -> dict[str, dict[str, str]]:
+    """Returns {deso_id: {avg_price_sek_per_sqm, source, n_listings}} from per-DeSO prices CSV."""
+    if not path.exists():
+        return {}
+    out: dict[str, dict[str, str]] = {}
+    for row in load_rows(path):
+        deso_id = (row.get("deso_id") or "").strip()
+        price = (row.get("avg_price_sek_per_sqm") or "").strip()
+        source = (row.get("source") or "missing").strip()
+        n_listings = (row.get("n_listings") or "0").strip()
+        if deso_id and price:
+            out[deso_id] = {"avg_price_sek_per_sqm": price, "source": source, "n_listings": n_listings}
+    return out
+
+
 def main() -> None:
     indicators = load_rows(IN_CSV)
     name_map = load_name_map(NAMES_CSV)
     commute_map = load_commute_map(COMMUTE_CSV)
     price_map = load_price_map(PRICES_CSV)
+    deso_price_map = load_deso_price_map(DESO_PRICES_CSV)
     transit_map = load_transit_map(TRANSIT_CSV)
 
     has_commute = bool(commute_map)
-    has_prices = bool(price_map)
+    has_prices = bool(price_map) or bool(deso_price_map)
     has_transit = bool(transit_map)
 
     out_fields = [
@@ -100,7 +117,7 @@ def main() -> None:
     if has_commute:
         out_fields += ["sl_commute_to_tcentralen_min", "commute_source"]
     if has_prices:
-        out_fields += ["avg_price_sek_per_sqm", "price_source"]
+        out_fields += ["avg_price_sek_per_sqm", "price_source", "price_n_listings"]
     if has_transit:
         out_fields += ["transit_type", "nearest_station_name", "nearest_station_walk_min"]
 
@@ -124,9 +141,11 @@ def main() -> None:
             out_row["sl_commute_to_tcentralen_min"] = commute.get("commute_min", "")
             out_row["commute_source"] = commute.get("source", "missing")
         if has_prices:
-            price = price_map.get(municipality.lower(), {})
+            # Prefer per-DeSO price (from Hemnet scrape); fall back to municipality average
+            price = deso_price_map.get(deso_id) or price_map.get(municipality.lower(), {})
             out_row["avg_price_sek_per_sqm"] = price.get("avg_price_sek_per_sqm", "")
             out_row["price_source"] = price.get("source", "missing")
+            out_row["price_n_listings"] = price.get("n_listings", "0")
         if has_transit:
             transit = transit_map.get(deso_id, {})
             out_row["transit_type"] = transit.get("transit_type", "")

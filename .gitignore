@@ -18,7 +18,8 @@ frontend/dist/
 frontend/.npm-cache/
 
 backend/.pytest_cache/
-backend/data/raw/*.zip
+backend/data/
 
 .DS_Store
 key.txt
+tmp/
