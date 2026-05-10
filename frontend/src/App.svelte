@@ -10,12 +10,10 @@
   let budgetCapSek = 3850000;
   let budgetCapPerSqm = 70000;
   let maxCommute = 35;
-  let destinationQuery = 'T-Centralen, Stockholm';
-  let destinationLat = 59.3303;
-  let destinationLon = 18.0586;
-  let destinationSuggestions = [];
-  let destinationSearchLoading = false;
-  let destinationSearchError = '';
+  // Each destination: { label, lat, lon, weight (1-100), query, suggestions, loading, error }
+  let destinations = [
+    { label: 'T-Centralen, Stockholm', lat: 59.3303, lon: 18.0586, weight: 100, query: 'T-Centralen, Stockholm', suggestions: [], loading: false, error: '' }
+  ];
   let mapSearchQuery = '';
   let mapSearchSuggestions = [];
   let mapSearchLoading = false;
@@ -36,9 +34,17 @@
     if (p.has('municipality')) municipality = p.get('municipality');
     if (p.has('budget')) { budgetCapPerSqm = Number(p.get('budget')); budgetCapSek = Math.round(budgetCapPerSqm * activeReferencePreset.sqm); }
     if (p.has('commute')) maxCommute = Number(p.get('commute'));
-    if (p.has('dest')) destinationQuery = p.get('dest');
-    if (p.has('dlat')) destinationLat = Number(p.get('dlat'));
-    if (p.has('dlon')) destinationLon = Number(p.get('dlon'));
+    const dlats = p.getAll('dlat').map(Number);
+    const dlons = p.getAll('dlon').map(Number);
+    const dweights = p.getAll('dw').map(Number);
+    const dlabels = p.getAll('dlabel');
+    if (dlats.length && dlons.length) {
+      destinations = dlats.map((lat, i) => ({
+        label: dlabels[i] || `Destination ${i + 1}`,
+        lat, lon: dlons[i], weight: dweights[i] ?? 100,
+        query: dlabels[i] || '', suggestions: [], loading: false, error: ''
+      }));
+    }
     if (p.has('pp')) priorityPrice = Number(p.get('pp'));
     if (p.has('pc')) priorityCommute = Number(p.get('pc'));
     if (p.has('ps')) priorityCrime = Number(p.get('ps'));
@@ -52,9 +58,13 @@
     if (municipality) p.set('municipality', municipality);
     if (budgetCapPerSqm !== 70000) p.set('budget', budgetCapPerSqm);
     if (maxCommute !== 35) p.set('commute', maxCommute);
-    if (destinationQuery && destinationQuery !== 'T-Centralen, Stockholm') p.set('dest', destinationQuery);
-    if (destinationLat !== 59.3303) p.set('dlat', destinationLat);
-    if (destinationLon !== 18.0586) p.set('dlon', destinationLon);
+    const defaultDest = destinations.length === 1 && destinations[0].lat === 59.3303 && destinations[0].lon === 18.0586;
+    if (!defaultDest) {
+      for (const d of destinations) {
+        p.append('dlat', d.lat); p.append('dlon', d.lon);
+        p.append('dw', d.weight); p.append('dlabel', d.label);
+      }
+    }
     if (priorityPrice !== 34) p.set('pp', priorityPrice);
     if (priorityCommute !== 33) p.set('pc', priorityCommute);
     if (priorityCrime !== 33) p.set('ps', priorityCrime);
@@ -87,7 +97,7 @@
   let lastAreaKey = '';
   let autoRefreshTimer;
   let isDark = false;
-  let sidebarOpen = true;
+  let sidebarWidth = 360;
   let suppressMarkerClicksUntil = 0;
   let hoverTooltipTimer;
   let detailCardWidth = 320;
@@ -100,6 +110,9 @@
   let showSalesLayer = false;
   let salesLayer = null;
   let salesLayerLoading = false;
+  let allSalesData = null;
+  let saleMin = 0;
+  let saleMax = 1;
 
   const heatOptions = MAP_METRIC_OPTIONS;
   const referencePresets = [
@@ -196,6 +209,15 @@
     return `${Math.round(commute)} min`;
   }
 
+  function commuteDestLines(item) {
+    const validDests = destinations.filter((d) => Number.isFinite(d.lat));
+    if (validDests.length <= 1) return null;
+    return validDests.map((d, i) => {
+      const mins = item.breakdown[`dest_commute_${i}`];
+      return { label: d.label, mins: mins != null ? Math.round(mins) : null };
+    });
+  }
+
   function commuteMinutes(item) {
     const commute = item?.breakdown?.commute_minutes ?? item?.area?.metrics?.sl_commute_to_tcentralen_min;
     return Number.isFinite(commute) ? Number(commute) : null;
@@ -249,10 +271,12 @@
     });
 
     if (municipality) params.set('municipality', municipality);
-    if (destinationQuery.trim()) params.set('destination_query', destinationQuery.trim());
-    if (Number.isFinite(destinationLat) && Number.isFinite(destinationLon)) {
-      params.set('destination_lat', String(destinationLat));
-      params.set('destination_lon', String(destinationLon));
+    for (const d of destinations) {
+      if (Number.isFinite(d.lat) && Number.isFinite(d.lon)) {
+        params.append('dest_lat', String(d.lat));
+        params.append('dest_lon', String(d.lon));
+        params.append('dest_weight', String(d.weight));
+      }
     }
     return params;
   }
@@ -279,37 +303,38 @@
     syncBudgetFromTotal();
   }
 
-  async function searchDestination() {
-    const q = destinationQuery.trim();
-    if (q.length < 2) {
-      destinationSuggestions = [];
-      destinationSearchError = 'Type at least 2 characters.';
-      return;
-    }
-
-    destinationSearchLoading = true;
-    destinationSearchError = '';
+  async function searchDestination(i) {
+    const d = destinations[i];
+    const q = d.query.trim();
+    if (q.length < 2) { destinations[i].error = 'Type at least 2 characters.'; destinations = destinations; return; }
+    destinations[i].loading = true; destinations[i].error = ''; destinations = destinations;
     try {
-      const params = new URLSearchParams({ q, limit: '6' });
-      const res = await fetch(`/api/geocode?${params.toString()}`);
+      const res = await fetch(`/api/geocode?${new URLSearchParams({ q, limit: '6' })}`);
       if (!res.ok) throw new Error(`Geocode API returned ${res.status}`);
-      destinationSuggestions = await res.json();
-      if (!destinationSuggestions.length) destinationSearchError = 'No matches found.';
+      destinations[i].suggestions = await res.json();
+      if (!destinations[i].suggestions.length) destinations[i].error = 'No matches found.';
     } catch (e) {
-      destinationSuggestions = [];
-      destinationSearchError = e instanceof Error ? e.message : 'Could not search destination';
+      destinations[i].suggestions = [];
+      destinations[i].error = e instanceof Error ? e.message : 'Could not search';
     } finally {
-      destinationSearchLoading = false;
+      destinations[i].loading = false; destinations = destinations;
     }
   }
 
-  function pickDestination(suggestion) {
-    destinationQuery = suggestion.label;
-    destinationLat = suggestion.lat;
-    destinationLon = suggestion.lon;
-    try { localStorage.setItem('hemla-destination', JSON.stringify({ query: suggestion.label, lat: suggestion.lat, lon: suggestion.lon })); } catch { /* ignore */ }
-    destinationSuggestions = [];
-    destinationSearchError = '';
+  function pickDestination(i, suggestion) {
+    destinations[i] = { ...destinations[i], label: suggestion.label, lat: suggestion.lat, lon: suggestion.lon, query: suggestion.label, suggestions: [], error: '' };
+    destinations = destinations;
+    renderDestinationMarker();
+    loadAreas();
+  }
+
+  function addDestination() {
+    destinations = [...destinations, { label: '', lat: NaN, lon: NaN, weight: 50, query: '', suggestions: [], loading: false, error: '' }];
+  }
+
+  function removeDestination(i) {
+    destinations = destinations.filter((_, j) => j !== i);
+    renderDestinationMarker();
     loadAreas();
   }
 
@@ -398,12 +423,58 @@
     }
   }
 
-  function salePriceColor(ppm) {
-    // 30k–130k SEK/sqm → green→yellow→red
-    const t = Math.max(0, Math.min(1, (ppm - 30000) / 100000));
+  function salePriceColor(ppm, min, max) {
+    const t = max > min ? Math.max(0, Math.min(1, (ppm - min) / (max - min))) : 0.5;
     const r = Math.round(t < 0.5 ? t * 2 * 255 : 255);
     const g = Math.round(t < 0.5 ? 255 : (1 - t) * 2 * 255);
     return `rgb(${r},${g},50)`;
+  }
+
+  function saleListingScore(s, desoItem) {
+    // Price score for this specific listing vs user budget
+    const norm = (v, lo, hi, rev) => { const t = Math.max(0, Math.min(1, (v - lo) / (hi - lo))); return rev ? 1 - t : t; };
+    const affordability = norm(s.p, 25000, 130000, true);
+    const budgetFit = s.p <= budgetCapPerSqm ? 1 : Math.max(0, 1 - (s.p - budgetCapPerSqm) / 40000);
+    const priceScore = affordability * 0.6 + budgetFit * 0.4;
+
+    const commuteScore = desoItem ? (desoItem.breakdown.commute ?? 0) / 100 : 0.0;
+    const crimeScore   = desoItem ? (desoItem.breakdown.crime   ?? 50) / 100 : 0.5;
+
+    const total = Math.max(1, priorityPrice + priorityCommute + priorityCrime);
+    const blended = (priceScore * priorityPrice + commuteScore * priorityCommute + crimeScore * priorityCrime) / total;
+    return Math.round(blended * 100);
+  }
+
+  function renderSalesInView() {
+    if (!map || !salesLayer || !allSalesData || !showSalesLayer) return;
+    salesLayer.clearLayers();
+    const bounds = map.getBounds().pad(0.15);
+    const zoom = map.getZoom();
+    const desoById = new Map(filteredAreas.map((item) => [item.area.id, item]));
+    const gridSize = zoom >= 14 ? 0 : zoom >= 12 ? 0.003 : zoom >= 10 ? 0.01 : 0.03;
+    const seen = new Set();
+    for (const s of allSalesData) {
+      if (!bounds.contains([s.la, s.lo])) continue;
+      if (gridSize > 0) {
+        const key = `${Math.round(s.la / gridSize)},${Math.round(s.lo / gridSize)}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+      }
+      const desoItem = s.d ? desoById.get(s.d) : null;
+      const color = scoreColor(saleListingScore(s, desoItem));
+      const date = s.t ? new Date(s.t * 1000).toLocaleDateString('sv-SE') : '';
+      L.circleMarker([s.la, s.lo], {
+        radius: zoom >= 14 ? 5 : zoom >= 12 ? 4 : 3,
+        color,
+        fillColor: color,
+        fillOpacity: 0.8,
+        weight: 0,
+        pane: 'markerPane',
+      }).bindPopup(
+        `<b>${s.a}</b><br>${s.r} · ${s.s} m²<br>${s.p.toLocaleString('sv-SE')} SEK/m²<br>${s.f.toLocaleString('sv-SE')} SEK total<br>${date}`,
+        { maxWidth: 200 }
+      ).addTo(salesLayer);
+    }
   }
 
   async function toggleSalesLayer() {
@@ -411,28 +482,22 @@
     if (showSalesLayer) {
       salesLayer.clearLayers();
       showSalesLayer = false;
+      map.off('moveend', renderSalesInView);
       return;
     }
     salesLayerLoading = true;
     try {
-      const res = await fetch('/api/sold_listings_all');
-      const data = await res.json();
-      salesLayer.clearLayers();
-      for (const s of data.listings) {
-        const date = s.t ? new Date(s.t * 1000).toLocaleDateString('sv-SE') : '';
-        L.circleMarker([s.la, s.lo], {
-          radius: 5,
-          color: salePriceColor(s.p),
-          fillColor: salePriceColor(s.p),
-          fillOpacity: 0.85,
-          weight: 0,
-          pane: 'markerPane',
-        }).bindPopup(
-          `<b>${s.a}</b><br>${s.r} · ${s.s} m²<br>${s.p.toLocaleString('sv-SE')} SEK/m²<br>${s.f.toLocaleString('sv-SE')} SEK total<br>${date}`,
-          { maxWidth: 200 }
-        ).addTo(salesLayer);
+      if (!allSalesData) {
+        const res = await fetch('/api/sold_listings_all');
+        const data = await res.json();
+        allSalesData = data.listings;
+        const prices = allSalesData.map((s) => s.p).filter(Boolean);
+        saleMin = Math.min(...prices);
+        saleMax = Math.max(...prices);
       }
       showSalesLayer = true;
+      renderSalesInView();
+      map.on('moveend', renderSalesInView);
     } catch (e) { console.error(e); }
     salesLayerLoading = false;
   }
@@ -627,22 +692,15 @@
   function renderDestinationMarker() {
     if (!map || !destinationLayer) return;
     destinationLayer.clearLayers();
-    if (!Number.isFinite(destinationLat) || !Number.isFinite(destinationLon)) return;
-
-    L.circleMarker([destinationLat, destinationLon], {
-      radius: 7,
-      color: '#ffffff',
-      weight: 3,
-      fillColor: '#0f172a',
-      fillOpacity: 1,
-    }).addTo(destinationLayer);
-
-    L.circleMarker([destinationLat, destinationLon], {
-      radius: 16,
-      color: '#0f172a',
-      weight: 2,
-      fillOpacity: 0.08,
-    }).addTo(destinationLayer);
+    for (const d of destinations) {
+      if (!Number.isFinite(d.lat) || !Number.isFinite(d.lon)) continue;
+      L.circleMarker([d.lat, d.lon], {
+        radius: 7, color: '#ffffff', weight: 3, fillColor: '#0f172a', fillOpacity: 1,
+      }).bindTooltip(d.label, { permanent: false }).addTo(destinationLayer);
+      L.circleMarker([d.lat, d.lon], {
+        radius: 16, color: '#0f172a', weight: 2, fillOpacity: 0.08,
+      }).addTo(destinationLayer);
+    }
   }
 
   function renderPolygons(areaById) {
@@ -760,7 +818,7 @@
       });
     }
 
-    const currentKey = `${filteredAreas.map((a) => a.area.id).join('|')}|${Boolean(desoGeojson)}`;
+    const currentKey = `${filteredAreas.map((a) => a.area.id).sort().join('|')}|${Boolean(desoGeojson)}`;
     if (currentKey !== lastAreaKey) {
       lastAreaKey = currentKey;
       if (bounds.length === 1) {
@@ -833,6 +891,33 @@
     window.addEventListener('pointerup', onUp, { once: true });
   }
 
+  const SIDEBAR_MIN = 200;
+  const SIDEBAR_DEFAULT = 360;
+  const SIDEBAR_COLLAPSE_THRESHOLD = 120;
+
+  function startSidebarResize(event) {
+    event.preventDefault();
+    const startX = event.clientX;
+    const startWidth = sidebarWidth;
+
+    function onMove(e) {
+      const newWidth = startWidth - (e.clientX - startX);
+      sidebarWidth = Math.max(0, newWidth);
+    }
+
+    function onUp() {
+      window.removeEventListener('pointermove', onMove);
+      if (sidebarWidth < SIDEBAR_COLLAPSE_THRESHOLD) sidebarWidth = 0;
+      else if (sidebarWidth < SIDEBAR_MIN) sidebarWidth = SIDEBAR_MIN;
+    }
+
+    window.addEventListener('pointermove', onMove);
+    window.addEventListener('pointerup', onUp, { once: true });
+  }
+
+  $: if (map && sidebarWidth !== undefined) requestAnimationFrame(() => map && map.invalidateSize());
+  $: if (filteredAreas) renderSalesInView();
+
   $: if (map) {
     filteredAreas;
     selectedId;
@@ -858,9 +943,7 @@
     priorityPrice;
     priorityCommute;
     priorityCrime;
-    destinationLat;
-    destinationLon;
-    destinationQuery;
+    destinations;
     referencePresetId;
     minTransitType;
     heatMetric;
@@ -885,15 +968,13 @@
     readFromUrl();
     _mounted = true;
 
-    // Fall back to localStorage for destination only if not in URL
-    if (destinationLat === 59.3303 && destinationLon === 18.0586) {
+    // Fall back to localStorage for destination only if still at default
+    if (destinations.length === 1 && destinations[0].lat === 59.3303) {
       try {
         const dest = localStorage.getItem('hemla-destination');
         if (dest) {
           const { query, lat, lon } = JSON.parse(dest);
-          destinationQuery = query;
-          destinationLat = lat;
-          destinationLon = lon;
+          destinations = [{ ...destinations[0], label: query, query, lat, lon }];
         }
       } catch { /* ignore */ }
     }
@@ -910,6 +991,7 @@
         heatLayer = undefined;
         polygonLayer = undefined;
         salesLayer = undefined;
+        showSalesLayer = false;
         baseTileLayer = undefined;
         searchResultLayer = undefined;
         destinationLayer = undefined;
@@ -938,17 +1020,14 @@
           {/each}
         </select>
       </div>
-      <button class={`flex items-center justify-center rounded-md px-3 py-1.5 text-xs font-medium transition ${isDark ? 'bg-white/10 text-white/70 hover:bg-white/15' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`} on:click={() => { sidebarOpen = !sidebarOpen; }} title={sidebarOpen ? 'Hide panel' : 'Show panel'}>
-        {sidebarOpen ? '▶' : '◀'}
-      </button>
       <button class={`flex items-center justify-center rounded-md px-3 py-1.5 text-xs font-medium transition ${isDark ? 'bg-white/10 text-white/70 hover:bg-white/15' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`} on:click={toggleTheme} aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}>
         {@html themeIconSvg(isDark ? 'sun' : 'moon', { color: isDark ? '#fbbf24' : '#0f172a' })}
       </button>
     </div>
   </header>
 
-  <section class={`grid min-h-0 gap-4 p-4 lg:h-full lg:px-6 lg:py-4 ${sidebarOpen ? '2xl:grid-cols-[2.25fr,1fr]' : ''}`}>
-    <div class="panel h-full min-h-0 p-3 md:p-4">
+  <section class="flex min-h-0 gap-4 p-4 lg:h-full lg:px-6 lg:py-4">
+    <div class="panel h-full min-h-0 flex-1 p-3 md:p-4">
       <div class="map-shell border border-slate-300/80 bg-slate-100">
         <div bind:this={mapContainer} class="map-container" style={isDark ? 'background:#0b1222' : ''}></div>
 
@@ -1055,7 +1134,17 @@
                   <span class={`ml-1 text-xs ${isDark ? 'text-amber-400' : 'text-amber-600'}`}>municipality avg</span>
                 {/if}
               </p>
-              <p class="m-0">Commute: <span class="font-semibold">{commuteLabel(selected)}</span></p>
+              {#if commuteDestLines(selected)}
+                {#each commuteDestLines(selected) as row, i}
+                  <p class="m-0 flex gap-1 min-w-0">
+                    <span class="shrink-0">Commute {i + 1}:</span>
+                    <span class="font-semibold shrink-0">{row.mins != null ? `${row.mins} min` : 'N/A'}</span>
+                    <span class={`truncate text-xs self-end ${isDark ? 'text-slate-400' : 'text-slate-500'}`} title={row.label}>{row.label}</span>
+                  </p>
+                {/each}
+              {:else}
+                <p class="m-0">Commute: <span class="font-semibold">{commuteLabel(selected)}</span></p>
+              {/if}
               {#if transitLabel(selected.area.metrics)}<p class="m-0">Transit: <span class="font-semibold">{@html transitLabel(selected.area.metrics, { iconColor: isDark ? '#e2e8f0' : '#0f172a' })}</span></p>{/if}
               <p class="m-0">Crime: <span class="font-semibold">{crimeLabel(selected.area.metrics)}</span></p>
               <p class="m-0">Ref ({activeReferencePreset.rooms} rok, {activeReferencePreset.sqm} sqm): <span class="font-semibold">{referencePrice(selected) == null ? 'N/A' : formatSek(referencePrice(selected))}</span></p>
@@ -1064,7 +1153,7 @@
               on:click={toggleSales}
               class={`mt-3 w-full rounded px-3 py-1.5 text-xs font-medium transition-colors ${showSales ? (isDark ? 'bg-cyan-700 text-white' : 'bg-cyan-600 text-white') : (isDark ? 'bg-white/10 text-slate-200 hover:bg-white/20' : 'bg-slate-100 text-slate-700 hover:bg-slate-200')}`}
             >
-              {salesLoading ? 'Loading…' : showSales ? 'Hide sales' : 'Show recent sales'}
+              {salesLoading ? 'Loading…' : showSales ? 'Hide sales' : `Show recent sales${selected.area.metrics.price_n_listings ? ` (${selected.area.metrics.price_n_listings})` : ''}`}
             </button>
             {#if showSales && salesData}
               <div class={`mt-2 max-h-60 overflow-y-auto rounded text-xs ${isDark ? 'bg-white/5' : 'bg-slate-50'}`}>
@@ -1134,7 +1223,17 @@
                   <span class={`ml-1 text-xs ${isDark ? 'text-amber-400' : 'text-amber-600'}`}>municipality avg</span>
                 {/if}
               </p>
-              <p class="m-0">Commute: <span class="font-semibold">{commuteLabel(selected)}</span></p>
+              {#if commuteDestLines(selected)}
+                {#each commuteDestLines(selected) as row, i}
+                  <p class="m-0 flex gap-1 min-w-0">
+                    <span class="shrink-0">Commute {i + 1}:</span>
+                    <span class="font-semibold shrink-0">{row.mins != null ? `${row.mins} min` : 'N/A'}</span>
+                    <span class={`truncate text-xs self-end ${isDark ? 'text-slate-400' : 'text-slate-500'}`} title={row.label}>{row.label}</span>
+                  </p>
+                {/each}
+              {:else}
+                <p class="m-0">Commute: <span class="font-semibold">{commuteLabel(selected)}</span></p>
+              {/if}
               {#if transitLabel(selected.area.metrics)}<p class="m-0">Transit: <span class="font-semibold">{@html transitLabel(selected.area.metrics, { iconColor: isDark ? '#e2e8f0' : '#0f172a' })}</span></p>{/if}
               <p class="m-0">Crime: <span class="font-semibold">{crimeLabel(selected.area.metrics)}</span></p>
               <p class="m-0">Ref ({activeReferencePreset.rooms} rok, {activeReferencePreset.sqm} sqm): <span class="font-semibold">{referencePrice(selected) == null ? 'N/A' : formatSek(referencePrice(selected))}</span></p>
@@ -1143,7 +1242,7 @@
               on:click={toggleSales}
               class={`mt-3 w-full rounded px-3 py-1.5 text-xs font-medium transition-colors ${showSales ? (isDark ? 'bg-cyan-700 text-white' : 'bg-cyan-600 text-white') : (isDark ? 'bg-white/10 text-slate-200 hover:bg-white/20' : 'bg-slate-100 text-slate-700 hover:bg-slate-200')}`}
             >
-              {salesLoading ? 'Loading…' : showSales ? 'Hide sales' : 'Show recent sales'}
+              {salesLoading ? 'Loading…' : showSales ? 'Hide sales' : `Show recent sales${selected.area.metrics.price_n_listings ? ` (${selected.area.metrics.price_n_listings})` : ''}`}
             </button>
             {#if showSales && salesData}
               <div class={`mt-2 max-h-60 overflow-y-auto rounded text-xs ${isDark ? 'bg-white/5' : 'bg-slate-50'}`}>
@@ -1173,48 +1272,63 @@
       {/if}
     </div>
 
-    {#if sidebarOpen}
-    <aside class="panel h-full overflow-y-auto">
-      <div class="grid gap-3">
+    {#if sidebarWidth === 0}
+      <button
+        class={`self-center rounded-l-lg border border-r-0 px-1.5 py-3 text-xs shadow-md transition flex-shrink-0 ${isDark ? 'border-white/10 bg-[#080f1e] text-white/60 hover:text-white/90' : 'border-slate-200 bg-white text-slate-400 hover:text-slate-700'}`}
+        on:click={() => { sidebarWidth = SIDEBAR_DEFAULT; }}
+        title="Show panel"
+      >◀</button>
+    {:else}
+    <aside class="panel relative flex h-full flex-shrink-0 flex-col overflow-hidden" style="width:{sidebarWidth}px">
+      <button
+        class={`absolute left-0 top-0 z-10 h-full w-1.5 cursor-col-resize opacity-0 hover:opacity-100 transition-opacity ${isDark ? 'bg-white/20' : 'bg-slate-400/40'}`}
+        on:pointerdown={startSidebarResize}
+        title="Drag to resize"
+      ></button>
+      <div class="min-w-0 overflow-x-hidden overflow-y-auto pl-2">
+      <div class="grid min-w-0 gap-3">
         <div class="rounded-xl border border-slate-300 bg-white p-3">
           <p class="m-0 mb-2 text-sm font-semibold">Constraints</p>
-          <label class="grid gap-1 text-sm font-semibold text-slate-800">Destination
-            <div class="flex gap-2">
-              <input
-                class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2"
-                type="text"
-                bind:value={destinationQuery}
-                on:keydown={(e) => {
-                  if (e.key === 'Enter') {
-                    e.preventDefault();
-                    searchDestination();
-                  }
-                }}
-                placeholder="Type destination (e.g. KTH, Stockholm)"
-              />
-              <button class="rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-700" on:click={searchDestination}>
-                Search
-              </button>
-            </div>
-          </label>
-          {#if destinationSearchLoading}
-            <p class="m-0 mt-1 text-xs text-slate-600">Searching destination...</p>
-          {/if}
-          {#if destinationSearchError}
-            <p class="m-0 mt-1 text-xs text-red-700">{destinationSearchError}</p>
-          {/if}
-          {#if destinationLat !== null && destinationLon !== null}
-            <p class="m-0 mt-1 text-xs text-slate-600">Selected point: {destinationLat.toFixed(5)}, {destinationLon.toFixed(5)}</p>
-          {/if}
-          {#if destinationSuggestions.length}
-            <div class="mt-2 grid gap-1 rounded-xl border border-slate-300 bg-white p-2">
-              {#each destinationSuggestions as suggestion}
-                <button type="button" class="rounded-lg px-2 py-2 text-left text-xs transition hover:bg-slate-100" on:click={() => pickDestination(suggestion)}>
-                  {suggestion.label}
-                </button>
-              {/each}
-            </div>
-          {/if}
+          <div class="grid gap-2">
+            <p class={`m-0 text-sm font-semibold ${isDark ? 'text-slate-200' : 'text-slate-800'}`}>Destinations</p>
+            {#each destinations as d, i}
+              <div class={`min-w-0 rounded-xl border p-2 ${isDark ? 'border-white/10 bg-white/5' : 'border-slate-200 bg-slate-50'}`}>
+                <div class="flex gap-1">
+                  <input
+                    class={`w-full rounded-lg border px-2 py-1.5 text-xs ${isDark ? 'border-white/10 bg-white/10 text-white placeholder:text-white/30' : 'border-slate-300 bg-white text-slate-900'}`}
+                    type="text"
+                    bind:value={d.query}
+                    on:keydown={(e) => { if (e.key === 'Enter') { e.preventDefault(); searchDestination(i); } }}
+                    placeholder="e.g. KTH, Stockholm"
+                  />
+                  <button class={`whitespace-nowrap rounded-lg border px-2 py-1 text-xs font-semibold transition ${isDark ? 'border-white/10 bg-white/10 text-white/70 hover:bg-white/20' : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-50'}`} on:click={() => searchDestination(i)}>Go</button>
+                  {#if destinations.length > 1}
+                    <button class={`rounded-lg border px-2 py-1 text-xs transition hover:text-red-500 ${isDark ? 'border-white/10 text-white/30' : 'border-slate-200 text-slate-400'}`} on:click={() => removeDestination(i)}>✕</button>
+                  {/if}
+                </div>
+                {#if d.label && d.label !== d.query && Number.isFinite(d.lat)}
+                  <p class={`m-0 mt-1 truncate text-xs ${isDark ? 'text-slate-400' : 'text-slate-500'}`} title={d.label}>{d.label}</p>
+                {/if}
+                {#if d.loading}<p class={`m-0 mt-1 text-xs ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>Searching…</p>{/if}
+                {#if d.error}<p class="m-0 mt-1 text-xs text-red-400">{d.error}</p>{/if}
+                {#if d.suggestions.length}
+                  <div class={`mt-1 grid gap-0.5 rounded-lg border p-1 ${isDark ? 'border-white/10 bg-white/5' : 'border-slate-200 bg-white'}`}>
+                    {#each d.suggestions as s}
+                      <button type="button" class={`rounded px-2 py-1.5 text-left text-xs transition ${isDark ? 'text-white/70 hover:bg-white/10' : 'hover:bg-slate-100'}`} on:click={() => pickDestination(i, s)}>{s.label}</button>
+                    {/each}
+                  </div>
+                {/if}
+                {#if destinations.length > 1}
+                  <div class="mt-2 flex items-center gap-2">
+                    <span class={`w-12 text-xs ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>Weight</span>
+                    <input type="range" min="0" max="100" step="5" bind:value={d.weight} on:input={() => { destinations = destinations; scheduleAutoRefresh(); }} class="flex-1" />
+                    <span class={`w-6 text-right text-xs font-medium ${isDark ? 'text-slate-300' : 'text-slate-700'}`}>{d.weight}</span>
+                  </div>
+                {/if}
+              </div>
+            {/each}
+            <button class={`rounded-xl border border-dashed py-1.5 text-xs transition hover:border-teal-400 hover:text-teal-500 ${isDark ? 'border-white/20 text-white/40' : 'border-slate-300 text-slate-500'}`} on:click={addDestination}>+ Add destination</button>
+          </div>
           <label class="grid gap-1 text-sm font-semibold text-slate-800">Municipality
             <select class="rounded-xl border border-slate-300 bg-white px-3 py-2" bind:value={municipality} on:change={scheduleAutoRefresh}>
               {#each municipalityOptions as option}
@@ -1292,7 +1406,7 @@
             {#each filteredAreas.slice(0, 20) as item, idx}
               <button
                 type="button"
-                class={`rounded-xl border p-3 text-left text-sm transition ${item.area.id === selectedId ? 'border-teal-600 bg-teal-50' : 'border-slate-300 hover:border-teal-300'}`}
+                class={`min-w-0 overflow-hidden rounded-xl border p-3 text-left text-sm transition ${item.area.id === selectedId ? 'border-teal-600 bg-teal-50' : 'border-slate-300 hover:border-teal-300'}`}
                 on:click={() => {
                   selectedId = item.area.id;
                   focusAreaOnMap(item.area.id);
@@ -1303,7 +1417,17 @@
                 <p class="m-0 font-semibold">{item.area.name}</p>
                 <p class="m-0 text-xs text-slate-600">{item.area.municipality}</p>
                 <p class="m-0 mt-1 text-sm font-semibold" style={`color:${scoreColor(item.value_score)}`}>{item.value_score}</p>
-                <p class="m-0 mt-1 text-xs text-slate-600">{commuteLabel(item)} commute • {priceLabel(item.area.metrics)} • {crimeLabel(item.area.metrics)} crime</p>
+                {#if commuteDestLines(item)}
+                  {#each commuteDestLines(item) as row}
+                    <p class="m-0 mt-0.5 flex gap-1 min-w-0 text-xs text-slate-600">
+                      <span class="shrink-0 font-semibold">{row.mins != null ? `${row.mins} min` : 'N/A'}</span>
+                      <span class="truncate" title={row.label}>to {row.label}</span>
+                    </p>
+                  {/each}
+                  <p class="m-0 mt-0.5 text-xs text-slate-600">{priceLabel(item.area.metrics)} • {crimeLabel(item.area.metrics)} crime</p>
+                {:else}
+                  <p class="m-0 mt-1 text-xs text-slate-600">{commuteLabel(item)} commute • {priceLabel(item.area.metrics)} • {crimeLabel(item.area.metrics)} crime</p>
+                {/if}
                 <p class="m-0 mt-1 text-[11px] text-slate-600">
                   Ref ({activeReferencePreset.rooms} rok, {activeReferencePreset.sqm} sqm): {referencePrice(item) == null ? 'N/A' : formatSek(referencePrice(item))}
                 </p>
@@ -1315,6 +1439,7 @@
           </div>
         </div>
 
+      </div>
       </div>
     </aside>
     {/if}
