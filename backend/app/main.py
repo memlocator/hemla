@@ -28,6 +28,8 @@ class Coordinates(BaseModel):
 
 class AreaMetrics(BaseModel):
     avg_price_sek_per_sqm: int | None = Field(default=None, description="Average sale price per sqm")
+    price_source: str | None = Field(default=None, description="Price data source: real, municipality_median, or missing")
+    price_n_listings: int | None = Field(default=None, description="Number of sold listings used to compute the price")
     monthly_rent_2br_sek: int | None = Field(default=None, description="Monthly rent for 2BR")
     sl_commute_to_tcentralen_min: int | None = Field(default=None, description="Typical SL commute time to T-Centralen")
     sl_departures_per_hour_peak: int | None = Field(default=None, description="Peak departures per hour")
@@ -64,6 +66,25 @@ class AreaResult(BaseModel):
 class AreaCollection(BaseModel):
     total: int
     items: List[AreaResult]
+
+
+class SoldListing(BaseModel):
+    id: str
+    street_address: str
+    final_price_sek: int
+    price_per_sqm_sek: int
+    sqm: int
+    rooms: str
+    sold_at: int
+    lat: float
+    lon: float
+    location_description: str
+
+
+class SoldListingsResponse(BaseModel):
+    deso_id: str
+    total: int
+    listings: List[SoldListing]
 
 
 class SourceInfo(BaseModel):
@@ -356,6 +377,8 @@ def load_real_areas_from_csv(csv_path: Path) -> List[Area]:
                     coordinates=Coordinates(lat=float(raw["lat"]), lon=float(raw["lon"])),
                     metrics=AreaMetrics(
                         avg_price_sek_per_sqm=parse_int(raw, "avg_price_sek_per_sqm"),
+                        price_source=raw.get("price_source") or None,
+                        price_n_listings=parse_int(raw, "price_n_listings"),
                         monthly_rent_2br_sek=parse_int(raw, "monthly_rent_2br_sek"),
                         sl_commute_to_tcentralen_min=parse_int(raw, "sl_commute_to_tcentralen_min"),
                         sl_departures_per_hour_peak=parse_int(raw, "sl_departures_per_hour_peak"),
@@ -390,6 +413,29 @@ def resolve_base_areas() -> tuple[List[Area], str]:
 
 
 BASE_AREAS, BASE_AREAS_SOURCE = resolve_base_areas()
+
+
+def load_sold_listings() -> Dict[str, list]:
+    """Load hemnet_sold_listings_with_deso.csv into {deso_id: [listing_dict, ...]}."""
+    csv_path = Path(__file__).resolve().parent.parent / "data" / "raw" / "hemnet_sold_listings_with_deso.csv"
+    if not csv_path.exists():
+        return {}
+    by_deso: Dict[str, list] = {}
+    with csv_path.open("r", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            deso_id = row.get("deso_id", "")
+            if not deso_id:
+                continue
+            if deso_id not in by_deso:
+                by_deso[deso_id] = []
+            by_deso[deso_id].append(row)
+    # Sort each zone newest first
+    for listings in by_deso.values():
+        listings.sort(key=lambda r: int(r.get("sold_at") or 0), reverse=True)
+    return by_deso
+
+
+SOLD_LISTINGS: Dict[str, list] = load_sold_listings()
 
 TRANSIT_ENGINE: "TransitEngine | None" = None
 
@@ -1209,6 +1255,28 @@ async def listings(
     return ApartmentCollection(total=len(out), items=out)
 
 
+@app.get("/api/sold_listings_all")
+async def get_all_sold_listings() -> dict:
+    """Return all sold listings as a flat list for map rendering."""
+    out = []
+    for listings in SOLD_LISTINGS.values():
+        for r in listings:
+            try:
+                out.append({
+                    "a": r.get("street_address", ""),
+                    "p": int(r["price_per_sqm_sek"]),
+                    "f": int(r["final_price_sek"]),
+                    "s": int(r["sqm"]),
+                    "r": r.get("rooms", ""),
+                    "t": int(r.get("sold_at") or 0),
+                    "la": float(r["lat"]),
+                    "lo": float(r["lon"]),
+                })
+            except (ValueError, KeyError):
+                continue
+    return {"total": len(out), "listings": out}
+
+
 @app.get("/api/areas/{area_id}", response_model=AreaResult)
 async def get_area(
     area_id: str,
@@ -1237,3 +1305,32 @@ async def get_area(
         priority_commute=priority_commute,
         priority_crime=priority_crime,
     )
+
+
+@app.get("/api/areas/{area_id}/sold_listings", response_model=SoldListingsResponse)
+async def get_sold_listings(
+    area_id: str,
+    limit: int = Query(default=50, le=500),
+) -> SoldListingsResponse:
+    area = next((a for a in BASE_AREAS if a.id == area_id), None)
+    if area is None:
+        raise HTTPException(status_code=404, detail="Area not found")
+    raw = SOLD_LISTINGS.get(area_id, [])
+    listings = []
+    for r in raw[:limit]:
+        try:
+            listings.append(SoldListing(
+                id=r["id"],
+                street_address=r.get("street_address", ""),
+                final_price_sek=int(r["final_price_sek"]),
+                price_per_sqm_sek=int(r["price_per_sqm_sek"]),
+                sqm=int(r["sqm"]),
+                rooms=r.get("rooms", ""),
+                sold_at=int(r.get("sold_at") or 0),
+                lat=float(r["lat"]),
+                lon=float(r["lon"]),
+                location_description=r.get("location_description", ""),
+            ))
+        except (ValueError, KeyError):
+            continue
+    return SoldListingsResponse(deso_id=area_id, total=len(raw), listings=listings)
