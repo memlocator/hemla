@@ -24,7 +24,6 @@
   let priorityCrime = 33;
 
   let showHeatmap = true;
-  let showMarkers = false;
   let heatMetric = 'weighted';
   let minTransitType = '';
   let referencePresetId = '2r-55';
@@ -755,7 +754,7 @@
       const latLng = [item.area.coordinates.lat, item.area.coordinates.lon];
       bounds.push(latLng);
       const active = item.area.id === selectedId;
-      if (!showMarkers && !active) continue;
+      if (!active) continue;
       const markerSize = active ? 22 : 16;
       const withinRange = item.area.metrics.nearest_station_walk_min != null && item.area.metrics.nearest_station_walk_min <= 9;
       const transitIconSize = Math.round(markerSize * 0.72);
@@ -922,7 +921,6 @@
     filteredAreas;
     selectedId;
     showHeatmap;
-    showMarkers;
     heatMetric;
     referencePresetId;
     maxCommute;
@@ -1003,6 +1001,7 @@
 <div class={`relative grid w-full transition-colors lg:h-[100dvh] lg:max-h-[100dvh] lg:grid-rows-[auto,minmax(0,1fr)] lg:overflow-hidden ${isDark ? 'theme-dark' : 'theme-light'}`}>
   <header class={`flex items-center justify-between gap-4 px-6 py-3 ${isDark ? 'border-b border-white/10 bg-[#080f1e]' : 'border-b border-slate-200 bg-white'}`}>
     <div class="flex items-center gap-3">
+      <img src="/favicon.svg" alt="Hemla logo" class="h-7 w-7 rounded-lg" />
       <span class={`font-brand text-lg font-extrabold leading-none tracking-[-0.03em] ${isDark ? 'text-white' : 'text-slate-900'}`}>hemla.</span>
       <span class={`hidden h-4 w-px sm:block ${isDark ? 'bg-white/10' : 'bg-slate-200'}`}></span>
       <span class={`hidden text-[12px] font-medium tracking-[0.01em] md:block ${isDark ? 'text-white/40' : 'text-slate-500'}`}></span>
@@ -1076,11 +1075,6 @@
 
         <div class="absolute right-3 top-3 flex flex-col gap-1" style="z-index:1000">
           <button
-            class={`pointer-events-auto rounded-lg border px-2 py-1 text-[11px] font-medium shadow-sm transition ${showMarkers ? 'border-teal-600 bg-teal-600 text-white hover:bg-teal-700' : 'border-slate-300 bg-white/80 text-slate-500 hover:bg-white'}`}
-            on:click={() => { showMarkers = !showMarkers; }}
-            title="Toggle markers"
-          >● Markers</button>
-          <button
             class={`pointer-events-auto rounded-lg border px-2 py-1 text-[11px] font-medium shadow-sm transition ${showHeatmap ? 'border-teal-600 bg-teal-600 text-white hover:bg-teal-700' : 'border-slate-300 bg-white/80 text-slate-500 hover:bg-white'}`}
             on:click={() => { showHeatmap = !showHeatmap; }}
             title="Toggle area layer"
@@ -1105,6 +1099,44 @@
             <div class={`pointer-events-auto max-w-40 rounded-lg border px-2 py-1 text-[11px] shadow-sm ${isDark ? 'border-rose-400/30 bg-[#080f1ee6] text-rose-200' : 'border-red-200 bg-white/90 text-red-700'}`}>{geojsonError}</div>
           {/if}
         </div>
+
+        {#if showHeatmap}
+          <div class={`pointer-events-none absolute left-3 top-3 z-[1000] hidden rounded-xl border px-3 py-2 text-[11px] shadow-md backdrop-blur md:block ${isDark ? 'border-white/10 bg-[#080f1ee6] text-slate-300' : 'border-slate-200 bg-white/90 text-slate-700'}`}>
+            {#if heatMetric === 'commute'}
+              <p class={`m-0 mb-1.5 font-semibold uppercase tracking-wide text-[10px] ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>Commute to T-Centralen</p>
+              {#each [{label:'0–20 min',color:'#0f766e'},{label:'20–35 min',color:'#0ea5e9'},{label:'35–50 min',color:'#eab308'},{label:'50–70 min',color:'#f97316'},{label:'70+ min',color:'#dc2626'},{label:'N/A',color:'#94a3b8'}] as row}
+                <div class="flex items-center gap-1.5 leading-5">
+                  <span style={`background:${row.color};width:10px;height:10px;border-radius:2px;display:inline-block;flex-shrink:0`}></span>
+                  {row.label}
+                </div>
+              {/each}
+            {:else if heatMetric === 'price'}
+              <p class={`m-0 mb-1.5 font-semibold uppercase tracking-wide text-[10px] ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>Price / sqm</p>
+              {#each [{label:'Top 25% (cheapest)',color:'#0f766e'},{label:'Above median',color:'#0ea5e9'},{label:'Below median',color:'#eab308'},{label:'Bottom 25% (priciest)',color:'#ef4444'}] as row}
+                <div class="flex items-center gap-1.5 leading-5">
+                  <span style={`background:${row.color};width:10px;height:10px;border-radius:2px;display:inline-block;flex-shrink:0`}></span>
+                  {row.label}
+                </div>
+              {/each}
+            {:else if heatMetric === 'safety'}
+              <p class={`m-0 mb-1.5 font-semibold uppercase tracking-wide text-[10px] ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>Safety score</p>
+              {#each [{label:`Top 25% (≥${scoreBreaks.q3})`,color:'#0f766e'},{label:`Above median (≥${scoreBreaks.q2})`,color:'#0ea5e9'},{label:`Above bottom (≥${scoreBreaks.q1})`,color:'#eab308'},{label:'Bottom 25%',color:'#ef4444'}] as row}
+                <div class="flex items-center gap-1.5 leading-5">
+                  <span style={`background:${row.color};width:10px;height:10px;border-radius:2px;display:inline-block;flex-shrink:0`}></span>
+                  {row.label}
+                </div>
+              {/each}
+            {:else}
+              <p class={`m-0 mb-1.5 font-semibold uppercase tracking-wide text-[10px] ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>Area score</p>
+              {#each [{label:`Top 25% (≥${scoreBreaks.q3})`,color:'#0f766e'},{label:`Above median (≥${scoreBreaks.q2})`,color:'#0ea5e9'},{label:`Above bottom (≥${scoreBreaks.q1})`,color:'#eab308'},{label:'Bottom 25%',color:'#ef4444'}] as row}
+                <div class="flex items-center gap-1.5 leading-5">
+                  <span style={`background:${row.color};width:10px;height:10px;border-radius:2px;display:inline-block;flex-shrink:0`}></span>
+                  {row.label}
+                </div>
+              {/each}
+            {/if}
+          </div>
+        {/if}
 
         {#if selected}
           <div
