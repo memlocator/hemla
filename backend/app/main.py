@@ -20,6 +20,8 @@ try:
 except ImportError:
     _TRANSIT_ENGINE_AVAILABLE = False
 
+from app import db as _db
+
 
 class Coordinates(BaseModel):
     lat: float
@@ -415,27 +417,51 @@ def resolve_base_areas() -> tuple[List[Area], str]:
 BASE_AREAS, BASE_AREAS_SOURCE = resolve_base_areas()
 
 
-def load_sold_listings() -> Dict[str, list]:
-    """Load hemnet_sold_listings_with_deso.csv into {deso_id: [listing_dict, ...]}."""
-    csv_path = Path(__file__).resolve().parent.parent / "data" / "raw" / "hemnet_sold_listings_with_deso.csv"
-    if not csv_path.exists():
-        return {}
-    by_deso: Dict[str, list] = {}
-    with csv_path.open("r", encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            deso_id = row.get("deso_id", "")
-            if not deso_id:
-                continue
-            if deso_id not in by_deso:
-                by_deso[deso_id] = []
-            by_deso[deso_id].append(row)
-    # Sort each zone newest first
-    for listings in by_deso.values():
-        listings.sort(key=lambda r: int(r.get("sold_at") or 0), reverse=True)
-    return by_deso
+def _enrich_prices_from_db(areas: List[Area]) -> List[Area]:
+    """Override avg_price_sek_per_sqm with median computed from actual sold listings."""
+    try:
+        from app.db import get_conn
+        with get_conn() as conn:
+            rows = conn.execute(
+                """
+                SELECT deso_id, price_per_sqm_sek
+                FROM sold_listings
+                WHERE deso_id IS NOT NULL AND price_per_sqm_sek > 0
+                  AND sqm >= 10
+                ORDER BY deso_id, price_per_sqm_sek
+                """
+            ).fetchall()
+        # Compute median per DeSO in Python
+        from collections import defaultdict
+        by_deso: dict[str, list[int]] = defaultdict(list)
+        for r in rows:
+            by_deso[r["deso_id"]].append(r["price_per_sqm_sek"])
+        medians: dict[str, int] = {}
+        for deso_id, prices in by_deso.items():
+            mid = len(prices) // 2
+            medians[deso_id] = int(prices[mid] if len(prices) % 2 else (prices[mid - 1] + prices[mid]) // 2)
+        patched = []
+        for area in areas:
+            if area.id in medians:
+                m = area.metrics.model_copy(update={
+                    "avg_price_sek_per_sqm": medians[area.id],
+                    "price_source": "sold_listings_median",
+                    "price_n_listings": len(by_deso[area.id]),
+                })
+                patched.append(area.model_copy(update={"metrics": m}))
+            else:
+                patched.append(area)
+        enriched = sum(1 for a in patched if a.metrics.price_source == "sold_listings_median")
+        print(f"[prices] Enriched {enriched}/{len(patched)} DeSO zones from sold listings DB.", flush=True)
+        return patched
+    except Exception as e:
+        print(f"[prices] Failed to enrich from DB: {e}", flush=True)
+        return areas
 
 
-SOLD_LISTINGS: Dict[str, list] = load_sold_listings()
+BASE_AREAS = _enrich_prices_from_db(BASE_AREAS)
+
+_db.init_db()
 
 TRANSIT_ENGINE: "TransitEngine | None" = None
 
@@ -482,6 +508,22 @@ def haversine_km(a: Coordinates, b: Coordinates) -> float:
     sin_dlon = math.sin(d_lon / 2.0)
     h = sin_dlat * sin_dlat + math.cos(lat1) * math.cos(lat2) * sin_dlon * sin_dlon
     return radius_km * (2.0 * math.atan2(math.sqrt(h), math.sqrt(max(0.0, 1.0 - h))))
+
+
+def effective_commute_multi(area: Area, destinations: list[tuple["Coordinates", float]]) -> int | None:
+    """Weighted-average commute across multiple destinations. Each entry is (coords, weight)."""
+    if not destinations:
+        return area.metrics.sl_commute_to_tcentralen_min
+    total_weight = sum(w for _, w in destinations)
+    if total_weight == 0:
+        return area.metrics.sl_commute_to_tcentralen_min
+    weighted_sum = 0.0
+    for dest_coords, weight in destinations:
+        t = estimate_commute_minutes(area, dest_coords)
+        if t is None:
+            return None
+        weighted_sum += weight * t
+    return int(round(weighted_sum / total_weight))
 
 
 def estimate_commute_minutes(area: Area, destination: Coordinates) -> int | None:
@@ -791,14 +833,14 @@ def score_area(
     area: Area,
     budget_sek_per_sqm: int,
     max_commute_min: int,
-    destination_coords: Coordinates | None = None,
+    destinations: list[tuple[Coordinates, float]] | None = None,
     priority_price: int = 34,
     priority_commute: int = 33,
     priority_crime: int = 33,
 ) -> AreaResult:
     m = area.metrics
 
-    effective_commute = estimate_commute_minutes(area, destination_coords) if destination_coords else m.sl_commute_to_tcentralen_min
+    effective_commute = effective_commute_multi(area, destinations) if destinations else m.sl_commute_to_tcentralen_min
 
     if m.avg_price_sek_per_sqm is None:
         price_score = 0.5
@@ -808,7 +850,7 @@ def score_area(
         price_score = affordability * 0.6 + budget_fit * 0.4
 
     if effective_commute is None:
-        commute_score = 0.5
+        commute_score = 0.0
     else:
         commute_time = normalize(effective_commute, 8, 75, reverse=True)
         commute_limit_fit = 1.0 if effective_commute <= max_commute_min else max(0.0, 1 - (effective_commute - max_commute_min) / 30)
@@ -841,12 +883,17 @@ def score_area(
         "socioeconomics": round(socioeconomics * 100, 1),
         "priority_score": round(priority_score * 100, 1),
         "commute_minutes": float(effective_commute) if effective_commute is not None else None,
+        **{f"dest_commute_{i}": float(t) if (t := estimate_commute_minutes(area, d)) is not None else None
+           for i, (d, _) in enumerate(destinations or [])},
         "price_data_available": 1.0 if m.avg_price_sek_per_sqm is not None else 0.0,
         "commute_data_available": 1.0 if effective_commute is not None else 0.0,
         "crime_data_available": 1.0 if m.crime_rate_per_1000 is not None else 0.0,
     }
 
-    value_score = round((priority_score * 0.8 + socioeconomics * 0.2) * 100, 1)
+    if effective_commute is None:
+        value_score = 0.0
+    else:
+        value_score = round((priority_score * 0.8 + socioeconomics * 0.2) * 100, 1)
     return AreaResult(area=area, value_score=value_score, breakdown=breakdown)
 
 
@@ -992,7 +1039,7 @@ async def get_scored_rows(
     municipality: str | None,
     live: bool,
     refresh: bool,
-    destination_coords: Coordinates | None = None,
+    destinations: list[tuple[Coordinates, float]] | None = None,
     detail_level: Literal["base", "fine", "ultra"] = "base",
     priority_price: int = 34,
     priority_commute: int = 33,
@@ -1009,7 +1056,7 @@ async def get_scored_rows(
             a,
             budget_sek_per_sqm=budget_sek_per_sqm,
             max_commute_min=max_commute_min,
-            destination_coords=destination_coords,
+            destinations=destinations,
             priority_price=priority_price,
             priority_commute=priority_commute,
             priority_crime=priority_crime,
@@ -1022,7 +1069,13 @@ async def get_scored_rows(
 
 @app.get("/health")
 def health() -> Dict[str, str]:
-    return {"status": "ok", "areas_source": BASE_AREAS_SOURCE, "areas_count": str(len(BASE_AREAS))}
+    return {
+        "status": "ok",
+        "areas_source": BASE_AREAS_SOURCE,
+        "areas_count": str(len(BASE_AREAS)),
+        "sold_listings": str(_db.total_listings()),
+        "sold_listings_with_deso": str(_db.total_listings_with_deso()),
+    }
 
 
 @app.get("/api/sources", response_model=List[SourceInfo])
@@ -1065,10 +1118,9 @@ async def list_areas(
     budget_sek_per_sqm: int = Query(70000, ge=1, le=1000000),
     max_commute_min: int = Query(35, ge=10, le=120),
     municipality: str | None = Query(default=None),
-    destination: str = Query(default="tcentralen"),
-    destination_query: str | None = Query(default=None, max_length=300),
-    destination_lat: float | None = Query(default=None, ge=-90, le=90),
-    destination_lon: float | None = Query(default=None, ge=-180, le=180),
+    dest_lat: List[float] = Query(default=[]),
+    dest_lon: List[float] = Query(default=[]),
+    dest_weight: List[float] = Query(default=[]),
     detail_level: Literal["base", "fine", "ultra"] = Query(default="base"),
     priority_price: int = Query(34, ge=0, le=100),
     priority_commute: int = Query(33, ge=0, le=100),
@@ -1076,19 +1128,16 @@ async def list_areas(
     live: bool = Query(default=False, description="Enable live enrichment from free APIs"),
     refresh: bool = Query(default=False, description="Force refresh of live enrichment cache"),
 ) -> AreaCollection:
-    destination_coords, _ = await resolve_destination(
-        destination=destination,
-        destination_query=destination_query,
-        destination_lat=destination_lat,
-        destination_lon=destination_lon,
-    )
+    destinations: list[tuple[Coordinates, float]] = []
+    for lat, lon, w in zip(dest_lat, dest_lon, dest_weight or [1.0] * len(dest_lat)):
+        destinations.append((Coordinates(lat=lat, lon=lon), w))
     scored = await get_scored_rows(
         budget_sek_per_sqm=budget_sek_per_sqm,
         max_commute_min=max_commute_min,
         municipality=municipality,
         live=live,
         refresh=refresh,
-        destination_coords=destination_coords,
+        destinations=destinations or None,
         detail_level=detail_level,
         priority_price=priority_price,
         priority_commute=priority_commute,
@@ -1125,7 +1174,7 @@ async def network(
         municipality=municipality,
         live=live,
         refresh=refresh,
-        destination_coords=destination_coords,
+        destinations=[(destination_coords, 1.0)] if destination_coords else None,
         detail_level=detail_level,
         priority_price=priority_price,
         priority_commute=priority_commute,
@@ -1164,7 +1213,7 @@ async def drilldown(
         municipality=municipality,
         live=live,
         refresh=refresh,
-        destination_coords=destination_coords,
+        destinations=[(destination_coords, 1.0)] if destination_coords else None,
         detail_level=detail_level,
         priority_price=priority_price,
         priority_commute=priority_commute,
@@ -1258,22 +1307,7 @@ async def listings(
 @app.get("/api/sold_listings_all")
 async def get_all_sold_listings() -> dict:
     """Return all sold listings as a flat list for map rendering."""
-    out = []
-    for listings in SOLD_LISTINGS.values():
-        for r in listings:
-            try:
-                out.append({
-                    "a": r.get("street_address", ""),
-                    "p": int(r["price_per_sqm_sek"]),
-                    "f": int(r["final_price_sek"]),
-                    "s": int(r["sqm"]),
-                    "r": r.get("rooms", ""),
-                    "t": int(r.get("sold_at") or 0),
-                    "la": float(r["lat"]),
-                    "lo": float(r["lon"]),
-                })
-            except (ValueError, KeyError):
-                continue
+    out = _db.get_all_sold_listings_compact()
     return {"total": len(out), "listings": out}
 
 
@@ -1315,9 +1349,10 @@ async def get_sold_listings(
     area = next((a for a in BASE_AREAS if a.id == area_id), None)
     if area is None:
         raise HTTPException(status_code=404, detail="Area not found")
-    raw = SOLD_LISTINGS.get(area_id, [])
+    total = _db.count_sold_listings_for_deso(area_id)
+    raw = _db.get_sold_listings_for_deso(area_id, limit=limit)
     listings = []
-    for r in raw[:limit]:
+    for r in raw:
         try:
             listings.append(SoldListing(
                 id=r["id"],
@@ -1333,4 +1368,4 @@ async def get_sold_listings(
             ))
         except (ValueError, KeyError):
             continue
-    return SoldListingsResponse(deso_id=area_id, total=len(raw), listings=listings)
+    return SoldListingsResponse(deso_id=area_id, total=total, listings=listings)
